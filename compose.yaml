@@ -1,0 +1,37 @@
+services:
+  ollama:
+    image: ollama/ollama:0.33.3
+    environment:
+      OLLAMA_HOST: "0.0.0.0:11434"
+      OLLAMA_NO_CLOUD: "1"
+      OLLAMA_NUM_PARALLEL: "1"
+    volumes:
+      - ollama_models:/root/.ollama
+    healthcheck:
+      test: ["CMD", "ollama", "list"]
+      interval: 10s
+      timeout: 5s
+      retries: 12
+      start_period: 10s
+
+  triage:
+    build:
+      context: ./service
+    ports:
+      - "8000:8000"
+    environment:
+      OLLAMA_URL: "http://ollama:11434"
+      OLLAMA_MODEL: "${OLLAMA_MODEL:-}"
+      MODEL_TIMEOUT: "300"
+      RUN_ID: "${RUN_ID:-development}"
+      DATA_DIR: "/app/data"
+      LOG_DIR: "/app/logs"
+    volumes:
+      - ./data:/app/data
+      - ./logs:/app/logs
+    depends_on:
+      ollama:
+        condition: service_healthy
+
+volumes:
+  ollama_models:

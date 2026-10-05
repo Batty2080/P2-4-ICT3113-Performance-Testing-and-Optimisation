@@ -1,0 +1,13 @@
+# Python
+__pycache__/
+*.pyc
+.venv/
+
+# Local configuration
+.env
+
+# Runtime database
+data/
+*.db
+*.db-shm
+*.db-wal
