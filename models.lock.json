@@ -1,0 +1,31 @@
+{
+  "recorded_at": "2026-10-07",
+  "ollama_version": "0.40.0",
+  "hardware": "AMD Ryzen 5 5600 (6 cores / 12 threads), 7.9 GB RAM, Windows 11 Home, CPU-only inference",
+  "models": [
+    {
+      "tag": "qwen2.5:1.5b",
+      "digest": "sha256:65ec06548149b04c096a120e4a6da9d4017ea809c91734ea5631e89f96ddc57b",
+      "params": "1.5B",
+      "quant": "Q4_K_M",
+      "family": "qwen2.5",
+      "size_class": "tiny"
+    },
+    {
+      "tag": "llama3.2:3b",
+      "digest": "sha256:a80c4f17acd55265feec403c7aef86be0c25983ab279d83f3bcd3abbcb5b8b72",
+      "params": "3.2B",
+      "quant": "Q4_K_M",
+      "family": "llama3.2",
+      "size_class": "small"
+    },
+    {
+      "tag": "qwen2.5:7b",
+      "digest": "sha256:845dbda0ea48ed749caafd9e6037047aa19acfcfd82e704d7ca97d631a0b697e",
+      "params": "7.6B",
+      "quant": "Q4_K_M",
+      "family": "qwen2.5",
+      "size_class": "medium"
+    }
+  ]
+}
