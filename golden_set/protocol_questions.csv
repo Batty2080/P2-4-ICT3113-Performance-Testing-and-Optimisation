@@ -1,0 +1,58 @@
+id,question,option_a,option_b,rows_affected,decision,notes
+P1,"When money held in a bank account (or a bank-like account such as Chime) is involved, how do we choose between Bank account or service and Money transfer or service?","Look at which service went wrong. If the problem is with the account itself, such as deposits, withdrawals, debit card charges, disputes, refunds or getting into the account, label it Bank account or service. Only label it Money transfer or service if the person was sending money to someone else and that transfer went wrong.
+
+Example: unknown companies take money out of someone's Citi savings account. The person didn't send anything, so this is Bank account or service.","Whenever money is moved out of an account without permission or a transfer is disputed (withdrawals, wire transfers, money moved to another account), label it Money transfer or service, even if it happened inside a normal bank account.
+
+Example: unknown companies take money out of someone's Citi savings account. Money was moved out, so this is Money transfer or service.","4021, 4029, 4056, 4061, 4077, 4131, 4136",Option A,
+P2,"Payment apps such as Cash App, Venmo and PayPal are named in our Money transfer definition. Should every complaint about these apps be Money transfer, even when the problem is with the person's account in the app?","Yes. Any complaint about a payment app named in the Money transfer definition is labelled Money transfer or service, whatever the specific problem is.
+
+Example: someone's Cash App account is locked and they can't get in. This is Money transfer or service.","No. If the problem is with the person's account in the app (it is locked, hacked, or they can't get in), label it Bank account or service. Only label it Money transfer or service when the problem is with a payment being sent or received.
+
+Example: someone's Cash App account is locked and they can't get in. This is Bank account or service.","4034, 4120, 4131",Option A,
+P3,Services that cash cheques through an app (for example Ingo) are not banks. Where do they belong?,"Treat them as a money service and label them Money transfer or service. The real CFPB category this course merged into Money transfer includes money services such as cheque cashing.
+
+Example: Ingo processes someone's cheque twice. This is Money transfer or service.","Treat cashing or depositing a cheque as a normal bank account feature and label it Bank account or service, the same way a mobile cheque deposit at Chime was labelled.
+
+Example: Ingo processes someone's cheque twice. This is Bank account or service.",4093,Option A,
+P4,"When the company that originally lent the money (not a separate debt collection agency) is chasing the person for payment with calls, demands or threats, is it Debt collection?","No. Label it by the product the debt comes from, because the original lender is not a debt collector. A US law (the Fair Debt collection Practices Act) defines a debt collector as someone collecting debts owed to another company.
+
+Example: American Express calls a relative's house about a late credit card payment. This is Credit card.","Yes. Our Debt collection definition includes collection calls, harassment and attempts to recover unpaid debts without saying who does them, so any collection activity counts as Debt collection, whoever is doing it.
+
+Example: American Express calls a relative's house about a late credit card payment. This is Debt collection.","4103, 4115",Option A,
+P5,"When a problem with a product (a credit card, loan or mortgage) causes wrong or damaging information on the person's credit report, do we label it by the product or as Credit reporting?","Label it by the product that caused the problem. This follows our original rule: label according to the main product that generated the complaint, not the knock-on effect.
+
+Example: Wells Fargo cuts someone's credit card limit, which may lower their credit score. This is Credit card.","If the person's main request is to fix their credit report, label it Credit reporting, even though a product caused the problem.
+
+Example: Wells Fargo cuts someone's credit card limit, which may lower their credit score. If what they mainly want is their credit score fixed, this is Credit reporting.","4047, 4051, 4092, 4148",Option A,
+P6,"When a debt from a debt collector appears on someone's credit report, is it Credit reporting or Debt collection?","It depends on what is happening. If the person only found the debt on their credit report and wants it removed, and nobody is calling or writing to them to collect it, label it Credit reporting. If a collector is actively chasing them with calls, letters, threats or lawsuits, label it Debt collection.
+
+Example: someone finds an unknown collection account on their credit report and disputes it with the credit bureau. Nobody is contacting them. This is Credit reporting.","Any time a debt collector or a collection account is involved, label it Debt collection, whether or not the collector is actively chasing the person.
+
+Example: someone finds an unknown collection account on their credit report and disputes it with the credit bureau. Nobody is contacting them. This is Debt collection.","4013, 4024, 4059, 4070, 4126",Option A,
+P7,"When a debt collector chases someone over a debt that came from a specific product (for example a personal loan), do we label it by the collector or by the original product?","Label it Debt collection. The complaint is about how the collector is behaving, so the original product is only background.
+
+Example: a company buys an unpaid personal loan and sends threatening letters from lawyers. This is Debt collection.","Label it by the original product the debt came from.
+
+Example: a company buys an unpaid personal loan and sends threatening letters from lawyers. This is Consumer loan.","4019, 4058",Option A,
+P8,"Prepaid cards (cards you load money onto in advance, such as government benefit cards) are not in any of our definitions. Where do they go?","Label all prepaid cards as Credit card. The real CFPB data groups them together as 'Credit card or prepaid card'.
+
+Example: someone receives an unemployment benefits prepaid card they never applied for. This is Credit card.","Label prepaid cards as Bank account or service, because they work like a debit card and hold the person's own money.
+
+Example: someone receives an unemployment benefits prepaid card they never applied for. This is Bank account or service.","4111, 4141",Option B,
+P9,"When one complaint involves more than one product (for example a credit card and a checking account both closed), which product do we choose?","Choose the product that the person's specific complaints are mostly about, such as the fees, refunds or charges they mention.
+
+Example: American Express closes someone's credit cards and checking accounts, and they want a refund of the cards' annual fees. Most complaints are about the cards, so this is Credit card.","Choose the other product named in the complaint.
+
+Example: American Express closes someone's credit cards and checking accounts. This is Bank account or service, because checking accounts were also closed.",4004,Option A,
+P10,"When a complaint is vague and doesn't name a specific product, how do we choose?","Use the clues in the text. If it only says 'loan' with no other detail, label it Consumer loan. If it is about information being shared with credit bureaus, label it Credit reporting.
+
+Example: someone receives marketing emails inviting them to apply for 'loans'. This is Consumer loan.","Choose the category that matches the type of company mentioned, even if the text gives few details.
+
+Example: someone receives marketing emails from a company inviting them to apply for 'loans'. Choose based on what kind of company sent them.","4008, 4020, 4064, 4146",Option A,
+P11,"Some products are not covered by our category definitions: car leases, cryptocurrency apps, companies like LexisNexis that sell reports about people, and store credit cards. Should we add them to the definitions?","Yes, add them so everyone labels them the same way. Car leases go to Consumer loan (the CFPB groups them with car loans). Cryptocurrency apps go to Money transfer or service. Companies that sell reports about people go to Credit reporting. Store credit cards go to Credit card.
+
+Example: a Toyota car lease is fraudulently extended. This is Consumer loan.","No, don't change the definitions. Treat each one as a 'fits none' case and pick the closest category each time.
+
+Example: a Toyota car lease is fraudulently extended. Decide the closest category for this ticket on its own.","4006, 4044, 4130, 4143",Option A,
+P12,"When a lender or company reports an account to the credit bureaus wrongly, and nothing else is wrong with the product itself, do we label it by the product or as Credit reporting?","Label it Credit reporting. Our Credit reporting definition already covers ""inaccurate reporting"" and ""disputes regarding information appearing on a credit report"". P5 only applies when something went wrong with the product itself (a broken autopay, a cut credit limit) and that caused the credit damage. Example: Bank of America reports a mortgage that was included in bankruptcy with the wrong status. Nothing else is wrong with the mortgage. This is Credit reporting.","Label it by the product that is being reported, because the account belongs to that product. Example: Bank of America reports a mortgage that was included in bankruptcy with the wrong status. This is Mortgage.","4079, 4109",Option A,Added after reviewing 4079: it was first filed under P5 by mistake.
+S,Is this disagreement really a typing or clicking mistake rather than a real difference of opinion?,"Check first: if one label doesn't match any definition or rule, ask the person who entered it whether it was a mistake. If it was, correct it and write 'entry error, corrected' as the reason.",Not applicable.,"4044, 4138, 4143, 4149",Option A,
