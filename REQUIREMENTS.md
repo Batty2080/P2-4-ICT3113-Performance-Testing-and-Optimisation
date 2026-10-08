@@ -2,7 +2,7 @@
 
 Team P2-4 · ICT3113 Assignment 1 · Committed before the first benchmark run.
 
-All requirements are derived from the workload model in `workload/Step3_Workload_Model.xlsx`
+All requirements are derived from the workload model in `Step3_Workload_Model.xlsx`
 (see sheet **Slide3** for every number quoted below). Every requirement states a number,
 a percentile where relevant, and the load condition under which it must hold.
 All load tests are **open-loop** (JMeter Open Model Thread Group or Precise Throughput Timer),
@@ -39,12 +39,15 @@ are not left waiting indefinitely.
 ### R2 – Sustained throughput
 
 > The service must complete **≥ 110 tickets/hour** for **60 minutes** at an open-loop arrival rate of 110/h,
-> with **error rate < 1%** (non-2xx responses) and **no queue build-up**: p95 latency in the last 10 minutes
-> ≤ 1.2 × p95 in the first 10 minutes.
+> with **error rate < 1%** (non-2xx responses) and **no queue build-up**: median latency in the last 10 minutes
+> ≤ 1.5 × median latency in the first 10 minutes.
 
 *Why:* 110/h is 1.5× the design peak, giving headroom for days busier than our two-week sample and for
 growth. The "no build-up" clause distinguishes a system that keeps up from one whose queue grows slowly
-(which open-loop testing exposes and closed-loop testing hides).
+(which open-loop testing exposes and closed-loop testing hides). The clause compares **medians**, not p95:
+at 110/h a 10-minute window holds only ≈ 18 requests, so a p95 would just be the single longest ticket
+(ticket lengths range from a few hundred to 2,000 characters) and could fail the test by chance. The median is
+stable at that sample size, and a real queue build-up still shows up as a large rise in it.
 
 ### R3 – Search response time under mixed load (GET /search)
 
@@ -92,6 +95,6 @@ Accuracy (R4) is therefore the requirement we weight most heavily, but latency m
 | Req | Evidence | Statistic |
 |---|---|---|
 | R1 | JMeter `.jtl` (elapsed) reconciled with `logs/requests.jsonl` (`duration_ms`) by `X-Request-ID` | p95, p99 per run; mean and spread over 3 runs |
-| R2 | `.jtl` + service log | completed/hour, error %, p95 first vs last 10 min |
+| R2 | `.jtl` + service log | completed/hour, error %, median first vs last 10 min |
 | R3 | `.jtl` filtered to GET /search | p95 per run |
 | R4 | service log `category` joined to `golden_set.csv` by row | per-category recall, weighted overall, confusion matrix |

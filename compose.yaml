@@ -1,6 +1,9 @@
 services:
   ollama:
-    image: ollama/ollama:0.33.3
+    image: ollama/ollama:0.40.0
+    cpus: "6"
+    ports:
+      - "127.0.0.1:11434:11434"
     environment:
       OLLAMA_HOST: "0.0.0.0:11434"
       OLLAMA_NO_CLOUD: "1"
