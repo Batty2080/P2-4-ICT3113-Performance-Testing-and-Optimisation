@@ -4,9 +4,12 @@ Verifies the models in Ollama still match models.lock.json and saves the result 
 Exit code 1 = a model changed -> do not run the benchmark.
 """
 import json, sys, os, urllib.request, datetime
+from pathlib import Path
+
+ROOT = Path(__file__).resolve().parent.parent  # repo root (this file lives in scripts/)
 
 OLLAMA = "http://localhost:11434"
-lock = json.load(open("models.lock.json"))
+lock = json.load(open(ROOT / "models.lock.json"))
 try:
     tags = json.load(urllib.request.urlopen(OLLAMA + "/api/tags", timeout=10))["models"]
 except Exception as e:
@@ -24,6 +27,6 @@ for m in lock["models"]:
 stamp = datetime.datetime.now().strftime("%Y%m%d-%H%M%S")
 report = f"Pin check {stamp}\n" + "\n".join(lines) + f"\nRESULT: {'PASS' if ok else 'FAIL'}\n"
 print(report)
-os.makedirs("logs", exist_ok=True)
-open(f"logs/pin_check_{stamp}.txt", "w").write(report)
+os.makedirs(ROOT / "logs", exist_ok=True)
+open(ROOT / "logs" / f"pin_check_{stamp}.txt", "w").write(report)
 sys.exit(0 if ok else 1)

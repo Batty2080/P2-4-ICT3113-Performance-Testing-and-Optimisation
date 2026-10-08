@@ -46,18 +46,18 @@ and the caller's `X-Request-ID`). The SQLite database is `data/tickets.db` (not 
 | `Step3_Workload_Model.xlsx` | **Step 3**: workload model with cited sources |
 | `REQUIREMENTS.md` | **Step 4**: performance and accuracy requirements R1–R4 |
 | `PREDICTIONS.md` | **Step 4**: prediction record, written before any benchmark |
-| `models.lock.json`, `pin_models.py`, `check_pins.py` | **Step 4**: candidate models pinned by tag and digest; `check_pins.py` verifies them before every run |
+| `models.lock.json` | **Step 4**: candidate models pinned by tag and digest |
+| `scripts/` | Tooling: `pin_models.py` (writes the lock file), `check_pins.py` (verifies the pins before every run), `make_team_rows.py`, `accuracy_test.py` |
 | `TEST_ENVIRONMENT.md` | **Step 5**: machines, network and limitations of the test setup |
-| `make_team_rows.py`, `team_rows_4000_4999.csv` | The team's 1,000 ticket rows (4000–4999) used as test traffic and for accuracy |
-| `accuracy_test.py` | **Step 5**: runs the golden set through each model and scores it (R4) |
+| `team_rows_4000_4999.csv` | The team's 1,000 ticket rows (4000–4999) used as test traffic and for accuracy; regenerate with `python scripts/make_team_rows.py path/to/ict3113_tickets.csv` |
 | `results/` | Outputs of test runs |
 | `logs/` | Service request logs and pin-check reports (evidence for every reported number) |
 
 ## Run the accuracy test
 
 ```
-python accuracy_test.py                       # all three models (about 45 minutes)
-python accuracy_test.py --models qwen2.5:7b   # one model
+python scripts/accuracy_test.py                       # all three models (about 45 minutes)
+python scripts/accuracy_test.py --models qwen2.5:7b   # one model
 ```
 
 It restarts the service for each model, resets the database, verifies the model pins, sends the 150 golden tickets

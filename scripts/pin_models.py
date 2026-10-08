@@ -4,6 +4,9 @@ Run ONCE after `ollama pull`-ing your candidates.
 Reads the exact digest of each model from Ollama and writes models.lock.json.
 """
 import json, sys, urllib.request, datetime
+from pathlib import Path
+
+ROOT = Path(__file__).resolve().parent.parent  # repo root (this file lives in scripts/)
 
 OLLAMA = "http://localhost:11434"
 
@@ -46,7 +49,7 @@ if missing:
 
 lock = {"recorded_at": datetime.datetime.now().isoformat(timespec="seconds"),
         "ollama_version": version, "models": models}
-json.dump(lock, open("models.lock.json", "w"), indent=2)
+json.dump(lock, open(ROOT / "models.lock.json", "w"), indent=2)
 
 print(f"Ollama {version}\n")
 print(f"{'tag':16}{'params':>8}  {'quant':8}  digest")
