@@ -54,7 +54,10 @@ Run id format: `load-<test>-<model with : replaced by ->-r<run number>`, e.g. `l
 python scripts/prepare_run.py --model qwen2.5:7b --run-id load-mixed-qwen2.5-7b-r1
 ```
 It verifies the pins, stops the service, deletes the database, restarts the service with this model and run id,
-and sends the warm-up request. It ends with `READY`.
+and sends the warm-up request. It ends with `READY`. **Start the Machine B command within 5 minutes of `READY`:**
+Ollama unloads an idle model after 5 minutes, and the first ticket would then include the model reload time
+(seen in the rehearsal: 8.7 s instead of 2.9 s after a 5 min 43 s gap). If you are late, run `prepare_run.py` again.
+Never reuse a run id.
 
 **On Machine B** (repo folder):
 ```

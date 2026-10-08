@@ -37,6 +37,8 @@ def main():
     if status != 201:
         sys.exit("Warm-up request failed; do not start the test.")
     print(f"\nREADY: model {args.model}, run id {args.run_id}. Start JMeter on the load generator now.")
+    print("Start it within 5 minutes: Ollama unloads an idle model after 5 minutes, and the first ticket would then "
+          "include the model reload time. If you are late, run this prepare step again.")
 
 
 if __name__ == "__main__":
