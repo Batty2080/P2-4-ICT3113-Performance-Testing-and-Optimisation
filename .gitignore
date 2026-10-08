@@ -11,3 +11,5 @@ data/
 *.db
 *.db-shm
 *.db-wal
+# Rehearsal (dry) load runs are not results
+results/load/dry-*/

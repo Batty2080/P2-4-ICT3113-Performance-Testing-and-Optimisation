@@ -47,7 +47,9 @@ and the caller's `X-Request-ID`). The SQLite database is `data/tickets.db` (not 
 | `REQUIREMENTS.md` | **Step 4**: performance and accuracy requirements R1–R4 |
 | `PREDICTIONS.md` | **Step 4**: prediction record, written before any benchmark |
 | `models.lock.json` | **Step 4**: candidate models pinned by tag and digest |
-| `scripts/` | Tooling: `pin_models.py` (writes the lock file), `check_pins.py` (verifies the pins before every run), `make_team_rows.py`, `accuracy_test.py` |
+| `scripts/` | Tooling: `pin_models.py` (writes the lock file), `check_pins.py` (verifies the pins before every run), `make_team_rows.py`, `make_jmeter_data.py`, `accuracy_test.py`, `prepare_run.py` (reset and warm up the service before a load run), `summarise_load.py` (statistics and reconciliation of load runs) |
+| `jmeter/` | **Step 5**: JMeter test plan (`triage_load.jmx`), its data files and `run_load_test.ps1` (runs one load test from the load generator) |
+| `PLAYBOOK.md` | **Step 5**: the step-by-step test procedure |
 | `TEST_ENVIRONMENT.md` | **Step 5**: machines, network and limitations of the test setup |
 | `team_rows_4000_4999.csv` | The team's 1,000 ticket rows (4000–4999) used as test traffic and for accuracy; regenerate with `python scripts/make_team_rows.py path/to/ict3113_tickets.csv` |
 | `results/` | Outputs of test runs |
@@ -65,7 +67,9 @@ and writes `results/accuracy/<run_id>/` (predictions, confusion matrix, summary)
 
 ## Load tests
 
-JMeter test plans (open-loop, run from a separate machine) and the playbook will be added under `jmeter/`.
+Open-loop JMeter tests run from a separate machine; the full procedure, run matrix and pass/fail rules are in
+[PLAYBOOK.md](PLAYBOOK.md). In short, for each run: `python scripts/prepare_run.py --model <tag> --run-id <id>` on the
+service machine, then `jmeter/run_load_test.ps1 -Test mixed|r2|stress -Model <tag> -Run <n>` on the load generator.
 
 ## Data and licences
 
