@@ -79,7 +79,6 @@ $props['sample_variables'] = 'row,seq'
 # ---- output folder ----------------------------------------------------------------------------------------------
 $out = Join-Path $repo "results\load\$runId"
 if ((Test-Path $out) -and -not $Force) { throw "$out already exists. Results are never overwritten; pick another -Run or pass -Force." }
-New-Item -ItemType Directory -Force $out | Out-Null
 
 Write-Host ""
 Write-Host "Run id : $runId"
@@ -96,6 +95,7 @@ if ($stats.total -gt 1 -and -not $Force) {
     throw "The service database holds $($stats.total) tickets (expected 1: the warm-up). Run prepare_run.py on the laptop first (or pass -Force)."
 }
 Write-Host "Service reachable; database holds $($stats.total) ticket(s) (the excluded warm-up)."
+New-Item -ItemType Directory -Force $out | Out-Null   # created only now, so a failed pre-check never leaves a blocking folder
 
 # ---- write settings, then run -----------------------------------------------------------------------------------
 $propLines = foreach ($k in $props.Keys) { "$k=$($props[$k])" }
@@ -111,6 +111,14 @@ $jmArgs = @('-n', '-t', $plan, '-q', (Join-Path $out 'run.properties'), '-l', (J
 Push-Location $PSScriptRoot   # the plan reads its CSV data files from this folder
 try { & $jmeter @jmArgs 2>&1 | Tee-Object -FilePath (Join-Path $out 'jmeter_stdout.txt') }
 finally { Pop-Location }
+$jmExit = $LASTEXITCODE
+$jtl = Join-Path $out 'results.jtl'
+$produced = (Test-Path $jtl) -and ((Get-Item $jtl).Length -gt 300)
+if (-not $produced -or $jmExit -ne 0) {
+    $failed = "$out-FAILED-" + (Get-Date).ToString('yyyyMMdd-HHmmss')
+    Move-Item -Path $out -Destination $failed
+    throw "JMeter did not complete normally (exit code $jmExit; results file produced: $produced). Output kept in $failed. Fix the cause, run prepare_run.py on the laptop again, then repeat this run."
+}
 
 $info['finished_at_utc'] = (Get-Date).ToUniversalTime().ToString('o')
 $info['finished_epoch_ms'] = [int64]([DateTimeOffset]::UtcNow.ToUnixTimeMilliseconds())
