@@ -63,7 +63,10 @@ def read_test_start(stdout_file):
     """Epoch ms at which JMeter started the test, from its console output (None if not found)."""
     if not stdout_file.exists():
         return None
-    m = re.search(r"Starting standalone test @ .*\((\d{12,14})\)", stdout_file.read_text(encoding="utf-8", errors="ignore"))
+    raw = stdout_file.read_bytes()
+    # Windows PowerShell's Tee-Object saves the console text as UTF-16 (with a byte-order mark); accept that and UTF-8
+    enc = "utf-16" if raw[:2] in (b"\xff\xfe", b"\xfe\xff") else "utf-8-sig"
+    m = re.search(r"Starting standalone test @ .*\((\d{12,14})\)", raw.decode(enc, errors="ignore"))
     return int(m.group(1)) if m else None
 
 

@@ -109,8 +109,14 @@ $info['started_epoch_ms'] = [int64]([DateTimeOffset]::UtcNow.ToUnixTimeMilliseco
 Write-Host "Starting JMeter (non-GUI). Press Ctrl+C to abort; an aborted run must be repeated."
 $jmArgs = @('-n', '-t', $plan, '-q', (Join-Path $out 'run.properties'), '-l', (Join-Path $out 'results.jtl'), '-j', (Join-Path $out 'jmeter.log'))
 Push-Location $PSScriptRoot   # the plan reads its CSV data files from this folder
-try { & $jmeter @jmArgs 2>&1 | Tee-Object -FilePath (Join-Path $out 'jmeter_stdout.txt') }
-finally { Pop-Location }
+# Java (25 and later) prints harmless warnings on its error stream, for example "A terminally deprecated method in
+# sun.misc.Unsafe has been called". Windows PowerShell would turn such text into a terminating error under
+# $ErrorActionPreference = 'Stop' and kill JMeter, so errors are not fatal while JMeter runs; whether the run
+# worked is decided below from the exit code and the results file.
+$prevEap = $ErrorActionPreference
+$ErrorActionPreference = 'Continue'
+try { & $jmeter @jmArgs 2>&1 | ForEach-Object { "$_" } | Tee-Object -FilePath (Join-Path $out 'jmeter_stdout.txt') }
+finally { $ErrorActionPreference = $prevEap; Pop-Location }
 $jmExit = $LASTEXITCODE
 $jtl = Join-Path $out 'results.jtl'
 $produced = (Test-Path $jtl) -and ((Get-Item $jtl).Length -gt 300)
