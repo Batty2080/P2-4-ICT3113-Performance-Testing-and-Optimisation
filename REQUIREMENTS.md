@@ -7,7 +7,13 @@ All requirements are derived from the workload model in `Step3_Workload_Model.xl
 a percentile where relevant, and the load condition under which it must hold.
 All load tests are **open-loop** (JMeter Open Model Thread Group or Precise Throughput Timer),
 **3 runs per configuration**, with the service database reset before each run and one
-warm-up request (excluded) after the model is loaded.
+warm-up request (excluded) after the model is loaded. Each load requirement is judged on the requests of the
+3 runs pooled together; per-run values and the spread across runs are also reported.
+
+**Revision note (9 Oct 2026, before any benchmark run):** test durations were
+shortened (R1 30 → 20 min, R2 60 → 30 min, R3 30 → 20 min) so that every configuration can be run three times
+for all three models. R1 is now measured under the R3 mixed load, so one run per model yields both R1 and R3. This gives fewer tickets per run (≈ 24 POSTs in a 20-minute run at
+72/h), which is why the percentiles are taken over the 3 pooled runs. The earlier version is in the git history.
 
 ## Workload figures used
 
@@ -28,7 +34,8 @@ The workload model has a clear peak (peak hour ≈ 8× off-peak), so every requi
 ### R1 – Classification response time (POST /tickets)
 
 > **p95 ≤ 15 s and p99 ≤ 30 s**, measured at the client (JMeter elapsed time),
-> at an open-loop arrival rate of **72 tickets/hour** sustained for **30 minutes**,
+> at an open-loop arrival rate of **72 tickets/hour** sustained for **20 minutes**
+> while the service simultaneously receives the R3 search and stats load,
 > using ticket narratives drawn in order from rows 4000–4999.
 
 *Why:* 72/h is the design peak hour. Classification is synchronous, so the intake system waits for the
@@ -38,7 +45,7 @@ are not left waiting indefinitely.
 
 ### R2 – Sustained throughput
 
-> The service must complete **≥ 110 tickets/hour** for **60 minutes** at an open-loop arrival rate of 110/h,
+> The service must complete **≥ 110 tickets/hour** for **30 minutes** at an open-loop arrival rate of 110/h,
 > with **error rate < 1%** (non-2xx responses) and **no queue build-up**: median latency in the last 10 minutes
 > ≤ 1.5 × median latency in the first 10 minutes.
 
@@ -52,7 +59,7 @@ stable at that sample size, and a real queue build-up still shows up as a large 
 ### R3 – Search response time under mixed load (GET /search)
 
 > **GET /search p95 ≤ 1 s**, while the service simultaneously receives the peak-hour mix:
-> **72 POST /tickets + 214 GET /search + 458 GET /stats per hour** (open-loop, 30 minutes),
+> **72 POST /tickets + 214 GET /search + 458 GET /stats per hour** (open-loop, 20 minutes),
 > with search terms drawn from a fixed list of 20 common complaint words.
 
 *Why:* Agents search interactively while classification is running. A search that waits behind
@@ -94,7 +101,7 @@ Accuracy (R4) is therefore the requirement we weight most heavily, but latency m
 
 | Req | Evidence | Statistic |
 |---|---|---|
-| R1 | JMeter `.jtl` (elapsed) reconciled with `logs/requests.jsonl` (`duration_ms`) by `X-Request-ID` | p95, p99 per run; mean and spread over 3 runs |
+| R1 | JMeter `.jtl` (elapsed) reconciled with `logs/requests.jsonl` (`duration_ms`) by `X-Request-ID` | p95, p99 over the 3 pooled runs (pass/fail); per run, with mean and spread across runs, also reported |
 | R2 | `.jtl` + service log | completed/hour, error %, median first vs last 10 min |
 | R3 | `.jtl` filtered to GET /search | p95 per run |
 | R4 | service log `category` joined to `golden_set.csv` by row | per-category recall, weighted overall, confusion matrix |
