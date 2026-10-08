@@ -1,0 +1,150 @@
+{
+  "model": "qwen2.5:1.5b",
+  "run_id": "acc-qwen2.5-1.5b-20261009-033439",
+  "started_at": "2026-10-09T03:34:51+08:00",
+  "finished_at": "2026-10-09T03:42:17+08:00",
+  "reconciliation": {
+    "requests_sent": 150,
+    "log_entries_found": 150,
+    "missing_in_log": 0,
+    "mismatched_with_log": 0
+  },
+  "n": 150,
+  "correct": 64,
+  "errors": 1,
+  "accuracy_unweighted": 0.4266666666666667,
+  "accuracy_weighted": 0.4152391638282241,
+  "per_category": {
+    "Credit reporting": {
+      "support": 31,
+      "correct": 30,
+      "predicted": 77,
+      "recall": 0.967741935483871,
+      "precision": 0.38961038961038963
+    },
+    "Debt collection": {
+      "support": 16,
+      "correct": 6,
+      "predicted": 8,
+      "recall": 0.375,
+      "precision": 0.75
+    },
+    "Mortgage": {
+      "support": 24,
+      "correct": 8,
+      "predicted": 8,
+      "recall": 0.3333333333333333,
+      "precision": 1.0
+    },
+    "Credit card": {
+      "support": 18,
+      "correct": 6,
+      "predicted": 32,
+      "recall": 0.3333333333333333,
+      "precision": 0.1875
+    },
+    "Bank account or service": {
+      "support": 21,
+      "correct": 4,
+      "predicted": 4,
+      "recall": 0.19047619047619047,
+      "precision": 1.0
+    },
+    "Consumer loan": {
+      "support": 17,
+      "correct": 4,
+      "predicted": 13,
+      "recall": 0.23529411764705882,
+      "precision": 0.3076923076923077
+    },
+    "Money transfer or service": {
+      "support": 23,
+      "correct": 6,
+      "predicted": 7,
+      "recall": 0.2608695652173913,
+      "precision": 0.8571428571428571
+    }
+  },
+  "confusion_matrix": {
+    "Credit reporting": {
+      "Credit reporting": 30,
+      "Debt collection": 1,
+      "Mortgage": 0,
+      "Credit card": 0,
+      "Bank account or service": 0,
+      "Consumer loan": 0,
+      "Money transfer or service": 0,
+      "ERROR": 0
+    },
+    "Debt collection": {
+      "Credit reporting": 8,
+      "Debt collection": 6,
+      "Mortgage": 0,
+      "Credit card": 0,
+      "Bank account or service": 0,
+      "Consumer loan": 2,
+      "Money transfer or service": 0,
+      "ERROR": 0
+    },
+    "Mortgage": {
+      "Credit reporting": 3,
+      "Debt collection": 0,
+      "Mortgage": 8,
+      "Credit card": 5,
+      "Bank account or service": 0,
+      "Consumer loan": 7,
+      "Money transfer or service": 0,
+      "ERROR": 1
+    },
+    "Credit card": {
+      "Credit reporting": 12,
+      "Debt collection": 0,
+      "Mortgage": 0,
+      "Credit card": 6,
+      "Bank account or service": 0,
+      "Consumer loan": 0,
+      "Money transfer or service": 0,
+      "ERROR": 0
+    },
+    "Bank account or service": {
+      "Credit reporting": 5,
+      "Debt collection": 0,
+      "Mortgage": 0,
+      "Credit card": 11,
+      "Bank account or service": 4,
+      "Consumer loan": 0,
+      "Money transfer or service": 1,
+      "ERROR": 0
+    },
+    "Consumer loan": {
+      "Credit reporting": 6,
+      "Debt collection": 1,
+      "Mortgage": 0,
+      "Credit card": 6,
+      "Bank account or service": 0,
+      "Consumer loan": 4,
+      "Money transfer or service": 0,
+      "ERROR": 0
+    },
+    "Money transfer or service": {
+      "Credit reporting": 13,
+      "Debt collection": 0,
+      "Mortgage": 0,
+      "Credit card": 4,
+      "Bank account or service": 0,
+      "Consumer loan": 0,
+      "Money transfer or service": 6,
+      "ERROR": 0
+    }
+  },
+  "r4_overall_pass": false,
+  "r4_categories_below_70": [
+    "Debt collection",
+    "Mortgage",
+    "Credit card",
+    "Bank account or service",
+    "Consumer loan",
+    "Money transfer or service"
+  ],
+  "r4_pass": false
+}
