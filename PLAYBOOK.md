@@ -78,8 +78,14 @@ Add `-Dry` for a 2-minute rehearsal (run ids start with `dry-`; these are not re
 | `stress` | stress test | `POST /tickets` stepped 120, 180, 240, 300, 360, 420, 480 per hour, 8 min per step, 10 s ramps between steps | about 57 min |
 
 JMeter generates the expected number of arrivals (rounded down; observed in the rehearsals, for example 2 POSTs in
-2 minutes at 72/h) at random times within the schedule. After the schedule ends JMeter waits for outstanding
-responses (the client timeout is 330 s) before it stops.
+2 minutes at 72/h) at random times within the schedule. **Drain pause:** a schedule that simply ends makes JMeter
+interrupt any request still in flight (this cut off the last ticket of R2 run 3; see `results/load/EXCLUSIONS.md`).
+Every schedule therefore ends with a pause so outstanding responses can complete: 2 minutes for `mixed` and `r2`,
+12 minutes for `stress` (the queue is long when the rate exceeds capacity). A pause always lasts its full length, so a
+`mixed` run takes about 22 minutes, an `r2` run about 32 minutes and the `stress` run about 69 minutes. The client
+timeout is 330 s. The first eleven runs (nine `mixed`, `r2` runs 1 and 2) used the plan without the pause; JMeter's
+log shows that none of them had a request interrupted. A run in which JMeter reports an interrupted request is excluded
+and repeated under a new run number.
 
 ### Run matrix
 
@@ -90,11 +96,11 @@ Run models in rounds, so that slow drift (temperature, background activity) affe
 | 1 | `mixed` | qwen2.5:1.5b, llama3.2:3b, qwen2.5:7b (in this order) | round 1 |
 | 2 | `mixed` | same three | round 2 |
 | 3 | `mixed` | same three | round 3 |
-| 4 | `r2` | qwen2.5:7b (slowest model: worst case) | 3 runs |
+| 4 | `r2` | qwen2.5:7b (slowest model: worst case) | 3 runs (runs 1, 2 and 4; run 3 is excluded, see `results/load/EXCLUSIONS.md`) |
 | 5 | `stress` | qwen2.5:7b | 1 run |
 | 6 (if time) | `r2` | llama3.2:3b, qwen2.5:1.5b | 3 runs each |
 
-Estimated wall-clock time per run, including preparation: `mixed` about 23 min, `r2` about 33 min, `stress` about 65 min.
+Estimated wall-clock time per run, including preparation (and for `r2` and `stress` the drain pause): `mixed` about 24 min, `r2` about 34 min, `stress` about 72 min.
 
 ### If something goes wrong
 * `prepare_run.py` reports a pin mismatch, or the warm-up fails: do not start the test. Fix and prepare again.

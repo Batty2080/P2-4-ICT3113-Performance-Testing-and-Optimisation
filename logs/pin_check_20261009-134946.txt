@@ -1,0 +1,5 @@
+Pin check 20261009-134946
+qwen2.5:1.5b     locked 65ec06548149  live 65ec06548149  OK
+llama3.2:3b      locked a80c4f17acd5  live a80c4f17acd5  OK
+qwen2.5:7b       locked 845dbda0ea48  live 845dbda0ea48  OK
+RESULT: PASS

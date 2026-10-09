@@ -15,17 +15,17 @@
           </elementProp>
           <elementProp name="post_default" elementType="Argument">
             <stringProp name="Argument.name">post_default</stringProp>
-            <stringProp name="Argument.value">rate(${__P(post_per_hour,72)}/hour) random_arrivals(${__P(duration_min,20)} min)</stringProp>
+            <stringProp name="Argument.value">rate(${__P(post_per_hour,72)}/hour) random_arrivals(${__P(duration_min,20)} min) pause(${__P(drain_min,2)} min)</stringProp>
             <stringProp name="Argument.metadata">=</stringProp>
           </elementProp>
           <elementProp name="search_default" elementType="Argument">
             <stringProp name="Argument.name">search_default</stringProp>
-            <stringProp name="Argument.value">rate(${__P(search_per_hour,214)}/hour) random_arrivals(${__P(duration_min,20)} min)</stringProp>
+            <stringProp name="Argument.value">rate(${__P(search_per_hour,214)}/hour) random_arrivals(${__P(duration_min,20)} min) pause(${__P(drain_min,2)} min)</stringProp>
             <stringProp name="Argument.metadata">=</stringProp>
           </elementProp>
           <elementProp name="stats_default" elementType="Argument">
             <stringProp name="Argument.name">stats_default</stringProp>
-            <stringProp name="Argument.value">rate(${__P(stats_per_hour,458)}/hour) random_arrivals(${__P(duration_min,20)} min)</stringProp>
+            <stringProp name="Argument.value">rate(${__P(stats_per_hour,458)}/hour) random_arrivals(${__P(duration_min,20)} min) pause(${__P(drain_min,2)} min)</stringProp>
             <stringProp name="Argument.metadata">=</stringProp>
           </elementProp>
         </collectionProp>

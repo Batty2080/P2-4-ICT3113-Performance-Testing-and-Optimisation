@@ -48,13 +48,13 @@ $info = [ordered]@{ test = $Test; model = $Model; run = $Run; run_id = $runId; d
 
 if ($Test -eq 'mixed') {
     $dur = 20; if ($Dry) { $dur = 2 }
-    $props['duration_min'] = $dur; $props['post_per_hour'] = 72; $props['search_per_hour'] = 214; $props['stats_per_hour'] = 458
-    $info['duration_min'] = $dur; $info['post_per_hour'] = 72; $info['search_per_hour'] = 214; $info['stats_per_hour'] = 458
+    $props['duration_min'] = $dur; $props['post_per_hour'] = 72; $props['search_per_hour'] = 214; $props['stats_per_hour'] = 458; $props['drain_min'] = 2
+    $info['duration_min'] = $dur; $info['post_per_hour'] = 72; $info['search_per_hour'] = 214; $info['stats_per_hour'] = 458; $info['drain_min'] = 2
 }
 elseif ($Test -eq 'r2') {
     $dur = 30; if ($Dry) { $dur = 2 }
-    $props['duration_min'] = $dur; $props['post_per_hour'] = 110; $props['search_per_hour'] = 0; $props['stats_per_hour'] = 0
-    $info['duration_min'] = $dur; $info['post_per_hour'] = 110; $info['search_per_hour'] = 0; $info['stats_per_hour'] = 0
+    $props['duration_min'] = $dur; $props['post_per_hour'] = 110; $props['search_per_hour'] = 0; $props['stats_per_hour'] = 0; $props['drain_min'] = 2
+    $info['duration_min'] = $dur; $info['post_per_hour'] = 110; $info['search_per_hour'] = 0; $info['stats_per_hour'] = 0; $info['drain_min'] = 2
 }
 else {
     # stress: constant-rate steps joined by 10-second ramps ("random_arrivals" twice in a row keeps the rate constant)
@@ -69,10 +69,13 @@ else {
         $steps += [ordered]@{ rate_per_hour = $rates[$i]; start_s = $t; end_s = $t + $stepMin * 60 }
         $t += $stepMin * 60
     }
+    # a trailing pause keeps JMeter running while the queue drains; without it JMeter interrupts requests still in flight
+    $drain = 12; if ($Dry) { $drain = 1 }
+    $sched += " pause($drain min)"
     $props['post_schedule'] = $sched
     $props['search_schedule'] = 'rate(0) random_arrivals(1 sec)'
     $props['stats_schedule'] = 'rate(0) random_arrivals(1 sec)'
-    $info['step_min'] = $stepMin; $info['ramp_s'] = $ramp; $info['steps'] = $steps; $info['post_schedule'] = $sched
+    $info['drain_min'] = $drain; $info['step_min'] = $stepMin; $info['ramp_s'] = $ramp; $info['steps'] = $steps; $info['post_schedule'] = $sched
 }
 $props['sample_variables'] = 'row,seq'
 
