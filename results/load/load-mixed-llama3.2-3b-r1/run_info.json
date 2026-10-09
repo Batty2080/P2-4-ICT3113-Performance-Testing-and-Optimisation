@@ -1,0 +1,18 @@
+﻿{
+    "test":  "mixed",
+    "model":  "llama3.2:3b",
+    "run":  1,
+    "run_id":  "load-mixed-llama3.2-3b-r1",
+    "dry":  false,
+    "target":  "http://192.168.18.104:8000",
+    "duration_min":  20,
+    "post_per_hour":  72,
+    "search_per_hour":  214,
+    "stats_per_hour":  458,
+    "jmeter_home":  "D:\\SIT\\Year 3\\ICT3113 - Performance Testing and Optimisation\\Assignment\\apache-jmeter-5.6.3",
+    "git_commit":  "6660448aa6374e79d516846460ad19c97a473a0a",
+    "started_at_utc":  "2026-10-08T23:44:52.5546490Z",
+    "started_epoch_ms":  1791503092554,
+    "finished_at_utc":  "2026-10-09T00:05:53.7165552Z",
+    "finished_epoch_ms":  1791504353716
+}
