@@ -1,0 +1,875 @@
+2026-10-09 09:01:06,797 INFO o.a.j.u.JMeterUtils: Setting Locale to en_EN
+2026-10-09 09:01:06,812 INFO o.a.j.JMeter: Loading user properties from: D:\SIT\Year 3\ICT3113 - Performance Testing and Optimisation\Assignment\apache-jmeter-5.6.3\bin\user.properties
+2026-10-09 09:01:06,819 INFO o.a.j.JMeter: Loading system properties from: D:\SIT\Year 3\ICT3113 - Performance Testing and Optimisation\Assignment\apache-jmeter-5.6.3\bin\system.properties
+2026-10-09 09:01:06,819 INFO o.a.j.JMeter: Loading additional properties from: D:\SIT\Year 3\ICT3113 - Performance Testing and Optimisation\Assignment\P2-4-ICT3113-Performance-Testing-and-Optimisation\results\load\load-mixed-llama3.2-3b-r2\run.properties
+2026-10-09 09:01:06,824 INFO o.a.j.JMeter: Copyright (c) 1998-2024 The Apache Software Foundation
+2026-10-09 09:01:06,825 INFO o.a.j.JMeter: Version 5.6.3
+2026-10-09 09:01:06,825 INFO o.a.j.JMeter: java.version=25.0.4.1
+2026-10-09 09:01:06,825 INFO o.a.j.JMeter: java.vm.name=Java HotSpot(TM) 64-Bit Server VM
+2026-10-09 09:01:06,825 INFO o.a.j.JMeter: os.name=Windows 11
+2026-10-09 09:01:06,825 INFO o.a.j.JMeter: os.arch=amd64
+2026-10-09 09:01:06,825 INFO o.a.j.JMeter: os.version=10.0
+2026-10-09 09:01:06,825 INFO o.a.j.JMeter: file.encoding=UTF-8
+2026-10-09 09:01:06,825 INFO o.a.j.JMeter: java.awt.headless=true
+2026-10-09 09:01:06,825 INFO o.a.j.JMeter: Max memory     =1073741824
+2026-10-09 09:01:06,825 INFO o.a.j.JMeter: Available Processors =12
+2026-10-09 09:01:06,831 INFO o.a.j.JMeter: Default Locale=English (EN)
+2026-10-09 09:01:06,832 INFO o.a.j.JMeter: JMeter  Locale=English (EN)
+2026-10-09 09:01:06,832 INFO o.a.j.JMeter: JMeterHome=D:\SIT\Year 3\ICT3113 - Performance Testing and Optimisation\Assignment\apache-jmeter-5.6.3
+2026-10-09 09:01:06,832 INFO o.a.j.JMeter: user.dir  =D:\SIT\Year 3\ICT3113 - Performance Testing and Optimisation\Assignment\P2-4-ICT3113-Performance-Testing-and-Optimisation\jmeter
+2026-10-09 09:01:06,832 INFO o.a.j.JMeter: PWD       =D:\SIT\Year 3\ICT3113 - Performance Testing and Optimisation\Assignment\P2-4-ICT3113-Performance-Testing-and-Optimisation\jmeter
+2026-10-09 09:01:06,835 INFO o.a.j.JMeter: IP: 192.168.18.85 Name: DESKTOP-UAU4QGB FullName: DESKTOP-UAU4QGB
+2026-10-09 09:01:06,842 INFO o.a.j.s.FileServer: Default base='D:\SIT\Year 3\ICT3113 - Performance Testing and Optimisation\Assignment\P2-4-ICT3113-Performance-Testing-and-Optimisation\jmeter'
+2026-10-09 09:01:06,842 INFO o.a.j.s.FileServer: Set new base='D:\SIT\Year 3\ICT3113 - Performance Testing and Optimisation\Assignment\P2-4-ICT3113-Performance-Testing-and-Optimisation\jmeter'
+2026-10-09 09:01:06,984 INFO o.a.j.s.SaveService: Testplan (JMX) version: 2.2. Testlog (JTL) version: 2.2
+2026-10-09 09:01:07,003 INFO o.a.j.s.SaveService: Using SaveService properties version 5.0
+2026-10-09 09:01:07,004 INFO o.a.j.s.SaveService: Using SaveService properties file encoding UTF-8
+2026-10-09 09:01:07,006 INFO o.a.j.s.SaveService: Loading file: D:\SIT\Year 3\ICT3113 - Performance Testing and Optimisation\Assignment\P2-4-ICT3113-Performance-Testing-and-Optimisation\jmeter\triage_load.jmx
+2026-10-09 09:01:07,053 INFO o.a.j.p.h.s.HTTPSamplerBase: Parser for text/html is org.apache.jmeter.protocol.http.parser.LagartoBasedHtmlParser
+2026-10-09 09:01:07,053 INFO o.a.j.p.h.s.HTTPSamplerBase: Parser for application/xhtml+xml is org.apache.jmeter.protocol.http.parser.LagartoBasedHtmlParser
+2026-10-09 09:01:07,053 INFO o.a.j.p.h.s.HTTPSamplerBase: Parser for application/xml is org.apache.jmeter.protocol.http.parser.LagartoBasedHtmlParser
+2026-10-09 09:01:07,053 INFO o.a.j.p.h.s.HTTPSamplerBase: Parser for text/xml is org.apache.jmeter.protocol.http.parser.LagartoBasedHtmlParser
+2026-10-09 09:01:07,053 INFO o.a.j.p.h.s.HTTPSamplerBase: Parser for text/vnd.wap.wml is org.apache.jmeter.protocol.http.parser.RegexpHTMLParser
+2026-10-09 09:01:07,053 INFO o.a.j.p.h.s.HTTPSamplerBase: Parser for text/css is org.apache.jmeter.protocol.http.parser.CssParser
+2026-10-09 09:01:07,061 INFO o.a.j.JMeter: Creating summariser <summary>
+2026-10-09 09:01:07,069 INFO o.a.j.e.StandardJMeterEngine: Running the test!
+2026-10-09 09:01:07,070 INFO o.a.j.s.SampleEvent: List of sample_variables: [row, seq]
+2026-10-09 09:01:07,070 INFO o.a.j.s.SampleEvent: List of sample_variables: [row, seq]
+2026-10-09 09:01:07,072 INFO o.a.j.e.u.CompoundVariable: Note: Function class names must contain the string: '.functions.'
+2026-10-09 09:01:07,073 INFO o.a.j.e.u.CompoundVariable: Note: Function class names must not contain the string: '.gui.'
+2026-10-09 09:01:07,110 INFO o.a.j.JMeter: Running test (1791507667110)
+2026-10-09 09:01:07,119 INFO o.a.j.e.StandardJMeterEngine: Starting ThreadGroup: 1 : POST /tickets arrivals
+2026-10-09 09:01:07,120 INFO o.a.j.e.StandardJMeterEngine: Starting 0 threads for group POST /tickets arrivals.
+2026-10-09 09:01:07,120 INFO o.a.j.e.StandardJMeterEngine: Thread will continue on error
+2026-10-09 09:01:07,120 INFO o.a.j.t.o.OpenModelThreadGroup: Starting OpenModelThreadGroup#1 with schedule rate(72/hour) random_arrivals(20 min)
+2026-10-09 09:01:07,137 INFO o.a.j.e.StandardJMeterEngine: Starting ThreadGroup: 2 : GET /search arrivals
+2026-10-09 09:01:07,137 INFO o.a.j.e.StandardJMeterEngine: Starting 0 threads for group GET /search arrivals.
+2026-10-09 09:01:07,137 INFO o.a.j.e.StandardJMeterEngine: Thread will continue on error
+2026-10-09 09:01:07,138 INFO o.a.j.t.o.OpenModelThreadGroup: Starting OpenModelThreadGroup#2 with schedule rate(214/hour) random_arrivals(20 min)
+2026-10-09 09:01:07,138 INFO o.a.j.e.StandardJMeterEngine: Starting ThreadGroup: 3 : GET /stats arrivals
+2026-10-09 09:01:07,138 INFO o.a.j.e.StandardJMeterEngine: Starting 0 threads for group GET /stats arrivals.
+2026-10-09 09:01:07,138 INFO o.a.j.e.StandardJMeterEngine: Thread will continue on error
+2026-10-09 09:01:07,138 INFO o.a.j.t.o.OpenModelThreadGroup: Thread starting init
+2026-10-09 09:01:07,138 INFO o.a.j.t.o.OpenModelThreadGroup: Starting OpenModelThreadGroup#3 with schedule rate(458/hour) random_arrivals(20 min)
+2026-10-09 09:01:07,138 INFO o.a.j.t.o.OpenModelThreadGroup: Thread starting init
+2026-10-09 09:01:07,138 INFO o.a.j.e.StandardJMeterEngine: All thread groups have been started
+2026-10-09 09:01:07,138 INFO o.a.j.t.o.OpenModelThreadGroup: Thread starting init
+2026-10-09 09:01:07,141 INFO o.a.j.t.o.PoissonArrivalsRamp: Generating 24 events, beginRate = 0.02 / sec, endRate = 0.02 / sec, duration = 1200.0 sec
+2026-10-09 09:01:07,141 INFO o.a.j.t.o.PoissonArrivalsRamp: Generating 71 events, beginRate = 0.059444444444444446 / sec, endRate = 0.059444444444444446 / sec, duration = 1200.0 sec
+2026-10-09 09:01:07,141 INFO o.a.j.t.o.PoissonArrivalsRamp: Generating 152 events, beginRate = 0.1272222222222222 / sec, endRate = 0.1272222222222222 / sec, duration = 1200.0 sec
+2026-10-09 09:01:07,450 INFO o.a.j.t.JMeterThread: Thread started: GET /stats arrivals 3-1
+2026-10-09 09:01:07,457 INFO o.a.j.p.h.s.HTTPHCAbstractImpl: Local host = DESKTOP-UAU4QGB
+2026-10-09 09:01:07,460 INFO o.a.j.p.h.s.HTTPHC4Impl: HTTP request retry count = 0
+2026-10-09 09:01:07,461 INFO o.a.j.s.SampleResult: Note: Sample TimeStamps are START times
+2026-10-09 09:01:07,461 INFO o.a.j.s.SampleResult: sampleresult.default.encoding is set to UTF-8
+2026-10-09 09:01:07,461 INFO o.a.j.s.SampleResult: sampleresult.useNanoTime=true
+2026-10-09 09:01:07,461 INFO o.a.j.s.SampleResult: sampleresult.nanoThreadSleep=5000
+2026-10-09 09:01:07,535 INFO o.a.j.t.JMeterThread: Thread is done: GET /stats arrivals 3-1
+2026-10-09 09:01:07,535 INFO o.a.j.t.JMeterThread: Thread finished: GET /stats arrivals 3-1
+2026-10-09 09:01:19,803 INFO o.a.j.t.JMeterThread: Thread started: POST /tickets arrivals 1-1
+2026-10-09 09:01:19,803 INFO o.a.j.s.FileServer: Stored: team_rows_bodies.tsv
+2026-10-09 09:01:27,513 INFO o.a.j.t.JMeterThread: Thread is done: POST /tickets arrivals 1-1
+2026-10-09 09:01:27,513 INFO o.a.j.t.JMeterThread: Thread finished: POST /tickets arrivals 1-1
+2026-10-09 09:01:31,729 INFO o.a.j.t.JMeterThread: Thread started: GET /stats arrivals 3-2
+2026-10-09 09:01:31,801 INFO o.a.j.r.Summariser: summary +      3 in 00:00:25 =    0.1/s Avg:  2604 Min:    44 Max:  7699 Err:     0 (0.00%) Active: 1 Started: 3 Finished: 2
+2026-10-09 09:01:31,802 INFO o.a.j.t.JMeterThread: Thread is done: GET /stats arrivals 3-2
+2026-10-09 09:01:31,802 INFO o.a.j.t.JMeterThread: Thread finished: GET /stats arrivals 3-2
+2026-10-09 09:01:42,523 INFO o.a.j.t.JMeterThread: Thread started: GET /stats arrivals 3-3
+2026-10-09 09:01:42,533 INFO o.a.j.t.JMeterThread: Thread is done: GET /stats arrivals 3-3
+2026-10-09 09:01:42,533 INFO o.a.j.t.JMeterThread: Thread finished: GET /stats arrivals 3-3
+2026-10-09 09:01:54,653 INFO o.a.j.t.JMeterThread: Thread started: GET /search arrivals 2-1
+2026-10-09 09:01:54,653 INFO o.a.j.s.FileServer: Stored: search_terms.csv
+2026-10-09 09:01:54,686 INFO o.a.j.t.JMeterThread: Thread is done: GET /search arrivals 2-1
+2026-10-09 09:01:54,686 INFO o.a.j.t.JMeterThread: Thread finished: GET /search arrivals 2-1
+2026-10-09 09:02:05,757 INFO o.a.j.t.JMeterThread: Thread started: GET /stats arrivals 3-4
+2026-10-09 09:02:05,778 INFO o.a.j.r.Summariser: summary +      3 in 00:00:34 =    0.1/s Avg:    17 Min:    10 Max:    24 Err:     0 (0.00%) Active: 1 Started: 6 Finished: 5
+2026-10-09 09:02:05,779 INFO o.a.j.r.Summariser: summary =      6 in 00:00:59 =    0.1/s Avg:  1311 Min:    10 Max:  7699 Err:     0 (0.00%)
+2026-10-09 09:02:05,779 INFO o.a.j.t.JMeterThread: Thread is done: GET /stats arrivals 3-4
+2026-10-09 09:02:05,779 INFO o.a.j.t.JMeterThread: Thread finished: GET /stats arrivals 3-4
+2026-10-09 09:02:16,947 INFO o.a.j.t.JMeterThread: Thread started: GET /stats arrivals 3-5
+2026-10-09 09:02:16,964 INFO o.a.j.t.JMeterThread: Thread is done: GET /stats arrivals 3-5
+2026-10-09 09:02:16,964 INFO o.a.j.t.JMeterThread: Thread finished: GET /stats arrivals 3-5
+2026-10-09 09:02:19,881 INFO o.a.j.t.JMeterThread: Thread started: GET /stats arrivals 3-6
+2026-10-09 09:02:19,897 INFO o.a.j.t.JMeterThread: Thread is done: GET /stats arrivals 3-6
+2026-10-09 09:02:19,898 INFO o.a.j.t.JMeterThread: Thread finished: GET /stats arrivals 3-6
+2026-10-09 09:02:24,900 INFO o.a.j.t.JMeterThread: Thread started: GET /stats arrivals 3-7
+2026-10-09 09:02:24,942 INFO o.a.j.t.JMeterThread: Thread is done: GET /stats arrivals 3-7
+2026-10-09 09:02:24,942 INFO o.a.j.t.JMeterThread: Thread finished: GET /stats arrivals 3-7
+2026-10-09 09:02:26,793 INFO o.a.j.t.JMeterThread: Thread started: POST /tickets arrivals 1-2
+2026-10-09 09:02:33,446 INFO o.a.j.r.Summariser: summary +      4 in 00:00:28 =    0.1/s Avg:  1681 Min:    16 Max:  6651 Err:     0 (0.00%) Active: 1 Started: 10 Finished: 9
+2026-10-09 09:02:33,446 INFO o.a.j.r.Summariser: summary =     10 in 00:01:26 =    0.1/s Avg:  1459 Min:    10 Max:  7699 Err:     0 (0.00%)
+2026-10-09 09:02:33,446 INFO o.a.j.t.JMeterThread: Thread is done: POST /tickets arrivals 1-2
+2026-10-09 09:02:33,446 INFO o.a.j.t.JMeterThread: Thread finished: POST /tickets arrivals 1-2
+2026-10-09 09:02:35,788 INFO o.a.j.t.JMeterThread: Thread started: GET /stats arrivals 3-8
+2026-10-09 09:02:35,810 INFO o.a.j.t.JMeterThread: Thread is done: GET /stats arrivals 3-8
+2026-10-09 09:02:35,810 INFO o.a.j.t.JMeterThread: Thread finished: GET /stats arrivals 3-8
+2026-10-09 09:02:39,258 INFO o.a.j.t.JMeterThread: Thread started: GET /stats arrivals 3-9
+2026-10-09 09:02:39,269 INFO o.a.j.t.JMeterThread: Thread is done: GET /stats arrivals 3-9
+2026-10-09 09:02:39,270 INFO o.a.j.t.JMeterThread: Thread finished: GET /stats arrivals 3-9
+2026-10-09 09:02:42,318 INFO o.a.j.t.JMeterThread: Thread started: GET /stats arrivals 3-10
+2026-10-09 09:02:42,329 INFO o.a.j.t.JMeterThread: Thread started: GET /stats arrivals 3-11
+2026-10-09 09:02:42,331 INFO o.a.j.t.JMeterThread: Thread is done: GET /stats arrivals 3-10
+2026-10-09 09:02:42,331 INFO o.a.j.t.JMeterThread: Thread finished: GET /stats arrivals 3-10
+2026-10-09 09:02:42,338 INFO o.a.j.t.JMeterThread: Thread is done: GET /stats arrivals 3-11
+2026-10-09 09:02:42,338 INFO o.a.j.t.JMeterThread: Thread finished: GET /stats arrivals 3-11
+2026-10-09 09:02:42,886 INFO o.a.j.t.JMeterThread: Thread started: GET /stats arrivals 3-12
+2026-10-09 09:02:42,905 INFO o.a.j.t.JMeterThread: Thread is done: GET /stats arrivals 3-12
+2026-10-09 09:02:42,905 INFO o.a.j.t.JMeterThread: Thread finished: GET /stats arrivals 3-12
+2026-10-09 09:02:52,396 INFO o.a.j.t.JMeterThread: Thread started: GET /search arrivals 2-2
+2026-10-09 09:02:52,409 INFO o.a.j.t.JMeterThread: Thread is done: GET /search arrivals 2-2
+2026-10-09 09:02:52,409 INFO o.a.j.t.JMeterThread: Thread finished: GET /search arrivals 2-2
+2026-10-09 09:03:14,935 INFO o.a.j.t.JMeterThread: Thread started: GET /stats arrivals 3-13
+2026-10-09 09:03:14,959 INFO o.a.j.t.JMeterThread: Thread is done: GET /stats arrivals 3-13
+2026-10-09 09:03:14,959 INFO o.a.j.t.JMeterThread: Thread finished: GET /stats arrivals 3-13
+2026-10-09 09:03:19,176 INFO o.a.j.t.JMeterThread: Thread started: GET /search arrivals 2-3
+2026-10-09 09:03:19,202 INFO o.a.j.t.JMeterThread: Thread is done: GET /search arrivals 2-3
+2026-10-09 09:03:19,202 INFO o.a.j.t.JMeterThread: Thread finished: GET /search arrivals 2-3
+2026-10-09 09:03:21,875 INFO o.a.j.t.JMeterThread: Thread started: GET /stats arrivals 3-14
+2026-10-09 09:03:21,907 INFO o.a.j.t.JMeterThread: Thread is done: GET /stats arrivals 3-14
+2026-10-09 09:03:21,908 INFO o.a.j.t.JMeterThread: Thread finished: GET /stats arrivals 3-14
+2026-10-09 09:03:28,430 INFO o.a.j.t.JMeterThread: Thread started: GET /stats arrivals 3-15
+2026-10-09 09:03:28,452 INFO o.a.j.t.JMeterThread: Thread is done: GET /stats arrivals 3-15
+2026-10-09 09:03:28,452 INFO o.a.j.t.JMeterThread: Thread finished: GET /stats arrivals 3-15
+2026-10-09 09:03:31,073 INFO o.a.j.t.JMeterThread: Thread started: GET /search arrivals 2-4
+2026-10-09 09:03:31,090 INFO o.a.j.r.Summariser: summary +     11 in 00:00:58 =    0.2/s Avg:    18 Min:     8 Max:    31 Err:     0 (0.00%) Active: 1 Started: 21 Finished: 20
+2026-10-09 09:03:31,090 INFO o.a.j.r.Summariser: summary =     21 in 00:02:24 =    0.1/s Avg:   704 Min:     8 Max:  7699 Err:     0 (0.00%)
+2026-10-09 09:03:31,091 INFO o.a.j.t.JMeterThread: Thread is done: GET /search arrivals 2-4
+2026-10-09 09:03:31,091 INFO o.a.j.t.JMeterThread: Thread finished: GET /search arrivals 2-4
+2026-10-09 09:03:31,523 INFO o.a.j.t.JMeterThread: Thread started: GET /stats arrivals 3-16
+2026-10-09 09:03:31,546 INFO o.a.j.t.JMeterThread: Thread is done: GET /stats arrivals 3-16
+2026-10-09 09:03:31,546 INFO o.a.j.t.JMeterThread: Thread finished: GET /stats arrivals 3-16
+2026-10-09 09:03:36,933 INFO o.a.j.t.JMeterThread: Thread started: GET /stats arrivals 3-17
+2026-10-09 09:03:36,956 INFO o.a.j.t.JMeterThread: Thread is done: GET /stats arrivals 3-17
+2026-10-09 09:03:36,957 INFO o.a.j.t.JMeterThread: Thread finished: GET /stats arrivals 3-17
+2026-10-09 09:03:47,657 INFO o.a.j.t.JMeterThread: Thread started: GET /stats arrivals 3-18
+2026-10-09 09:03:47,668 INFO o.a.j.t.JMeterThread: Thread is done: GET /stats arrivals 3-18
+2026-10-09 09:03:47,668 INFO o.a.j.t.JMeterThread: Thread finished: GET /stats arrivals 3-18
+2026-10-09 09:03:49,454 INFO o.a.j.t.JMeterThread: Thread started: GET /stats arrivals 3-19
+2026-10-09 09:03:49,475 INFO o.a.j.t.JMeterThread: Thread is done: GET /stats arrivals 3-19
+2026-10-09 09:03:49,475 INFO o.a.j.t.JMeterThread: Thread finished: GET /stats arrivals 3-19
+2026-10-09 09:03:55,838 INFO o.a.j.t.JMeterThread: Thread started: GET /stats arrivals 3-20
+2026-10-09 09:03:55,875 INFO o.a.j.t.JMeterThread: Thread is done: GET /stats arrivals 3-20
+2026-10-09 09:03:55,875 INFO o.a.j.t.JMeterThread: Thread finished: GET /stats arrivals 3-20
+2026-10-09 09:04:05,079 INFO o.a.j.t.JMeterThread: Thread started: GET /stats arrivals 3-21
+2026-10-09 09:04:05,090 INFO o.a.j.r.Summariser: summary +      6 in 00:00:34 =    0.2/s Avg:    20 Min:    10 Max:    35 Err:     0 (0.00%) Active: 1 Started: 27 Finished: 26
+2026-10-09 09:04:05,090 INFO o.a.j.r.Summariser: summary =     27 in 00:02:58 =    0.2/s Avg:   552 Min:     8 Max:  7699 Err:     0 (0.00%)
+2026-10-09 09:04:05,091 INFO o.a.j.t.JMeterThread: Thread is done: GET /stats arrivals 3-21
+2026-10-09 09:04:05,091 INFO o.a.j.t.JMeterThread: Thread finished: GET /stats arrivals 3-21
+2026-10-09 09:04:12,421 INFO o.a.j.t.JMeterThread: Thread started: GET /stats arrivals 3-22
+2026-10-09 09:04:12,437 INFO o.a.j.t.JMeterThread: Thread is done: GET /stats arrivals 3-22
+2026-10-09 09:04:12,437 INFO o.a.j.t.JMeterThread: Thread finished: GET /stats arrivals 3-22
+2026-10-09 09:04:18,758 INFO o.a.j.t.JMeterThread: Thread started: GET /search arrivals 2-5
+2026-10-09 09:04:18,768 INFO o.a.j.t.JMeterThread: Thread is done: GET /search arrivals 2-5
+2026-10-09 09:04:18,768 INFO o.a.j.t.JMeterThread: Thread finished: GET /search arrivals 2-5
+2026-10-09 09:04:26,947 INFO o.a.j.t.JMeterThread: Thread started: GET /stats arrivals 3-23
+2026-10-09 09:04:26,971 INFO o.a.j.t.JMeterThread: Thread is done: GET /stats arrivals 3-23
+2026-10-09 09:04:26,971 INFO o.a.j.t.JMeterThread: Thread finished: GET /stats arrivals 3-23
+2026-10-09 09:04:31,627 INFO o.a.j.t.JMeterThread: Thread started: GET /search arrivals 2-6
+2026-10-09 09:04:31,641 INFO o.a.j.r.Summariser: summary +      4 in 00:00:27 =    0.2/s Avg:    15 Min:     9 Max:    23 Err:     0 (0.00%) Active: 1 Started: 31 Finished: 30
+2026-10-09 09:04:31,641 INFO o.a.j.r.Summariser: summary =     31 in 00:03:25 =    0.2/s Avg:   482 Min:     8 Max:  7699 Err:     0 (0.00%)
+2026-10-09 09:04:31,641 INFO o.a.j.t.JMeterThread: Thread is done: GET /search arrivals 2-6
+2026-10-09 09:04:31,641 INFO o.a.j.t.JMeterThread: Thread finished: GET /search arrivals 2-6
+2026-10-09 09:04:35,674 INFO o.a.j.t.JMeterThread: Thread started: POST /tickets arrivals 1-3
+2026-10-09 09:04:38,166 INFO o.a.j.t.JMeterThread: Thread started: GET /stats arrivals 3-24
+2026-10-09 09:04:39,822 INFO o.a.j.t.JMeterThread: Thread is done: POST /tickets arrivals 1-3
+2026-10-09 09:04:39,822 INFO o.a.j.t.JMeterThread: Thread finished: POST /tickets arrivals 1-3
+2026-10-09 09:04:39,834 INFO o.a.j.t.JMeterThread: Thread is done: GET /stats arrivals 3-24
+2026-10-09 09:04:39,834 INFO o.a.j.t.JMeterThread: Thread finished: GET /stats arrivals 3-24
+2026-10-09 09:04:45,735 INFO o.a.j.t.JMeterThread: Thread started: GET /stats arrivals 3-25
+2026-10-09 09:04:45,748 INFO o.a.j.t.JMeterThread: Thread is done: GET /stats arrivals 3-25
+2026-10-09 09:04:45,748 INFO o.a.j.t.JMeterThread: Thread finished: GET /stats arrivals 3-25
+2026-10-09 09:04:58,128 INFO o.a.j.t.JMeterThread: Thread started: GET /stats arrivals 3-26
+2026-10-09 09:04:58,154 INFO o.a.j.t.JMeterThread: Thread is done: GET /stats arrivals 3-26
+2026-10-09 09:04:58,155 INFO o.a.j.t.JMeterThread: Thread finished: GET /stats arrivals 3-26
+2026-10-09 09:05:03,256 INFO o.a.j.t.JMeterThread: Thread started: GET /stats arrivals 3-27
+2026-10-09 09:05:03,275 INFO o.a.j.r.Summariser: summary +      5 in 00:00:32 =    0.2/s Avg:  1174 Min:    12 Max:  4147 Err:     0 (0.00%) Active: 1 Started: 36 Finished: 35
+2026-10-09 09:05:03,276 INFO o.a.j.r.Summariser: summary =     36 in 00:03:56 =    0.2/s Avg:   578 Min:     8 Max:  7699 Err:     0 (0.00%)
+2026-10-09 09:05:03,276 INFO o.a.j.t.JMeterThread: Thread is done: GET /stats arrivals 3-27
+2026-10-09 09:05:03,276 INFO o.a.j.t.JMeterThread: Thread finished: GET /stats arrivals 3-27
+2026-10-09 09:05:03,346 INFO o.a.j.t.JMeterThread: Thread started: POST /tickets arrivals 1-4
+2026-10-09 09:05:05,785 INFO o.a.j.t.JMeterThread: Thread started: GET /search arrivals 2-7
+2026-10-09 09:05:08,659 INFO o.a.j.t.JMeterThread: Thread is done: POST /tickets arrivals 1-4
+2026-10-09 09:05:08,659 INFO o.a.j.t.JMeterThread: Thread finished: POST /tickets arrivals 1-4
+2026-10-09 09:05:08,685 INFO o.a.j.t.JMeterThread: Thread is done: GET /search arrivals 2-7
+2026-10-09 09:05:08,685 INFO o.a.j.t.JMeterThread: Thread finished: GET /search arrivals 2-7
+2026-10-09 09:05:19,581 INFO o.a.j.t.JMeterThread: Thread started: GET /stats arrivals 3-28
+2026-10-09 09:05:19,603 INFO o.a.j.t.JMeterThread: Thread is done: GET /stats arrivals 3-28
+2026-10-09 09:05:19,603 INFO o.a.j.t.JMeterThread: Thread finished: GET /stats arrivals 3-28
+2026-10-09 09:05:21,750 INFO o.a.j.t.JMeterThread: Thread started: GET /search arrivals 2-8
+2026-10-09 09:05:21,773 INFO o.a.j.t.JMeterThread: Thread is done: GET /search arrivals 2-8
+2026-10-09 09:05:21,773 INFO o.a.j.t.JMeterThread: Thread finished: GET /search arrivals 2-8
+2026-10-09 09:05:21,933 INFO o.a.j.t.JMeterThread: Thread started: GET /search arrivals 2-9
+2026-10-09 09:05:21,941 INFO o.a.j.t.JMeterThread: Thread is done: GET /search arrivals 2-9
+2026-10-09 09:05:21,941 INFO o.a.j.t.JMeterThread: Thread finished: GET /search arrivals 2-9
+2026-10-09 09:05:27,314 INFO o.a.j.t.JMeterThread: Thread started: GET /stats arrivals 3-29
+2026-10-09 09:05:27,335 INFO o.a.j.t.JMeterThread: Thread is done: GET /stats arrivals 3-29
+2026-10-09 09:05:27,335 INFO o.a.j.t.JMeterThread: Thread finished: GET /stats arrivals 3-29
+2026-10-09 09:05:29,877 INFO o.a.j.t.JMeterThread: Thread started: GET /stats arrivals 3-30
+2026-10-09 09:05:29,888 INFO o.a.j.t.JMeterThread: Thread is done: GET /stats arrivals 3-30
+2026-10-09 09:05:29,888 INFO o.a.j.t.JMeterThread: Thread finished: GET /stats arrivals 3-30
+2026-10-09 09:05:36,153 INFO o.a.j.t.JMeterThread: Thread started: GET /search arrivals 2-10
+2026-10-09 09:05:36,178 INFO o.a.j.t.JMeterThread: Thread is done: GET /search arrivals 2-10
+2026-10-09 09:05:36,178 INFO o.a.j.t.JMeterThread: Thread finished: GET /search arrivals 2-10
+2026-10-09 09:05:40,060 INFO o.a.j.t.JMeterThread: Thread started: GET /search arrivals 2-11
+2026-10-09 09:05:40,079 INFO o.a.j.t.JMeterThread: Thread is done: GET /search arrivals 2-11
+2026-10-09 09:05:40,079 INFO o.a.j.t.JMeterThread: Thread finished: GET /search arrivals 2-11
+2026-10-09 09:05:43,286 INFO o.a.j.t.JMeterThread: Thread started: GET /search arrivals 2-12
+2026-10-09 09:05:43,298 INFO o.a.j.t.JMeterThread: Thread is done: GET /search arrivals 2-12
+2026-10-09 09:05:43,298 INFO o.a.j.t.JMeterThread: Thread finished: GET /search arrivals 2-12
+2026-10-09 09:05:50,074 INFO o.a.j.t.JMeterThread: Thread started: GET /search arrivals 2-13
+2026-10-09 09:05:50,093 INFO o.a.j.t.JMeterThread: Thread is done: GET /search arrivals 2-13
+2026-10-09 09:05:50,093 INFO o.a.j.t.JMeterThread: Thread finished: GET /search arrivals 2-13
+2026-10-09 09:05:52,918 INFO o.a.j.t.JMeterThread: Thread started: GET /stats arrivals 3-31
+2026-10-09 09:05:52,932 INFO o.a.j.t.JMeterThread: Thread is done: GET /stats arrivals 3-31
+2026-10-09 09:05:52,945 INFO o.a.j.t.JMeterThread: Thread finished: GET /stats arrivals 3-31
+2026-10-09 09:05:54,393 INFO o.a.j.t.JMeterThread: Thread started: GET /stats arrivals 3-32
+2026-10-09 09:05:54,408 INFO o.a.j.t.JMeterThread: Thread is done: GET /stats arrivals 3-32
+2026-10-09 09:05:54,408 INFO o.a.j.t.JMeterThread: Thread finished: GET /stats arrivals 3-32
+2026-10-09 09:05:58,893 INFO o.a.j.t.JMeterThread: Thread started: GET /stats arrivals 3-33
+2026-10-09 09:05:58,911 INFO o.a.j.t.JMeterThread: Thread is done: GET /stats arrivals 3-33
+2026-10-09 09:05:58,911 INFO o.a.j.t.JMeterThread: Thread finished: GET /stats arrivals 3-33
+2026-10-09 09:06:13,552 INFO o.a.j.t.JMeterThread: Thread started: GET /search arrivals 2-14
+2026-10-09 09:06:13,586 INFO o.a.j.t.JMeterThread: Thread is done: GET /search arrivals 2-14
+2026-10-09 09:06:13,586 INFO o.a.j.t.JMeterThread: Thread finished: GET /search arrivals 2-14
+2026-10-09 09:06:14,937 INFO o.a.j.t.JMeterThread: Thread started: GET /stats arrivals 3-34
+2026-10-09 09:06:14,948 INFO o.a.j.t.JMeterThread: Thread is done: GET /stats arrivals 3-34
+2026-10-09 09:06:14,948 INFO o.a.j.t.JMeterThread: Thread finished: GET /stats arrivals 3-34
+2026-10-09 09:06:20,967 INFO o.a.j.t.JMeterThread: Thread started: GET /search arrivals 2-15
+2026-10-09 09:06:20,986 INFO o.a.j.t.JMeterThread: Thread is done: GET /search arrivals 2-15
+2026-10-09 09:06:20,986 INFO o.a.j.t.JMeterThread: Thread finished: GET /search arrivals 2-15
+2026-10-09 09:06:30,082 INFO o.a.j.t.JMeterThread: Thread started: GET /stats arrivals 3-35
+2026-10-09 09:06:30,113 INFO o.a.j.r.Summariser: summary +     18 in 00:01:27 =    0.2/s Avg:   472 Min:     8 Max:  5311 Err:     0 (0.00%) Active: 1 Started: 54 Finished: 53
+2026-10-09 09:06:30,113 INFO o.a.j.r.Summariser: summary =     54 in 00:05:23 =    0.2/s Avg:   543 Min:     8 Max:  7699 Err:     0 (0.00%)
+2026-10-09 09:06:30,114 INFO o.a.j.t.JMeterThread: Thread is done: GET /stats arrivals 3-35
+2026-10-09 09:06:30,114 INFO o.a.j.t.JMeterThread: Thread finished: GET /stats arrivals 3-35
+2026-10-09 09:06:33,197 INFO o.a.j.t.JMeterThread: Thread started: GET /search arrivals 2-16
+2026-10-09 09:06:33,222 INFO o.a.j.t.JMeterThread: Thread is done: GET /search arrivals 2-16
+2026-10-09 09:06:33,222 INFO o.a.j.t.JMeterThread: Thread finished: GET /search arrivals 2-16
+2026-10-09 09:06:36,922 INFO o.a.j.t.JMeterThread: Thread started: GET /stats arrivals 3-36
+2026-10-09 09:06:36,943 INFO o.a.j.t.JMeterThread: Thread is done: GET /stats arrivals 3-36
+2026-10-09 09:06:36,943 INFO o.a.j.t.JMeterThread: Thread finished: GET /stats arrivals 3-36
+2026-10-09 09:06:42,901 INFO o.a.j.t.JMeterThread: Thread started: GET /stats arrivals 3-37
+2026-10-09 09:06:42,916 INFO o.a.j.t.JMeterThread: Thread is done: GET /stats arrivals 3-37
+2026-10-09 09:06:42,916 INFO o.a.j.t.JMeterThread: Thread finished: GET /stats arrivals 3-37
+2026-10-09 09:06:48,405 INFO o.a.j.t.JMeterThread: Thread started: GET /stats arrivals 3-38
+2026-10-09 09:06:48,416 INFO o.a.j.t.JMeterThread: Thread is done: GET /stats arrivals 3-38
+2026-10-09 09:06:48,416 INFO o.a.j.t.JMeterThread: Thread finished: GET /stats arrivals 3-38
+2026-10-09 09:06:50,964 INFO o.a.j.t.JMeterThread: Thread started: GET /search arrivals 2-17
+2026-10-09 09:06:50,983 INFO o.a.j.t.JMeterThread: Thread is done: GET /search arrivals 2-17
+2026-10-09 09:06:50,983 INFO o.a.j.t.JMeterThread: Thread finished: GET /search arrivals 2-17
+2026-10-09 09:07:10,158 INFO o.a.j.t.JMeterThread: Thread started: GET /stats arrivals 3-39
+2026-10-09 09:07:10,178 INFO o.a.j.t.JMeterThread: Thread is done: GET /stats arrivals 3-39
+2026-10-09 09:07:10,178 INFO o.a.j.t.JMeterThread: Thread finished: GET /stats arrivals 3-39
+2026-10-09 09:07:12,399 INFO o.a.j.t.JMeterThread: Thread started: GET /search arrivals 2-18
+2026-10-09 09:07:12,464 INFO o.a.j.t.JMeterThread: Thread is done: GET /search arrivals 2-18
+2026-10-09 09:07:12,464 INFO o.a.j.t.JMeterThread: Thread finished: GET /search arrivals 2-18
+2026-10-09 09:07:13,655 INFO o.a.j.t.JMeterThread: Thread started: GET /search arrivals 2-19
+2026-10-09 09:07:13,673 INFO o.a.j.t.JMeterThread: Thread is done: GET /search arrivals 2-19
+2026-10-09 09:07:13,673 INFO o.a.j.t.JMeterThread: Thread finished: GET /search arrivals 2-19
+2026-10-09 09:07:15,359 INFO o.a.j.t.JMeterThread: Thread started: GET /search arrivals 2-20
+2026-10-09 09:07:15,381 INFO o.a.j.t.JMeterThread: Thread is done: GET /search arrivals 2-20
+2026-10-09 09:07:15,381 INFO o.a.j.t.JMeterThread: Thread finished: GET /search arrivals 2-20
+2026-10-09 09:07:18,994 INFO o.a.j.t.JMeterThread: Thread started: GET /search arrivals 2-21
+2026-10-09 09:07:19,021 INFO o.a.j.t.JMeterThread: Thread is done: GET /search arrivals 2-21
+2026-10-09 09:07:19,021 INFO o.a.j.t.JMeterThread: Thread finished: GET /search arrivals 2-21
+2026-10-09 09:07:21,206 INFO o.a.j.t.JMeterThread: Thread started: GET /stats arrivals 3-40
+2026-10-09 09:07:21,283 INFO o.a.j.t.JMeterThread: Thread is done: GET /stats arrivals 3-40
+2026-10-09 09:07:21,283 INFO o.a.j.t.JMeterThread: Thread finished: GET /stats arrivals 3-40
+2026-10-09 09:07:24,336 INFO o.a.j.t.JMeterThread: Thread started: GET /stats arrivals 3-41
+2026-10-09 09:07:24,348 INFO o.a.j.t.JMeterThread: Thread is done: GET /stats arrivals 3-41
+2026-10-09 09:07:24,348 INFO o.a.j.t.JMeterThread: Thread finished: GET /stats arrivals 3-41
+2026-10-09 09:07:28,672 INFO o.a.j.t.JMeterThread: Thread started: GET /stats arrivals 3-42
+2026-10-09 09:07:28,690 INFO o.a.j.t.JMeterThread: Thread is done: GET /stats arrivals 3-42
+2026-10-09 09:07:28,690 INFO o.a.j.t.JMeterThread: Thread finished: GET /stats arrivals 3-42
+2026-10-09 09:07:30,590 INFO o.a.j.t.JMeterThread: Thread started: GET /stats arrivals 3-43
+2026-10-09 09:07:30,609 INFO o.a.j.r.Summariser: summary +     14 in 00:01:00 =    0.2/s Avg:    25 Min:    10 Max:    77 Err:     0 (0.00%) Active: 1 Started: 68 Finished: 67
+2026-10-09 09:07:30,610 INFO o.a.j.r.Summariser: summary =     68 in 00:06:23 =    0.2/s Avg:   436 Min:     8 Max:  7699 Err:     0 (0.00%)
+2026-10-09 09:07:30,610 INFO o.a.j.t.JMeterThread: Thread is done: GET /stats arrivals 3-43
+2026-10-09 09:07:30,610 INFO o.a.j.t.JMeterThread: Thread finished: GET /stats arrivals 3-43
+2026-10-09 09:07:31,204 INFO o.a.j.t.JMeterThread: Thread started: GET /stats arrivals 3-44
+2026-10-09 09:07:31,268 INFO o.a.j.t.JMeterThread: Thread is done: GET /stats arrivals 3-44
+2026-10-09 09:07:31,268 INFO o.a.j.t.JMeterThread: Thread finished: GET /stats arrivals 3-44
+2026-10-09 09:07:45,217 INFO o.a.j.t.JMeterThread: Thread started: GET /search arrivals 2-22
+2026-10-09 09:07:45,234 INFO o.a.j.t.JMeterThread: Thread is done: GET /search arrivals 2-22
+2026-10-09 09:07:45,234 INFO o.a.j.t.JMeterThread: Thread finished: GET /search arrivals 2-22
+2026-10-09 09:07:45,735 INFO o.a.j.t.JMeterThread: Thread started: GET /search arrivals 2-23
+2026-10-09 09:07:45,746 INFO o.a.j.t.JMeterThread: Thread is done: GET /search arrivals 2-23
+2026-10-09 09:07:45,746 INFO o.a.j.t.JMeterThread: Thread finished: GET /search arrivals 2-23
+2026-10-09 09:07:53,256 INFO o.a.j.t.JMeterThread: Thread started: GET /stats arrivals 3-45
+2026-10-09 09:07:53,279 INFO o.a.j.t.JMeterThread: Thread is done: GET /stats arrivals 3-45
+2026-10-09 09:07:53,279 INFO o.a.j.t.JMeterThread: Thread finished: GET /stats arrivals 3-45
+2026-10-09 09:07:59,546 INFO o.a.j.t.JMeterThread: Thread started: POST /tickets arrivals 1-5
+2026-10-09 09:08:01,198 INFO o.a.j.t.JMeterThread: Thread started: GET /stats arrivals 3-46
+2026-10-09 09:08:04,930 INFO o.a.j.r.Summariser: summary +      5 in 00:00:34 =    0.1/s Avg:  1099 Min:    10 Max:  5383 Err:     0 (0.00%) Active: 2 Started: 74 Finished: 72
+2026-10-09 09:08:04,931 INFO o.a.j.r.Summariser: summary =     73 in 00:06:58 =    0.2/s Avg:   482 Min:     8 Max:  7699 Err:     0 (0.00%)
+2026-10-09 09:08:04,931 INFO o.a.j.t.JMeterThread: Thread is done: POST /tickets arrivals 1-5
+2026-10-09 09:08:04,931 INFO o.a.j.t.JMeterThread: Thread finished: POST /tickets arrivals 1-5
+2026-10-09 09:08:04,943 INFO o.a.j.t.JMeterThread: Thread is done: GET /stats arrivals 3-46
+2026-10-09 09:08:04,943 INFO o.a.j.t.JMeterThread: Thread finished: GET /stats arrivals 3-46
+2026-10-09 09:08:09,007 INFO o.a.j.t.JMeterThread: Thread started: GET /search arrivals 2-24
+2026-10-09 09:08:09,059 INFO o.a.j.t.JMeterThread: Thread is done: GET /search arrivals 2-24
+2026-10-09 09:08:09,060 INFO o.a.j.t.JMeterThread: Thread finished: GET /search arrivals 2-24
+2026-10-09 09:08:09,261 INFO o.a.j.t.JMeterThread: Thread started: GET /stats arrivals 3-47
+2026-10-09 09:08:09,285 INFO o.a.j.t.JMeterThread: Thread is done: GET /stats arrivals 3-47
+2026-10-09 09:08:09,286 INFO o.a.j.t.JMeterThread: Thread finished: GET /stats arrivals 3-47
+2026-10-09 09:08:12,236 INFO o.a.j.t.JMeterThread: Thread started: GET /stats arrivals 3-48
+2026-10-09 09:08:12,261 INFO o.a.j.t.JMeterThread: Thread is done: GET /stats arrivals 3-48
+2026-10-09 09:08:12,261 INFO o.a.j.t.JMeterThread: Thread finished: GET /stats arrivals 3-48
+2026-10-09 09:08:17,351 INFO o.a.j.t.JMeterThread: Thread started: GET /stats arrivals 3-49
+2026-10-09 09:08:17,375 INFO o.a.j.t.JMeterThread: Thread is done: GET /stats arrivals 3-49
+2026-10-09 09:08:17,375 INFO o.a.j.t.JMeterThread: Thread finished: GET /stats arrivals 3-49
+2026-10-09 09:08:20,597 INFO o.a.j.t.JMeterThread: Thread started: POST /tickets arrivals 1-6
+2026-10-09 09:08:25,127 INFO o.a.j.t.JMeterThread: Thread started: GET /search arrivals 2-25
+2026-10-09 09:08:30,095 INFO o.a.j.r.Summariser: summary +      6 in 00:00:25 =    0.2/s Avg:  2227 Min:    23 Max:  9497 Err:     0 (0.00%) Active: 2 Started: 80 Finished: 78
+2026-10-09 09:08:30,095 INFO o.a.j.r.Summariser: summary =     79 in 00:07:23 =    0.2/s Avg:   614 Min:     8 Max:  9497 Err:     0 (0.00%)
+2026-10-09 09:08:30,097 INFO o.a.j.t.JMeterThread: Thread is done: POST /tickets arrivals 1-6
+2026-10-09 09:08:30,097 INFO o.a.j.t.JMeterThread: Thread finished: POST /tickets arrivals 1-6
+2026-10-09 09:08:30,110 INFO o.a.j.t.JMeterThread: Thread is done: GET /search arrivals 2-25
+2026-10-09 09:08:30,110 INFO o.a.j.t.JMeterThread: Thread finished: GET /search arrivals 2-25
+2026-10-09 09:08:30,880 INFO o.a.j.t.JMeterThread: Thread started: GET /stats arrivals 3-50
+2026-10-09 09:08:30,900 INFO o.a.j.t.JMeterThread: Thread is done: GET /stats arrivals 3-50
+2026-10-09 09:08:30,900 INFO o.a.j.t.JMeterThread: Thread finished: GET /stats arrivals 3-50
+2026-10-09 09:08:32,293 INFO o.a.j.t.JMeterThread: Thread started: POST /tickets arrivals 1-7
+2026-10-09 09:08:35,310 INFO o.a.j.t.JMeterThread: Thread is done: POST /tickets arrivals 1-7
+2026-10-09 09:08:35,310 INFO o.a.j.t.JMeterThread: Thread finished: POST /tickets arrivals 1-7
+2026-10-09 09:08:38,999 INFO o.a.j.t.JMeterThread: Thread started: GET /stats arrivals 3-51
+2026-10-09 09:08:39,024 INFO o.a.j.t.JMeterThread: Thread is done: GET /stats arrivals 3-51
+2026-10-09 09:08:39,024 INFO o.a.j.t.JMeterThread: Thread finished: GET /stats arrivals 3-51
+2026-10-09 09:08:48,649 INFO o.a.j.t.JMeterThread: Thread started: POST /tickets arrivals 1-8
+2026-10-09 09:08:50,029 INFO o.a.j.t.JMeterThread: Thread started: GET /search arrivals 2-26
+2026-10-09 09:08:50,552 INFO o.a.j.t.JMeterThread: Thread started: GET /search arrivals 2-27
+2026-10-09 09:08:51,754 INFO o.a.j.t.JMeterThread: Thread started: GET /stats arrivals 3-52
+2026-10-09 09:08:51,841 INFO o.a.j.t.JMeterThread: Thread is done: POST /tickets arrivals 1-8
+2026-10-09 09:08:51,841 INFO o.a.j.t.JMeterThread: Thread finished: POST /tickets arrivals 1-8
+2026-10-09 09:08:51,860 INFO o.a.j.t.JMeterThread: Thread is done: GET /search arrivals 2-26
+2026-10-09 09:08:51,860 INFO o.a.j.t.JMeterThread: Thread finished: GET /search arrivals 2-26
+2026-10-09 09:08:51,886 INFO o.a.j.t.JMeterThread: Thread is done: GET /search arrivals 2-27
+2026-10-09 09:08:51,886 INFO o.a.j.t.JMeterThread: Thread finished: GET /search arrivals 2-27
+2026-10-09 09:08:51,902 INFO o.a.j.t.JMeterThread: Thread is done: GET /stats arrivals 3-52
+2026-10-09 09:08:51,902 INFO o.a.j.t.JMeterThread: Thread finished: GET /stats arrivals 3-52
+2026-10-09 09:08:54,128 INFO o.a.j.t.JMeterThread: Thread started: GET /stats arrivals 3-53
+2026-10-09 09:08:54,153 INFO o.a.j.t.JMeterThread: Thread is done: GET /stats arrivals 3-53
+2026-10-09 09:08:54,153 INFO o.a.j.t.JMeterThread: Thread finished: GET /stats arrivals 3-53
+2026-10-09 09:09:01,184 INFO o.a.j.t.JMeterThread: Thread started: GET /search arrivals 2-28
+2026-10-09 09:09:01,210 INFO o.a.j.r.Summariser: summary +     10 in 00:00:31 =    0.3/s Avg:  1459 Min:    20 Max:  4981 Err:     0 (0.00%) Active: 1 Started: 89 Finished: 88
+2026-10-09 09:09:01,211 INFO o.a.j.r.Summariser: summary =     89 in 00:07:54 =    0.2/s Avg:   709 Min:     8 Max:  9497 Err:     0 (0.00%)
+2026-10-09 09:09:01,211 INFO o.a.j.t.JMeterThread: Thread is done: GET /search arrivals 2-28
+2026-10-09 09:09:01,211 INFO o.a.j.t.JMeterThread: Thread finished: GET /search arrivals 2-28
+2026-10-09 09:09:03,100 INFO o.a.j.t.JMeterThread: Thread started: GET /search arrivals 2-29
+2026-10-09 09:09:03,115 INFO o.a.j.t.JMeterThread: Thread is done: GET /search arrivals 2-29
+2026-10-09 09:09:03,115 INFO o.a.j.t.JMeterThread: Thread finished: GET /search arrivals 2-29
+2026-10-09 09:09:04,435 INFO o.a.j.t.JMeterThread: Thread started: POST /tickets arrivals 1-9
+2026-10-09 09:09:08,484 INFO o.a.j.t.JMeterThread: Thread started: GET /stats arrivals 3-54
+2026-10-09 09:09:09,024 INFO o.a.j.t.JMeterThread: Thread is done: POST /tickets arrivals 1-9
+2026-10-09 09:09:09,024 INFO o.a.j.t.JMeterThread: Thread finished: POST /tickets arrivals 1-9
+2026-10-09 09:09:09,046 INFO o.a.j.t.JMeterThread: Thread is done: GET /stats arrivals 3-54
+2026-10-09 09:09:09,046 INFO o.a.j.t.JMeterThread: Thread finished: GET /stats arrivals 3-54
+2026-10-09 09:09:09,598 INFO o.a.j.t.JMeterThread: Thread started: GET /search arrivals 2-30
+2026-10-09 09:09:09,626 INFO o.a.j.t.JMeterThread: Thread is done: GET /search arrivals 2-30
+2026-10-09 09:09:09,626 INFO o.a.j.t.JMeterThread: Thread finished: GET /search arrivals 2-30
+2026-10-09 09:09:10,459 INFO o.a.j.t.JMeterThread: Thread started: GET /search arrivals 2-31
+2026-10-09 09:09:10,483 INFO o.a.j.t.JMeterThread: Thread is done: GET /search arrivals 2-31
+2026-10-09 09:09:10,483 INFO o.a.j.t.JMeterThread: Thread finished: GET /search arrivals 2-31
+2026-10-09 09:09:13,675 INFO o.a.j.t.JMeterThread: Thread started: GET /search arrivals 2-32
+2026-10-09 09:09:13,691 INFO o.a.j.t.JMeterThread: Thread is done: GET /search arrivals 2-32
+2026-10-09 09:09:13,691 INFO o.a.j.t.JMeterThread: Thread finished: GET /search arrivals 2-32
+2026-10-09 09:09:14,936 INFO o.a.j.t.JMeterThread: Thread started: GET /search arrivals 2-33
+2026-10-09 09:09:14,950 INFO o.a.j.t.JMeterThread: Thread is done: GET /search arrivals 2-33
+2026-10-09 09:09:14,950 INFO o.a.j.t.JMeterThread: Thread finished: GET /search arrivals 2-33
+2026-10-09 09:09:16,968 INFO o.a.j.t.JMeterThread: Thread started: GET /stats arrivals 3-55
+2026-10-09 09:09:16,985 INFO o.a.j.t.JMeterThread: Thread is done: GET /stats arrivals 3-55
+2026-10-09 09:09:16,986 INFO o.a.j.t.JMeterThread: Thread finished: GET /stats arrivals 3-55
+2026-10-09 09:09:19,116 INFO o.a.j.t.JMeterThread: Thread started: GET /stats arrivals 3-56
+2026-10-09 09:09:19,128 INFO o.a.j.t.JMeterThread: Thread is done: GET /stats arrivals 3-56
+2026-10-09 09:09:19,128 INFO o.a.j.t.JMeterThread: Thread finished: GET /stats arrivals 3-56
+2026-10-09 09:09:19,415 INFO o.a.j.t.JMeterThread: Thread started: GET /stats arrivals 3-57
+2026-10-09 09:09:19,426 INFO o.a.j.t.JMeterThread: Thread is done: GET /stats arrivals 3-57
+2026-10-09 09:09:19,426 INFO o.a.j.t.JMeterThread: Thread finished: GET /stats arrivals 3-57
+2026-10-09 09:09:23,071 INFO o.a.j.t.JMeterThread: Thread started: GET /stats arrivals 3-58
+2026-10-09 09:09:23,096 INFO o.a.j.t.JMeterThread: Thread is done: GET /stats arrivals 3-58
+2026-10-09 09:09:23,096 INFO o.a.j.t.JMeterThread: Thread finished: GET /stats arrivals 3-58
+2026-10-09 09:09:28,635 INFO o.a.j.t.JMeterThread: Thread started: GET /stats arrivals 3-59
+2026-10-09 09:09:28,656 INFO o.a.j.t.JMeterThread: Thread is done: GET /stats arrivals 3-59
+2026-10-09 09:09:28,656 INFO o.a.j.t.JMeterThread: Thread finished: GET /stats arrivals 3-59
+2026-10-09 09:09:36,648 INFO o.a.j.t.JMeterThread: Thread started: POST /tickets arrivals 1-10
+2026-10-09 09:09:38,986 INFO o.a.j.t.JMeterThread: Thread started: GET /search arrivals 2-34
+2026-10-09 09:09:44,216 INFO o.a.j.t.JMeterThread: Thread is done: POST /tickets arrivals 1-10
+2026-10-09 09:09:44,216 INFO o.a.j.t.JMeterThread: Thread finished: POST /tickets arrivals 1-10
+2026-10-09 09:09:44,233 INFO o.a.j.t.JMeterThread: Thread is done: GET /search arrivals 2-34
+2026-10-09 09:09:44,233 INFO o.a.j.t.JMeterThread: Thread finished: GET /search arrivals 2-34
+2026-10-09 09:09:49,743 INFO o.a.j.t.JMeterThread: Thread started: GET /stats arrivals 3-60
+2026-10-09 09:09:49,765 INFO o.a.j.t.JMeterThread: Thread is done: GET /stats arrivals 3-60
+2026-10-09 09:09:49,766 INFO o.a.j.t.JMeterThread: Thread finished: GET /stats arrivals 3-60
+2026-10-09 09:09:51,013 INFO o.a.j.t.JMeterThread: Thread started: GET /stats arrivals 3-61
+2026-10-09 09:09:51,031 INFO o.a.j.t.JMeterThread: Thread is done: GET /stats arrivals 3-61
+2026-10-09 09:09:51,032 INFO o.a.j.t.JMeterThread: Thread finished: GET /stats arrivals 3-61
+2026-10-09 09:09:58,537 INFO o.a.j.t.JMeterThread: Thread started: GET /search arrivals 2-35
+2026-10-09 09:09:58,565 INFO o.a.j.t.JMeterThread: Thread is done: GET /search arrivals 2-35
+2026-10-09 09:09:58,565 INFO o.a.j.t.JMeterThread: Thread finished: GET /search arrivals 2-35
+2026-10-09 09:10:10,462 INFO o.a.j.t.JMeterThread: Thread started: GET /stats arrivals 3-62
+2026-10-09 09:10:10,481 INFO o.a.j.t.JMeterThread: Thread is done: GET /stats arrivals 3-62
+2026-10-09 09:10:10,481 INFO o.a.j.t.JMeterThread: Thread finished: GET /stats arrivals 3-62
+2026-10-09 09:10:17,895 INFO o.a.j.t.JMeterThread: Thread started: GET /search arrivals 2-36
+2026-10-09 09:10:17,917 INFO o.a.j.t.JMeterThread: Thread is done: GET /search arrivals 2-36
+2026-10-09 09:10:17,917 INFO o.a.j.t.JMeterThread: Thread finished: GET /search arrivals 2-36
+2026-10-09 09:10:21,122 INFO o.a.j.t.JMeterThread: Thread started: GET /stats arrivals 3-63
+2026-10-09 09:10:21,149 INFO o.a.j.t.JMeterThread: Thread is done: GET /stats arrivals 3-63
+2026-10-09 09:10:21,149 INFO o.a.j.t.JMeterThread: Thread finished: GET /stats arrivals 3-63
+2026-10-09 09:10:23,346 INFO o.a.j.t.JMeterThread: Thread started: GET /stats arrivals 3-64
+2026-10-09 09:10:23,357 INFO o.a.j.t.JMeterThread: Thread is done: GET /stats arrivals 3-64
+2026-10-09 09:10:23,357 INFO o.a.j.t.JMeterThread: Thread finished: GET /stats arrivals 3-64
+2026-10-09 09:10:28,969 INFO o.a.j.t.JMeterThread: Thread started: GET /search arrivals 2-37
+2026-10-09 09:10:28,995 INFO o.a.j.t.JMeterThread: Thread is done: GET /search arrivals 2-37
+2026-10-09 09:10:28,995 INFO o.a.j.t.JMeterThread: Thread finished: GET /search arrivals 2-37
+2026-10-09 09:10:31,820 INFO o.a.j.t.JMeterThread: Thread started: GET /search arrivals 2-38
+2026-10-09 09:10:31,844 INFO o.a.j.r.Summariser: summary +     23 in 00:01:31 =    0.3/s Avg:   797 Min:    11 Max:  7566 Err:     0 (0.00%) Active: 1 Started: 112 Finished: 111
+2026-10-09 09:10:31,844 INFO o.a.j.r.Summariser: summary =    112 in 00:09:25 =    0.2/s Avg:   727 Min:     8 Max:  9497 Err:     0 (0.00%)
+2026-10-09 09:10:31,845 INFO o.a.j.t.JMeterThread: Thread is done: GET /search arrivals 2-38
+2026-10-09 09:10:31,845 INFO o.a.j.t.JMeterThread: Thread finished: GET /search arrivals 2-38
+2026-10-09 09:10:33,867 INFO o.a.j.t.JMeterThread: Thread started: POST /tickets arrivals 1-11
+2026-10-09 09:10:34,190 INFO o.a.j.t.JMeterThread: Thread started: GET /stats arrivals 3-65
+2026-10-09 09:10:39,288 INFO o.a.j.t.JMeterThread: Thread started: GET /stats arrivals 3-66
+2026-10-09 09:10:40,804 INFO o.a.j.t.JMeterThread: Thread is done: POST /tickets arrivals 1-11
+2026-10-09 09:10:40,804 INFO o.a.j.t.JMeterThread: Thread finished: POST /tickets arrivals 1-11
+2026-10-09 09:10:40,817 INFO o.a.j.t.JMeterThread: Thread is done: GET /stats arrivals 3-65
+2026-10-09 09:10:40,817 INFO o.a.j.t.JMeterThread: Thread finished: GET /stats arrivals 3-65
+2026-10-09 09:10:40,829 INFO o.a.j.t.JMeterThread: Thread is done: GET /stats arrivals 3-66
+2026-10-09 09:10:40,829 INFO o.a.j.t.JMeterThread: Thread finished: GET /stats arrivals 3-66
+2026-10-09 09:10:41,458 INFO o.a.j.t.JMeterThread: Thread started: GET /stats arrivals 3-67
+2026-10-09 09:10:41,473 INFO o.a.j.t.JMeterThread: Thread is done: GET /stats arrivals 3-67
+2026-10-09 09:10:41,474 INFO o.a.j.t.JMeterThread: Thread finished: GET /stats arrivals 3-67
+2026-10-09 09:10:55,223 INFO o.a.j.t.JMeterThread: Thread started: GET /search arrivals 2-39
+2026-10-09 09:10:55,247 INFO o.a.j.t.JMeterThread: Thread is done: GET /search arrivals 2-39
+2026-10-09 09:10:55,247 INFO o.a.j.t.JMeterThread: Thread finished: GET /search arrivals 2-39
+2026-10-09 09:10:55,270 INFO o.a.j.t.JMeterThread: Thread started: GET /stats arrivals 3-68
+2026-10-09 09:10:55,293 INFO o.a.j.t.JMeterThread: Thread is done: GET /stats arrivals 3-68
+2026-10-09 09:10:55,293 INFO o.a.j.t.JMeterThread: Thread finished: GET /stats arrivals 3-68
+2026-10-09 09:10:56,159 INFO o.a.j.t.JMeterThread: Thread started: GET /search arrivals 2-40
+2026-10-09 09:10:56,170 INFO o.a.j.t.JMeterThread: Thread is done: GET /search arrivals 2-40
+2026-10-09 09:10:56,170 INFO o.a.j.t.JMeterThread: Thread finished: GET /search arrivals 2-40
+2026-10-09 09:10:57,220 INFO o.a.j.t.JMeterThread: Thread started: GET /search arrivals 2-41
+2026-10-09 09:10:57,243 INFO o.a.j.t.JMeterThread: Thread is done: GET /search arrivals 2-41
+2026-10-09 09:10:57,244 INFO o.a.j.t.JMeterThread: Thread finished: GET /search arrivals 2-41
+2026-10-09 09:10:57,478 INFO o.a.j.t.JMeterThread: Thread started: GET /search arrivals 2-42
+2026-10-09 09:10:57,503 INFO o.a.j.t.JMeterThread: Thread is done: GET /search arrivals 2-42
+2026-10-09 09:10:57,503 INFO o.a.j.t.JMeterThread: Thread finished: GET /search arrivals 2-42
+2026-10-09 09:11:04,836 INFO o.a.j.t.JMeterThread: Thread started: GET /stats arrivals 3-69
+2026-10-09 09:11:04,851 INFO o.a.j.r.Summariser: summary +     10 in 00:00:33 =    0.3/s Avg:  1523 Min:     9 Max:  6936 Err:     0 (0.00%) Active: 1 Started: 122 Finished: 121
+2026-10-09 09:11:04,851 INFO o.a.j.r.Summariser: summary =    122 in 00:09:58 =    0.2/s Avg:   792 Min:     8 Max:  9497 Err:     0 (0.00%)
+2026-10-09 09:11:04,851 INFO o.a.j.t.JMeterThread: Thread is done: GET /stats arrivals 3-69
+2026-10-09 09:11:04,851 INFO o.a.j.t.JMeterThread: Thread finished: GET /stats arrivals 3-69
+2026-10-09 09:11:05,506 INFO o.a.j.t.JMeterThread: Thread started: GET /stats arrivals 3-70
+2026-10-09 09:11:05,530 INFO o.a.j.t.JMeterThread: Thread is done: GET /stats arrivals 3-70
+2026-10-09 09:11:05,530 INFO o.a.j.t.JMeterThread: Thread finished: GET /stats arrivals 3-70
+2026-10-09 09:11:10,977 INFO o.a.j.t.JMeterThread: Thread started: GET /search arrivals 2-43
+2026-10-09 09:11:11,010 INFO o.a.j.t.JMeterThread: Thread is done: GET /search arrivals 2-43
+2026-10-09 09:11:11,010 INFO o.a.j.t.JMeterThread: Thread finished: GET /search arrivals 2-43
+2026-10-09 09:11:21,468 INFO o.a.j.t.JMeterThread: Thread started: GET /stats arrivals 3-71
+2026-10-09 09:11:21,500 INFO o.a.j.t.JMeterThread: Thread is done: GET /stats arrivals 3-71
+2026-10-09 09:11:21,502 INFO o.a.j.t.JMeterThread: Thread finished: GET /stats arrivals 3-71
+2026-10-09 09:11:22,374 INFO o.a.j.t.JMeterThread: Thread started: GET /stats arrivals 3-72
+2026-10-09 09:11:22,407 INFO o.a.j.t.JMeterThread: Thread is done: GET /stats arrivals 3-72
+2026-10-09 09:11:22,407 INFO o.a.j.t.JMeterThread: Thread finished: GET /stats arrivals 3-72
+2026-10-09 09:11:25,446 INFO o.a.j.t.JMeterThread: Thread started: GET /search arrivals 2-44
+2026-10-09 09:11:25,459 INFO o.a.j.t.JMeterThread: Thread is done: GET /search arrivals 2-44
+2026-10-09 09:11:25,460 INFO o.a.j.t.JMeterThread: Thread finished: GET /search arrivals 2-44
+2026-10-09 09:11:37,236 INFO o.a.j.t.JMeterThread: Thread started: POST /tickets arrivals 1-12
+2026-10-09 09:11:37,903 INFO o.a.j.t.JMeterThread: Thread started: GET /stats arrivals 3-73
+2026-10-09 09:11:40,610 INFO o.a.j.t.JMeterThread: Thread started: GET /search arrivals 2-45
+2026-10-09 09:11:41,220 INFO o.a.j.t.JMeterThread: Thread is done: POST /tickets arrivals 1-12
+2026-10-09 09:11:41,220 INFO o.a.j.t.JMeterThread: Thread finished: POST /tickets arrivals 1-12
+2026-10-09 09:11:41,230 INFO o.a.j.t.JMeterThread: Thread is done: GET /stats arrivals 3-73
+2026-10-09 09:11:41,230 INFO o.a.j.t.JMeterThread: Thread finished: GET /stats arrivals 3-73
+2026-10-09 09:11:41,240 INFO o.a.j.t.JMeterThread: Thread is done: GET /search arrivals 2-45
+2026-10-09 09:11:41,240 INFO o.a.j.t.JMeterThread: Thread finished: GET /search arrivals 2-45
+2026-10-09 09:11:44,129 INFO o.a.j.t.JMeterThread: Thread started: GET /search arrivals 2-46
+2026-10-09 09:11:44,197 INFO o.a.j.t.JMeterThread: Thread is done: GET /search arrivals 2-46
+2026-10-09 09:11:44,197 INFO o.a.j.t.JMeterThread: Thread finished: GET /search arrivals 2-46
+2026-10-09 09:11:53,681 INFO o.a.j.t.JMeterThread: Thread started: GET /stats arrivals 3-74
+2026-10-09 09:11:53,703 INFO o.a.j.t.JMeterThread: Thread is done: GET /stats arrivals 3-74
+2026-10-09 09:11:53,703 INFO o.a.j.t.JMeterThread: Thread finished: GET /stats arrivals 3-74
+2026-10-09 09:11:59,749 INFO o.a.j.t.JMeterThread: Thread started: GET /stats arrivals 3-75
+2026-10-09 09:11:59,762 INFO o.a.j.t.JMeterThread: Thread is done: GET /stats arrivals 3-75
+2026-10-09 09:11:59,762 INFO o.a.j.t.JMeterThread: Thread finished: GET /stats arrivals 3-75
+2026-10-09 09:12:00,996 INFO o.a.j.t.JMeterThread: Thread started: GET /search arrivals 2-47
+2026-10-09 09:12:01,012 INFO o.a.j.r.Summariser: summary +     12 in 00:00:56 =    0.2/s Avg:   682 Min:    13 Max:  3983 Err:     0 (0.00%) Active: 1 Started: 134 Finished: 133
+2026-10-09 09:12:01,013 INFO o.a.j.r.Summariser: summary =    134 in 00:10:54 =    0.2/s Avg:   782 Min:     8 Max:  9497 Err:     0 (0.00%)
+2026-10-09 09:12:01,013 INFO o.a.j.t.JMeterThread: Thread is done: GET /search arrivals 2-47
+2026-10-09 09:12:01,013 INFO o.a.j.t.JMeterThread: Thread finished: GET /search arrivals 2-47
+2026-10-09 09:12:14,003 INFO o.a.j.t.JMeterThread: Thread started: GET /stats arrivals 3-76
+2026-10-09 09:12:14,014 INFO o.a.j.t.JMeterThread: Thread is done: GET /stats arrivals 3-76
+2026-10-09 09:12:14,014 INFO o.a.j.t.JMeterThread: Thread finished: GET /stats arrivals 3-76
+2026-10-09 09:12:19,238 INFO o.a.j.t.JMeterThread: Thread started: GET /stats arrivals 3-77
+2026-10-09 09:12:19,257 INFO o.a.j.t.JMeterThread: Thread is done: GET /stats arrivals 3-77
+2026-10-09 09:12:19,257 INFO o.a.j.t.JMeterThread: Thread finished: GET /stats arrivals 3-77
+2026-10-09 09:12:27,708 INFO o.a.j.t.JMeterThread: Thread started: GET /stats arrivals 3-78
+2026-10-09 09:12:27,730 INFO o.a.j.t.JMeterThread: Thread is done: GET /stats arrivals 3-78
+2026-10-09 09:12:27,730 INFO o.a.j.t.JMeterThread: Thread finished: GET /stats arrivals 3-78
+2026-10-09 09:12:28,547 INFO o.a.j.t.JMeterThread: Thread started: GET /search arrivals 2-48
+2026-10-09 09:12:28,570 INFO o.a.j.t.JMeterThread: Thread is done: GET /search arrivals 2-48
+2026-10-09 09:12:28,570 INFO o.a.j.t.JMeterThread: Thread finished: GET /search arrivals 2-48
+2026-10-09 09:12:31,815 INFO o.a.j.t.JMeterThread: Thread started: POST /tickets arrivals 1-13
+2026-10-09 09:12:36,743 INFO o.a.j.t.JMeterThread: Thread started: GET /stats arrivals 3-79
+2026-10-09 09:12:37,005 INFO o.a.j.t.JMeterThread: Thread is done: POST /tickets arrivals 1-13
+2026-10-09 09:12:37,006 INFO o.a.j.t.JMeterThread: Thread finished: POST /tickets arrivals 1-13
+2026-10-09 09:12:37,021 INFO o.a.j.t.JMeterThread: Thread is done: GET /stats arrivals 3-79
+2026-10-09 09:12:37,021 INFO o.a.j.t.JMeterThread: Thread finished: GET /stats arrivals 3-79
+2026-10-09 09:12:47,069 INFO o.a.j.t.JMeterThread: Thread started: POST /tickets arrivals 1-14
+2026-10-09 09:12:49,208 INFO o.a.j.t.JMeterThread: Thread started: GET /stats arrivals 3-80
+2026-10-09 09:12:49,801 INFO o.a.j.t.JMeterThread: Thread started: GET /stats arrivals 3-81
+2026-10-09 09:12:51,817 INFO o.a.j.t.JMeterThread: Thread started: GET /search arrivals 2-49
+2026-10-09 09:12:53,211 INFO o.a.j.t.JMeterThread: Thread started: GET /stats arrivals 3-82
+2026-10-09 09:12:54,298 INFO o.a.j.t.JMeterThread: Thread is done: POST /tickets arrivals 1-14
+2026-10-09 09:12:54,298 INFO o.a.j.t.JMeterThread: Thread finished: POST /tickets arrivals 1-14
+2026-10-09 09:12:54,310 INFO o.a.j.t.JMeterThread: Thread is done: GET /stats arrivals 3-80
+2026-10-09 09:12:54,310 INFO o.a.j.t.JMeterThread: Thread finished: GET /stats arrivals 3-80
+2026-10-09 09:12:54,319 INFO o.a.j.t.JMeterThread: Thread is done: GET /stats arrivals 3-81
+2026-10-09 09:12:54,319 INFO o.a.j.t.JMeterThread: Thread finished: GET /stats arrivals 3-81
+2026-10-09 09:12:54,332 INFO o.a.j.t.JMeterThread: Thread is done: GET /search arrivals 2-49
+2026-10-09 09:12:54,333 INFO o.a.j.t.JMeterThread: Thread finished: GET /search arrivals 2-49
+2026-10-09 09:12:54,346 INFO o.a.j.t.JMeterThread: Thread is done: GET /stats arrivals 3-82
+2026-10-09 09:12:54,346 INFO o.a.j.t.JMeterThread: Thread finished: GET /stats arrivals 3-82
+2026-10-09 09:13:00,115 INFO o.a.j.t.JMeterThread: Thread started: GET /stats arrivals 3-83
+2026-10-09 09:13:00,134 INFO o.a.j.r.Summariser: summary +     12 in 00:00:59 =    0.2/s Avg:  2171 Min:    11 Max:  7229 Err:     0 (0.00%) Active: 1 Started: 146 Finished: 145
+2026-10-09 09:13:00,134 INFO o.a.j.r.Summariser: summary =    146 in 00:11:53 =    0.2/s Avg:   897 Min:     8 Max:  9497 Err:     0 (0.00%)
+2026-10-09 09:13:00,134 INFO o.a.j.t.JMeterThread: Thread is done: GET /stats arrivals 3-83
+2026-10-09 09:13:00,135 INFO o.a.j.t.JMeterThread: Thread finished: GET /stats arrivals 3-83
+2026-10-09 09:13:05,662 INFO o.a.j.t.JMeterThread: Thread started: GET /stats arrivals 3-84
+2026-10-09 09:13:05,678 INFO o.a.j.t.JMeterThread: Thread is done: GET /stats arrivals 3-84
+2026-10-09 09:13:05,678 INFO o.a.j.t.JMeterThread: Thread finished: GET /stats arrivals 3-84
+2026-10-09 09:13:14,943 INFO o.a.j.t.JMeterThread: Thread started: GET /stats arrivals 3-85
+2026-10-09 09:13:14,961 INFO o.a.j.t.JMeterThread: Thread is done: GET /stats arrivals 3-85
+2026-10-09 09:13:14,961 INFO o.a.j.t.JMeterThread: Thread finished: GET /stats arrivals 3-85
+2026-10-09 09:13:16,262 INFO o.a.j.t.JMeterThread: Thread started: GET /search arrivals 2-50
+2026-10-09 09:13:16,282 INFO o.a.j.t.JMeterThread: Thread is done: GET /search arrivals 2-50
+2026-10-09 09:13:16,282 INFO o.a.j.t.JMeterThread: Thread finished: GET /search arrivals 2-50
+2026-10-09 09:13:20,032 INFO o.a.j.t.JMeterThread: Thread started: GET /stats arrivals 3-86
+2026-10-09 09:13:20,065 INFO o.a.j.t.JMeterThread: Thread is done: GET /stats arrivals 3-86
+2026-10-09 09:13:20,065 INFO o.a.j.t.JMeterThread: Thread finished: GET /stats arrivals 3-86
+2026-10-09 09:13:21,001 INFO o.a.j.t.JMeterThread: Thread started: GET /stats arrivals 3-87
+2026-10-09 09:13:21,018 INFO o.a.j.t.JMeterThread: Thread is done: GET /stats arrivals 3-87
+2026-10-09 09:13:21,018 INFO o.a.j.t.JMeterThread: Thread finished: GET /stats arrivals 3-87
+2026-10-09 09:13:21,293 INFO o.a.j.t.JMeterThread: Thread started: GET /stats arrivals 3-88
+2026-10-09 09:13:21,308 INFO o.a.j.t.JMeterThread: Thread is done: GET /stats arrivals 3-88
+2026-10-09 09:13:21,308 INFO o.a.j.t.JMeterThread: Thread finished: GET /stats arrivals 3-88
+2026-10-09 09:13:28,386 INFO o.a.j.t.JMeterThread: Thread started: GET /stats arrivals 3-89
+2026-10-09 09:13:28,398 INFO o.a.j.t.JMeterThread: Thread is done: GET /stats arrivals 3-89
+2026-10-09 09:13:28,398 INFO o.a.j.t.JMeterThread: Thread finished: GET /stats arrivals 3-89
+2026-10-09 09:13:29,601 INFO o.a.j.t.JMeterThread: Thread started: GET /stats arrivals 3-90
+2026-10-09 09:13:29,610 INFO o.a.j.t.JMeterThread: Thread is done: GET /stats arrivals 3-90
+2026-10-09 09:13:29,610 INFO o.a.j.t.JMeterThread: Thread finished: GET /stats arrivals 3-90
+2026-10-09 09:13:32,902 INFO o.a.j.t.JMeterThread: Thread started: GET /stats arrivals 3-91
+2026-10-09 09:13:32,920 INFO o.a.j.r.Summariser: summary +      9 in 00:00:33 =    0.3/s Avg:    17 Min:     9 Max:    32 Err:     0 (0.00%) Active: 1 Started: 155 Finished: 154
+2026-10-09 09:13:32,920 INFO o.a.j.r.Summariser: summary =    155 in 00:12:26 =    0.2/s Avg:   845 Min:     8 Max:  9497 Err:     0 (0.00%)
+2026-10-09 09:13:32,921 INFO o.a.j.t.JMeterThread: Thread is done: GET /stats arrivals 3-91
+2026-10-09 09:13:32,921 INFO o.a.j.t.JMeterThread: Thread finished: GET /stats arrivals 3-91
+2026-10-09 09:13:34,266 INFO o.a.j.t.JMeterThread: Thread started: GET /stats arrivals 3-92
+2026-10-09 09:13:34,297 INFO o.a.j.t.JMeterThread: Thread is done: GET /stats arrivals 3-92
+2026-10-09 09:13:34,297 INFO o.a.j.t.JMeterThread: Thread finished: GET /stats arrivals 3-92
+2026-10-09 09:13:36,894 INFO o.a.j.t.JMeterThread: Thread started: GET /stats arrivals 3-93
+2026-10-09 09:13:36,913 INFO o.a.j.t.JMeterThread: Thread is done: GET /stats arrivals 3-93
+2026-10-09 09:13:36,913 INFO o.a.j.t.JMeterThread: Thread finished: GET /stats arrivals 3-93
+2026-10-09 09:13:38,891 INFO o.a.j.t.JMeterThread: Thread started: GET /stats arrivals 3-94
+2026-10-09 09:13:38,910 INFO o.a.j.t.JMeterThread: Thread is done: GET /stats arrivals 3-94
+2026-10-09 09:13:38,910 INFO o.a.j.t.JMeterThread: Thread finished: GET /stats arrivals 3-94
+2026-10-09 09:13:40,674 INFO o.a.j.t.JMeterThread: Thread started: GET /stats arrivals 3-95
+2026-10-09 09:13:40,694 INFO o.a.j.t.JMeterThread: Thread is done: GET /stats arrivals 3-95
+2026-10-09 09:13:40,694 INFO o.a.j.t.JMeterThread: Thread finished: GET /stats arrivals 3-95
+2026-10-09 09:13:49,727 INFO o.a.j.t.JMeterThread: Thread started: GET /stats arrivals 3-96
+2026-10-09 09:13:49,769 INFO o.a.j.t.JMeterThread: Thread is done: GET /stats arrivals 3-96
+2026-10-09 09:13:49,769 INFO o.a.j.t.JMeterThread: Thread finished: GET /stats arrivals 3-96
+2026-10-09 09:13:52,817 INFO o.a.j.t.JMeterThread: Thread started: GET /stats arrivals 3-97
+2026-10-09 09:13:52,889 INFO o.a.j.t.JMeterThread: Thread is done: GET /stats arrivals 3-97
+2026-10-09 09:13:52,889 INFO o.a.j.t.JMeterThread: Thread finished: GET /stats arrivals 3-97
+2026-10-09 09:13:55,170 INFO o.a.j.t.JMeterThread: Thread started: GET /stats arrivals 3-98
+2026-10-09 09:13:55,185 INFO o.a.j.t.JMeterThread: Thread is done: GET /stats arrivals 3-98
+2026-10-09 09:13:55,185 INFO o.a.j.t.JMeterThread: Thread finished: GET /stats arrivals 3-98
+2026-10-09 09:14:11,355 INFO o.a.j.t.JMeterThread: Thread started: GET /search arrivals 2-51
+2026-10-09 09:14:11,367 INFO o.a.j.t.JMeterThread: Thread is done: GET /search arrivals 2-51
+2026-10-09 09:14:11,367 INFO o.a.j.t.JMeterThread: Thread finished: GET /search arrivals 2-51
+2026-10-09 09:14:13,169 INFO o.a.j.t.JMeterThread: Thread started: GET /stats arrivals 3-99
+2026-10-09 09:14:13,193 INFO o.a.j.t.JMeterThread: Thread is done: GET /stats arrivals 3-99
+2026-10-09 09:14:13,193 INFO o.a.j.t.JMeterThread: Thread finished: GET /stats arrivals 3-99
+2026-10-09 09:14:17,263 INFO o.a.j.t.JMeterThread: Thread started: GET /search arrivals 2-52
+2026-10-09 09:14:17,313 INFO o.a.j.t.JMeterThread: Thread is done: GET /search arrivals 2-52
+2026-10-09 09:14:17,313 INFO o.a.j.t.JMeterThread: Thread finished: GET /search arrivals 2-52
+2026-10-09 09:14:20,513 INFO o.a.j.t.JMeterThread: Thread started: GET /search arrivals 2-53
+2026-10-09 09:14:20,531 INFO o.a.j.t.JMeterThread: Thread is done: GET /search arrivals 2-53
+2026-10-09 09:14:20,531 INFO o.a.j.t.JMeterThread: Thread finished: GET /search arrivals 2-53
+2026-10-09 09:14:27,676 INFO o.a.j.t.JMeterThread: Thread started: GET /stats arrivals 3-100
+2026-10-09 09:14:27,697 INFO o.a.j.t.JMeterThread: Thread is done: GET /stats arrivals 3-100
+2026-10-09 09:14:27,697 INFO o.a.j.t.JMeterThread: Thread finished: GET /stats arrivals 3-100
+2026-10-09 09:14:28,224 INFO o.a.j.t.JMeterThread: Thread started: GET /stats arrivals 3-101
+2026-10-09 09:14:28,234 INFO o.a.j.t.JMeterThread: Thread is done: GET /stats arrivals 3-101
+2026-10-09 09:14:28,234 INFO o.a.j.t.JMeterThread: Thread finished: GET /stats arrivals 3-101
+2026-10-09 09:14:35,178 INFO o.a.j.t.JMeterThread: Thread started: GET /search arrivals 2-54
+2026-10-09 09:14:35,198 INFO o.a.j.r.Summariser: summary +     14 in 00:01:02 =    0.2/s Avg:    25 Min:     9 Max:    70 Err:     0 (0.00%) Active: 1 Started: 169 Finished: 168
+2026-10-09 09:14:35,199 INFO o.a.j.r.Summariser: summary =    169 in 00:13:28 =    0.2/s Avg:   778 Min:     8 Max:  9497 Err:     0 (0.00%)
+2026-10-09 09:14:35,199 INFO o.a.j.t.JMeterThread: Thread is done: GET /search arrivals 2-54
+2026-10-09 09:14:35,199 INFO o.a.j.t.JMeterThread: Thread finished: GET /search arrivals 2-54
+2026-10-09 09:14:45,778 INFO o.a.j.t.JMeterThread: Thread started: GET /stats arrivals 3-102
+2026-10-09 09:14:45,800 INFO o.a.j.t.JMeterThread: Thread is done: GET /stats arrivals 3-102
+2026-10-09 09:14:45,800 INFO o.a.j.t.JMeterThread: Thread finished: GET /stats arrivals 3-102
+2026-10-09 09:14:57,387 INFO o.a.j.t.JMeterThread: Thread started: GET /search arrivals 2-55
+2026-10-09 09:14:57,400 INFO o.a.j.t.JMeterThread: Thread is done: GET /search arrivals 2-55
+2026-10-09 09:14:57,400 INFO o.a.j.t.JMeterThread: Thread finished: GET /search arrivals 2-55
+2026-10-09 09:15:01,306 INFO o.a.j.t.JMeterThread: Thread started: GET /search arrivals 2-56
+2026-10-09 09:15:01,331 INFO o.a.j.r.Summariser: summary +      3 in 00:00:26 =    0.1/s Avg:    19 Min:    13 Max:    24 Err:     0 (0.00%) Active: 1 Started: 172 Finished: 171
+2026-10-09 09:15:01,331 INFO o.a.j.r.Summariser: summary =    172 in 00:13:54 =    0.2/s Avg:   764 Min:     8 Max:  9497 Err:     0 (0.00%)
+2026-10-09 09:15:01,331 INFO o.a.j.t.JMeterThread: Thread is done: GET /search arrivals 2-56
+2026-10-09 09:15:01,331 INFO o.a.j.t.JMeterThread: Thread finished: GET /search arrivals 2-56
+2026-10-09 09:15:03,277 INFO o.a.j.t.JMeterThread: Thread started: GET /stats arrivals 3-103
+2026-10-09 09:15:03,301 INFO o.a.j.t.JMeterThread: Thread is done: GET /stats arrivals 3-103
+2026-10-09 09:15:03,301 INFO o.a.j.t.JMeterThread: Thread finished: GET /stats arrivals 3-103
+2026-10-09 09:15:04,963 INFO o.a.j.t.JMeterThread: Thread started: GET /stats arrivals 3-104
+2026-10-09 09:15:04,983 INFO o.a.j.t.JMeterThread: Thread is done: GET /stats arrivals 3-104
+2026-10-09 09:15:04,983 INFO o.a.j.t.JMeterThread: Thread finished: GET /stats arrivals 3-104
+2026-10-09 09:15:12,548 INFO o.a.j.t.JMeterThread: Thread started: GET /stats arrivals 3-105
+2026-10-09 09:15:12,622 INFO o.a.j.t.JMeterThread: Thread is done: GET /stats arrivals 3-105
+2026-10-09 09:15:12,622 INFO o.a.j.t.JMeterThread: Thread finished: GET /stats arrivals 3-105
+2026-10-09 09:15:14,523 INFO o.a.j.t.JMeterThread: Thread started: GET /stats arrivals 3-106
+2026-10-09 09:15:14,537 INFO o.a.j.t.JMeterThread: Thread is done: GET /stats arrivals 3-106
+2026-10-09 09:15:14,537 INFO o.a.j.t.JMeterThread: Thread finished: GET /stats arrivals 3-106
+2026-10-09 09:15:27,447 INFO o.a.j.t.JMeterThread: Thread started: GET /search arrivals 2-57
+2026-10-09 09:15:27,481 INFO o.a.j.t.JMeterThread: Thread is done: GET /search arrivals 2-57
+2026-10-09 09:15:27,481 INFO o.a.j.t.JMeterThread: Thread finished: GET /search arrivals 2-57
+2026-10-09 09:15:37,337 INFO o.a.j.t.JMeterThread: Thread started: GET /stats arrivals 3-107
+2026-10-09 09:15:37,359 INFO o.a.j.t.JMeterThread: Thread is done: GET /stats arrivals 3-107
+2026-10-09 09:15:37,359 INFO o.a.j.t.JMeterThread: Thread finished: GET /stats arrivals 3-107
+2026-10-09 09:15:39,919 INFO o.a.j.t.JMeterThread: Thread started: GET /search arrivals 2-58
+2026-10-09 09:15:39,931 INFO o.a.j.t.JMeterThread: Thread is done: GET /search arrivals 2-58
+2026-10-09 09:15:39,931 INFO o.a.j.t.JMeterThread: Thread finished: GET /search arrivals 2-58
+2026-10-09 09:15:41,152 INFO o.a.j.t.JMeterThread: Thread started: GET /stats arrivals 3-108
+2026-10-09 09:15:41,163 INFO o.a.j.t.JMeterThread: Thread is done: GET /stats arrivals 3-108
+2026-10-09 09:15:41,163 INFO o.a.j.t.JMeterThread: Thread finished: GET /stats arrivals 3-108
+2026-10-09 09:15:45,041 INFO o.a.j.t.JMeterThread: Thread started: GET /search arrivals 2-59
+2026-10-09 09:15:45,116 INFO o.a.j.t.JMeterThread: Thread is done: GET /search arrivals 2-59
+2026-10-09 09:15:45,116 INFO o.a.j.t.JMeterThread: Thread finished: GET /search arrivals 2-59
+2026-10-09 09:15:46,054 INFO o.a.j.t.JMeterThread: Thread started: POST /tickets arrivals 1-15
+2026-10-09 09:15:49,283 INFO o.a.j.t.JMeterThread: Thread started: GET /stats arrivals 3-109
+2026-10-09 09:15:49,352 INFO o.a.j.t.JMeterThread: Thread started: GET /search arrivals 2-60
+2026-10-09 09:15:52,002 INFO o.a.j.t.JMeterThread: Thread is done: POST /tickets arrivals 1-15
+2026-10-09 09:15:52,002 INFO o.a.j.t.JMeterThread: Thread finished: POST /tickets arrivals 1-15
+2026-10-09 09:15:52,014 INFO o.a.j.t.JMeterThread: Thread is done: GET /stats arrivals 3-109
+2026-10-09 09:15:52,014 INFO o.a.j.t.JMeterThread: Thread finished: GET /stats arrivals 3-109
+2026-10-09 09:15:52,026 INFO o.a.j.t.JMeterThread: Thread is done: GET /search arrivals 2-60
+2026-10-09 09:15:52,026 INFO o.a.j.t.JMeterThread: Thread finished: GET /search arrivals 2-60
+2026-10-09 09:15:57,518 INFO o.a.j.t.JMeterThread: Thread started: POST /tickets arrivals 1-16
+2026-10-09 09:15:59,771 INFO o.a.j.t.JMeterThread: Thread started: GET /stats arrivals 3-110
+2026-10-09 09:16:02,199 INFO o.a.j.r.Summariser: summary +     13 in 00:01:01 =    0.2/s Avg:  1254 Min:    10 Max:  5946 Err:     0 (0.00%) Active: 2 Started: 186 Finished: 184
+2026-10-09 09:16:02,199 INFO o.a.j.r.Summariser: summary =    185 in 00:14:55 =    0.2/s Avg:   799 Min:     8 Max:  9497 Err:     0 (0.00%)
+2026-10-09 09:16:02,199 INFO o.a.j.t.JMeterThread: Thread is done: POST /tickets arrivals 1-16
+2026-10-09 09:16:02,199 INFO o.a.j.t.JMeterThread: Thread finished: POST /tickets arrivals 1-16
+2026-10-09 09:16:02,211 INFO o.a.j.t.JMeterThread: Thread is done: GET /stats arrivals 3-110
+2026-10-09 09:16:02,211 INFO o.a.j.t.JMeterThread: Thread finished: GET /stats arrivals 3-110
+2026-10-09 09:16:02,285 INFO o.a.j.t.JMeterThread: Thread started: GET /stats arrivals 3-111
+2026-10-09 09:16:02,305 INFO o.a.j.t.JMeterThread: Thread is done: GET /stats arrivals 3-111
+2026-10-09 09:16:02,305 INFO o.a.j.t.JMeterThread: Thread finished: GET /stats arrivals 3-111
+2026-10-09 09:16:09,255 INFO o.a.j.t.JMeterThread: Thread started: GET /stats arrivals 3-112
+2026-10-09 09:16:09,275 INFO o.a.j.t.JMeterThread: Thread is done: GET /stats arrivals 3-112
+2026-10-09 09:16:09,275 INFO o.a.j.t.JMeterThread: Thread finished: GET /stats arrivals 3-112
+2026-10-09 09:16:12,263 INFO o.a.j.t.JMeterThread: Thread started: GET /stats arrivals 3-113
+2026-10-09 09:16:12,339 INFO o.a.j.t.JMeterThread: Thread is done: GET /stats arrivals 3-113
+2026-10-09 09:16:12,339 INFO o.a.j.t.JMeterThread: Thread finished: GET /stats arrivals 3-113
+2026-10-09 09:16:19,069 INFO o.a.j.t.JMeterThread: Thread started: GET /search arrivals 2-61
+2026-10-09 09:16:19,093 INFO o.a.j.t.JMeterThread: Thread is done: GET /search arrivals 2-61
+2026-10-09 09:16:19,093 INFO o.a.j.t.JMeterThread: Thread finished: GET /search arrivals 2-61
+2026-10-09 09:16:19,479 INFO o.a.j.t.JMeterThread: Thread started: GET /stats arrivals 3-114
+2026-10-09 09:16:19,491 INFO o.a.j.t.JMeterThread: Thread is done: GET /stats arrivals 3-114
+2026-10-09 09:16:19,491 INFO o.a.j.t.JMeterThread: Thread finished: GET /stats arrivals 3-114
+2026-10-09 09:16:19,914 INFO o.a.j.t.JMeterThread: Thread started: GET /stats arrivals 3-115
+2026-10-09 09:16:19,937 INFO o.a.j.t.JMeterThread: Thread is done: GET /stats arrivals 3-115
+2026-10-09 09:16:19,937 INFO o.a.j.t.JMeterThread: Thread finished: GET /stats arrivals 3-115
+2026-10-09 09:16:24,196 INFO o.a.j.t.JMeterThread: Thread started: GET /search arrivals 2-62
+2026-10-09 09:16:24,221 INFO o.a.j.t.JMeterThread: Thread is done: GET /search arrivals 2-62
+2026-10-09 09:16:24,221 INFO o.a.j.t.JMeterThread: Thread finished: GET /search arrivals 2-62
+2026-10-09 09:16:27,787 INFO o.a.j.t.JMeterThread: Thread started: GET /stats arrivals 3-116
+2026-10-09 09:16:27,807 INFO o.a.j.t.JMeterThread: Thread is done: GET /stats arrivals 3-116
+2026-10-09 09:16:27,807 INFO o.a.j.t.JMeterThread: Thread finished: GET /stats arrivals 3-116
+2026-10-09 09:16:29,556 INFO o.a.j.t.JMeterThread: Thread started: GET /stats arrivals 3-117
+2026-10-09 09:16:29,574 INFO o.a.j.t.JMeterThread: Thread is done: GET /stats arrivals 3-117
+2026-10-09 09:16:29,574 INFO o.a.j.t.JMeterThread: Thread finished: GET /stats arrivals 3-117
+2026-10-09 09:16:32,170 INFO o.a.j.t.JMeterThread: Thread started: GET /stats arrivals 3-118
+2026-10-09 09:16:32,245 INFO o.a.j.r.Summariser: summary +     11 in 00:00:30 =    0.4/s Avg:   249 Min:    11 Max:  2441 Err:     0 (0.00%) Active: 1 Started: 196 Finished: 195
+2026-10-09 09:16:32,245 INFO o.a.j.r.Summariser: summary =    196 in 00:15:25 =    0.2/s Avg:   768 Min:     8 Max:  9497 Err:     0 (0.00%)
+2026-10-09 09:16:32,246 INFO o.a.j.t.JMeterThread: Thread is done: GET /stats arrivals 3-118
+2026-10-09 09:16:32,246 INFO o.a.j.t.JMeterThread: Thread finished: GET /stats arrivals 3-118
+2026-10-09 09:16:32,724 INFO o.a.j.t.JMeterThread: Thread started: GET /stats arrivals 3-119
+2026-10-09 09:16:32,746 INFO o.a.j.t.JMeterThread: Thread is done: GET /stats arrivals 3-119
+2026-10-09 09:16:32,746 INFO o.a.j.t.JMeterThread: Thread finished: GET /stats arrivals 3-119
+2026-10-09 09:16:34,091 INFO o.a.j.t.JMeterThread: Thread started: GET /stats arrivals 3-120
+2026-10-09 09:16:34,109 INFO o.a.j.t.JMeterThread: Thread is done: GET /stats arrivals 3-120
+2026-10-09 09:16:34,109 INFO o.a.j.t.JMeterThread: Thread finished: GET /stats arrivals 3-120
+2026-10-09 09:16:38,717 INFO o.a.j.t.JMeterThread: Thread started: GET /stats arrivals 3-121
+2026-10-09 09:16:38,728 INFO o.a.j.t.JMeterThread: Thread is done: GET /stats arrivals 3-121
+2026-10-09 09:16:38,728 INFO o.a.j.t.JMeterThread: Thread finished: GET /stats arrivals 3-121
+2026-10-09 09:16:54,357 INFO o.a.j.t.JMeterThread: Thread started: GET /search arrivals 2-63
+2026-10-09 09:16:54,380 INFO o.a.j.t.JMeterThread: Thread is done: GET /search arrivals 2-63
+2026-10-09 09:16:54,380 INFO o.a.j.t.JMeterThread: Thread finished: GET /search arrivals 2-63
+2026-10-09 09:16:54,878 INFO o.a.j.t.JMeterThread: Thread started: POST /tickets arrivals 1-17
+2026-10-09 09:16:57,482 INFO o.a.j.t.JMeterThread: Thread is done: POST /tickets arrivals 1-17
+2026-10-09 09:16:57,482 INFO o.a.j.t.JMeterThread: Thread finished: POST /tickets arrivals 1-17
+2026-10-09 09:17:00,693 INFO o.a.j.t.JMeterThread: Thread started: GET /stats arrivals 3-122
+2026-10-09 09:17:00,715 INFO o.a.j.r.Summariser: summary +      6 in 00:00:28 =    0.2/s Avg:   449 Min:    11 Max:  2603 Err:     0 (0.00%) Active: 1 Started: 202 Finished: 201
+2026-10-09 09:17:00,715 INFO o.a.j.r.Summariser: summary =    202 in 00:15:54 =    0.2/s Avg:   758 Min:     8 Max:  9497 Err:     0 (0.00%)
+2026-10-09 09:17:00,715 INFO o.a.j.t.JMeterThread: Thread is done: GET /stats arrivals 3-122
+2026-10-09 09:17:00,715 INFO o.a.j.t.JMeterThread: Thread finished: GET /stats arrivals 3-122
+2026-10-09 09:17:18,084 INFO o.a.j.t.JMeterThread: Thread started: GET /stats arrivals 3-123
+2026-10-09 09:17:18,131 INFO o.a.j.t.JMeterThread: Thread is done: GET /stats arrivals 3-123
+2026-10-09 09:17:18,131 INFO o.a.j.t.JMeterThread: Thread finished: GET /stats arrivals 3-123
+2026-10-09 09:17:19,224 INFO o.a.j.t.JMeterThread: Thread started: POST /tickets arrivals 1-18
+2026-10-09 09:17:25,309 INFO o.a.j.t.JMeterThread: Thread is done: POST /tickets arrivals 1-18
+2026-10-09 09:17:25,309 INFO o.a.j.t.JMeterThread: Thread finished: POST /tickets arrivals 1-18
+2026-10-09 09:17:27,352 INFO o.a.j.t.JMeterThread: Thread started: GET /stats arrivals 3-124
+2026-10-09 09:17:27,401 INFO o.a.j.t.JMeterThread: Thread is done: GET /stats arrivals 3-124
+2026-10-09 09:17:27,401 INFO o.a.j.t.JMeterThread: Thread finished: GET /stats arrivals 3-124
+2026-10-09 09:17:49,498 INFO o.a.j.t.JMeterThread: Thread started: POST /tickets arrivals 1-19
+2026-10-09 09:17:49,727 INFO o.a.j.t.JMeterThread: Thread started: GET /stats arrivals 3-125
+2026-10-09 09:17:52,938 INFO o.a.j.t.JMeterThread: Thread started: GET /search arrivals 2-64
+2026-10-09 09:17:53,215 INFO o.a.j.t.JMeterThread: Thread started: GET /stats arrivals 3-126
+2026-10-09 09:17:53,496 INFO o.a.j.t.JMeterThread: Thread is done: POST /tickets arrivals 1-19
+2026-10-09 09:17:53,496 INFO o.a.j.t.JMeterThread: Thread finished: POST /tickets arrivals 1-19
+2026-10-09 09:17:53,510 INFO o.a.j.t.JMeterThread: Thread is done: GET /stats arrivals 3-125
+2026-10-09 09:17:53,510 INFO o.a.j.t.JMeterThread: Thread finished: GET /stats arrivals 3-125
+2026-10-09 09:17:53,523 INFO o.a.j.t.JMeterThread: Thread is done: GET /search arrivals 2-64
+2026-10-09 09:17:53,523 INFO o.a.j.t.JMeterThread: Thread finished: GET /search arrivals 2-64
+2026-10-09 09:17:53,536 INFO o.a.j.t.JMeterThread: Thread is done: GET /stats arrivals 3-126
+2026-10-09 09:17:53,536 INFO o.a.j.t.JMeterThread: Thread finished: GET /stats arrivals 3-126
+2026-10-09 09:17:58,588 INFO o.a.j.t.JMeterThread: Thread started: GET /stats arrivals 3-127
+2026-10-09 09:17:58,607 INFO o.a.j.t.JMeterThread: Thread is done: GET /stats arrivals 3-127
+2026-10-09 09:17:58,607 INFO o.a.j.t.JMeterThread: Thread finished: GET /stats arrivals 3-127
+2026-10-09 09:17:59,255 INFO o.a.j.t.JMeterThread: Thread started: GET /stats arrivals 3-128
+2026-10-09 09:17:59,269 INFO o.a.j.t.JMeterThread: Thread is done: GET /stats arrivals 3-128
+2026-10-09 09:17:59,269 INFO o.a.j.t.JMeterThread: Thread finished: GET /stats arrivals 3-128
+2026-10-09 09:18:01,355 INFO o.a.j.t.JMeterThread: Thread started: GET /stats arrivals 3-129
+2026-10-09 09:18:01,378 INFO o.a.j.r.Summariser: summary +     10 in 00:01:01 =    0.2/s Avg:  1491 Min:    13 Max:  6084 Err:     0 (0.00%) Active: 1 Started: 212 Finished: 211
+2026-10-09 09:18:01,378 INFO o.a.j.r.Summariser: summary =    212 in 00:16:54 =    0.2/s Avg:   793 Min:     8 Max:  9497 Err:     0 (0.00%)
+2026-10-09 09:18:01,378 INFO o.a.j.t.JMeterThread: Thread is done: GET /stats arrivals 3-129
+2026-10-09 09:18:01,378 INFO o.a.j.t.JMeterThread: Thread finished: GET /stats arrivals 3-129
+2026-10-09 09:18:03,185 INFO o.a.j.t.JMeterThread: Thread started: GET /stats arrivals 3-130
+2026-10-09 09:18:03,215 INFO o.a.j.t.JMeterThread: Thread is done: GET /stats arrivals 3-130
+2026-10-09 09:18:03,215 INFO o.a.j.t.JMeterThread: Thread finished: GET /stats arrivals 3-130
+2026-10-09 09:18:12,865 INFO o.a.j.t.JMeterThread: Thread started: GET /stats arrivals 3-131
+2026-10-09 09:18:12,948 INFO o.a.j.t.JMeterThread: Thread is done: GET /stats arrivals 3-131
+2026-10-09 09:18:12,948 INFO o.a.j.t.JMeterThread: Thread finished: GET /stats arrivals 3-131
+2026-10-09 09:18:13,262 INFO o.a.j.t.JMeterThread: Thread started: POST /tickets arrivals 1-20
+2026-10-09 09:18:17,792 INFO o.a.j.t.JMeterThread: Thread is done: POST /tickets arrivals 1-20
+2026-10-09 09:18:17,792 INFO o.a.j.t.JMeterThread: Thread finished: POST /tickets arrivals 1-20
+2026-10-09 09:18:23,661 INFO o.a.j.t.JMeterThread: Thread started: GET /search arrivals 2-65
+2026-10-09 09:18:23,680 INFO o.a.j.t.JMeterThread: Thread is done: GET /search arrivals 2-65
+2026-10-09 09:18:23,680 INFO o.a.j.t.JMeterThread: Thread finished: GET /search arrivals 2-65
+2026-10-09 09:18:26,129 INFO o.a.j.t.JMeterThread: Thread started: GET /stats arrivals 3-132
+2026-10-09 09:18:26,149 INFO o.a.j.t.JMeterThread: Thread is done: GET /stats arrivals 3-132
+2026-10-09 09:18:26,149 INFO o.a.j.t.JMeterThread: Thread finished: GET /stats arrivals 3-132
+2026-10-09 09:18:36,804 INFO o.a.j.t.JMeterThread: Thread started: GET /search arrivals 2-66
+2026-10-09 09:18:36,817 INFO o.a.j.t.JMeterThread: Thread is done: GET /search arrivals 2-66
+2026-10-09 09:18:36,817 INFO o.a.j.t.JMeterThread: Thread finished: GET /search arrivals 2-66
+2026-10-09 09:18:39,486 INFO o.a.j.t.JMeterThread: Thread started: GET /stats arrivals 3-133
+2026-10-09 09:18:39,505 INFO o.a.j.t.JMeterThread: Thread is done: GET /stats arrivals 3-133
+2026-10-09 09:18:39,505 INFO o.a.j.t.JMeterThread: Thread finished: GET /stats arrivals 3-133
+2026-10-09 09:18:40,262 INFO o.a.j.t.JMeterThread: Thread started: GET /stats arrivals 3-134
+2026-10-09 09:18:40,274 INFO o.a.j.t.JMeterThread: Thread is done: GET /stats arrivals 3-134
+2026-10-09 09:18:40,274 INFO o.a.j.t.JMeterThread: Thread finished: GET /stats arrivals 3-134
+2026-10-09 09:18:43,318 INFO o.a.j.t.JMeterThread: Thread started: GET /search arrivals 2-67
+2026-10-09 09:18:43,358 INFO o.a.j.t.JMeterThread: Thread is done: GET /search arrivals 2-67
+2026-10-09 09:18:43,358 INFO o.a.j.t.JMeterThread: Thread finished: GET /search arrivals 2-67
+2026-10-09 09:18:56,073 INFO o.a.j.t.JMeterThread: Thread started: POST /tickets arrivals 1-21
+2026-10-09 09:18:57,989 INFO o.a.j.t.JMeterThread: Thread started: GET /search arrivals 2-68
+2026-10-09 09:18:58,783 INFO o.a.j.t.JMeterThread: Thread is done: POST /tickets arrivals 1-21
+2026-10-09 09:18:58,783 INFO o.a.j.t.JMeterThread: Thread finished: POST /tickets arrivals 1-21
+2026-10-09 09:18:58,793 INFO o.a.j.t.JMeterThread: Thread is done: GET /search arrivals 2-68
+2026-10-09 09:18:58,793 INFO o.a.j.t.JMeterThread: Thread finished: GET /search arrivals 2-68
+2026-10-09 09:18:59,937 INFO o.a.j.t.JMeterThread: Thread started: GET /stats arrivals 3-135
+2026-10-09 09:18:59,959 INFO o.a.j.t.JMeterThread: Thread is done: GET /stats arrivals 3-135
+2026-10-09 09:18:59,959 INFO o.a.j.t.JMeterThread: Thread finished: GET /stats arrivals 3-135
+2026-10-09 09:19:03,654 INFO o.a.j.t.JMeterThread: Thread started: GET /search arrivals 2-69
+2026-10-09 09:19:03,677 INFO o.a.j.r.Summariser: summary +     13 in 00:01:02 =    0.2/s Avg:   639 Min:    11 Max:  4529 Err:     0 (0.00%) Active: 1 Started: 225 Finished: 224
+2026-10-09 09:19:03,677 INFO o.a.j.r.Summariser: summary =    225 in 00:17:57 =    0.2/s Avg:   784 Min:     8 Max:  9497 Err:     0 (0.00%)
+2026-10-09 09:19:03,677 INFO o.a.j.t.JMeterThread: Thread is done: GET /search arrivals 2-69
+2026-10-09 09:19:03,677 INFO o.a.j.t.JMeterThread: Thread finished: GET /search arrivals 2-69
+2026-10-09 09:19:10,538 INFO o.a.j.t.JMeterThread: Thread started: GET /stats arrivals 3-136
+2026-10-09 09:19:10,572 INFO o.a.j.t.JMeterThread: Thread is done: GET /stats arrivals 3-136
+2026-10-09 09:19:10,572 INFO o.a.j.t.JMeterThread: Thread finished: GET /stats arrivals 3-136
+2026-10-09 09:19:13,752 INFO o.a.j.t.JMeterThread: Thread started: GET /stats arrivals 3-137
+2026-10-09 09:19:13,773 INFO o.a.j.t.JMeterThread: Thread is done: GET /stats arrivals 3-137
+2026-10-09 09:19:13,773 INFO o.a.j.t.JMeterThread: Thread finished: GET /stats arrivals 3-137
+2026-10-09 09:19:25,893 INFO o.a.j.t.JMeterThread: Thread started: GET /stats arrivals 3-138
+2026-10-09 09:19:25,915 INFO o.a.j.t.JMeterThread: Thread is done: GET /stats arrivals 3-138
+2026-10-09 09:19:25,915 INFO o.a.j.t.JMeterThread: Thread finished: GET /stats arrivals 3-138
+2026-10-09 09:19:38,749 INFO o.a.j.t.JMeterThread: Thread started: GET /stats arrivals 3-139
+2026-10-09 09:19:38,764 INFO o.a.j.t.JMeterThread: Thread is done: GET /stats arrivals 3-139
+2026-10-09 09:19:38,764 INFO o.a.j.t.JMeterThread: Thread finished: GET /stats arrivals 3-139
+2026-10-09 09:19:40,500 INFO o.a.j.t.JMeterThread: Thread started: GET /stats arrivals 3-140
+2026-10-09 09:19:40,524 INFO o.a.j.t.JMeterThread: Thread is done: GET /stats arrivals 3-140
+2026-10-09 09:19:40,524 INFO o.a.j.t.JMeterThread: Thread finished: GET /stats arrivals 3-140
+2026-10-09 09:19:44,970 INFO o.a.j.t.JMeterThread: Thread started: GET /stats arrivals 3-141
+2026-10-09 09:19:44,988 INFO o.a.j.t.JMeterThread: Thread is done: GET /stats arrivals 3-141
+2026-10-09 09:19:44,988 INFO o.a.j.t.JMeterThread: Thread finished: GET /stats arrivals 3-141
+2026-10-09 09:19:52,777 INFO o.a.j.t.JMeterThread: Thread started: GET /stats arrivals 3-142
+2026-10-09 09:19:52,797 INFO o.a.j.t.JMeterThread: Thread is done: GET /stats arrivals 3-142
+2026-10-09 09:19:52,797 INFO o.a.j.t.JMeterThread: Thread finished: GET /stats arrivals 3-142
+2026-10-09 09:19:56,003 INFO o.a.j.t.JMeterThread: Thread started: POST /tickets arrivals 1-22
+2026-10-09 09:19:58,275 INFO o.a.j.t.JMeterThread: Thread started: GET /stats arrivals 3-143
+2026-10-09 09:20:04,695 INFO o.a.j.r.Summariser: summary +      8 in 00:01:01 =    0.1/s Avg:  1105 Min:    16 Max:  8693 Err:     0 (0.00%) Active: 2 Started: 234 Finished: 232
+2026-10-09 09:20:04,696 INFO o.a.j.r.Summariser: summary =    233 in 00:18:58 =    0.2/s Avg:   795 Min:     8 Max:  9497 Err:     0 (0.00%)
+2026-10-09 09:20:04,696 INFO o.a.j.t.JMeterThread: Thread is done: POST /tickets arrivals 1-22
+2026-10-09 09:20:04,696 INFO o.a.j.t.JMeterThread: Thread finished: POST /tickets arrivals 1-22
+2026-10-09 09:20:04,710 INFO o.a.j.t.JMeterThread: Thread is done: GET /stats arrivals 3-143
+2026-10-09 09:20:04,710 INFO o.a.j.t.JMeterThread: Thread finished: GET /stats arrivals 3-143
+2026-10-09 09:20:09,302 INFO o.a.j.t.JMeterThread: Thread started: GET /stats arrivals 3-144
+2026-10-09 09:20:09,367 INFO o.a.j.t.JMeterThread: Thread is done: GET /stats arrivals 3-144
+2026-10-09 09:20:09,367 INFO o.a.j.t.JMeterThread: Thread finished: GET /stats arrivals 3-144
+2026-10-09 09:20:14,838 INFO o.a.j.t.JMeterThread: Thread started: POST /tickets arrivals 1-23
+2026-10-09 09:20:18,013 INFO o.a.j.t.JMeterThread: Thread is done: POST /tickets arrivals 1-23
+2026-10-09 09:20:18,013 INFO o.a.j.t.JMeterThread: Thread finished: POST /tickets arrivals 1-23
+2026-10-09 09:20:21,844 INFO o.a.j.t.JMeterThread: Thread started: GET /stats arrivals 3-145
+2026-10-09 09:20:21,870 INFO o.a.j.t.JMeterThread: Thread is done: GET /stats arrivals 3-145
+2026-10-09 09:20:21,870 INFO o.a.j.t.JMeterThread: Thread finished: GET /stats arrivals 3-145
+2026-10-09 09:20:22,464 INFO o.a.j.t.JMeterThread: Thread started: GET /stats arrivals 3-146
+2026-10-09 09:20:22,488 INFO o.a.j.t.JMeterThread: Thread is done: GET /stats arrivals 3-146
+2026-10-09 09:20:22,489 INFO o.a.j.t.JMeterThread: Thread finished: GET /stats arrivals 3-146
+2026-10-09 09:20:33,581 INFO o.a.j.t.JMeterThread: Thread started: GET /search arrivals 2-70
+2026-10-09 09:20:33,667 INFO o.a.j.r.Summariser: summary +      6 in 00:00:29 =    0.2/s Avg:  1634 Min:    24 Max:  6434 Err:     0 (0.00%) Active: 1 Started: 239 Finished: 238
+2026-10-09 09:20:33,668 INFO o.a.j.r.Summariser: summary =    239 in 00:19:27 =    0.2/s Avg:   816 Min:     8 Max:  9497 Err:     0 (0.00%)
+2026-10-09 09:20:33,668 INFO o.a.j.t.JMeterThread: Thread is done: GET /search arrivals 2-70
+2026-10-09 09:20:33,668 INFO o.a.j.t.JMeterThread: Thread finished: GET /search arrivals 2-70
+2026-10-09 09:20:35,225 INFO o.a.j.t.JMeterThread: Thread started: GET /stats arrivals 3-147
+2026-10-09 09:20:35,236 INFO o.a.j.t.JMeterThread: Thread is done: GET /stats arrivals 3-147
+2026-10-09 09:20:35,237 INFO o.a.j.t.JMeterThread: Thread finished: GET /stats arrivals 3-147
+2026-10-09 09:20:49,034 INFO o.a.j.t.o.OpenModelThreadGroup: There will be no more events, so will wait for 18 sec till the end of the schedule
+2026-10-09 09:20:49,034 INFO o.a.j.t.JMeterThread: Thread started: POST /tickets arrivals 1-24
+2026-10-09 09:20:50,727 INFO o.a.j.t.JMeterThread: Thread started: GET /stats arrivals 3-148
+2026-10-09 09:20:54,705 INFO o.a.j.t.JMeterThread: Thread started: GET /stats arrivals 3-149
+2026-10-09 09:20:56,115 INFO o.a.j.t.JMeterThread: Thread is done: POST /tickets arrivals 1-24
+2026-10-09 09:20:56,115 INFO o.a.j.t.JMeterThread: Thread finished: POST /tickets arrivals 1-24
+2026-10-09 09:20:56,134 INFO o.a.j.t.JMeterThread: Thread is done: GET /stats arrivals 3-148
+2026-10-09 09:20:56,134 INFO o.a.j.t.JMeterThread: Thread finished: GET /stats arrivals 3-148
+2026-10-09 09:20:56,161 INFO o.a.j.t.JMeterThread: Thread is done: GET /stats arrivals 3-149
+2026-10-09 09:20:56,161 INFO o.a.j.t.JMeterThread: Thread finished: GET /stats arrivals 3-149
+2026-10-09 09:20:59,084 INFO o.a.j.t.JMeterThread: Thread started: GET /stats arrivals 3-150
+2026-10-09 09:20:59,111 INFO o.a.j.t.JMeterThread: Thread is done: GET /stats arrivals 3-150
+2026-10-09 09:20:59,111 INFO o.a.j.t.JMeterThread: Thread finished: GET /stats arrivals 3-150
+2026-10-09 09:21:01,559 INFO o.a.j.t.JMeterThread: Thread started: GET /stats arrivals 3-151
+2026-10-09 09:21:01,582 INFO o.a.j.r.Summariser: summary +      6 in 00:00:28 =    0.2/s Avg:  2333 Min:    11 Max:  7080 Err:     0 (0.00%) Active: 1 Started: 245 Finished: 244
+2026-10-09 09:21:01,582 INFO o.a.j.r.Summariser: summary =    245 in 00:19:54 =    0.2/s Avg:   853 Min:     8 Max:  9497 Err:     0 (0.00%)
+2026-10-09 09:21:01,582 INFO o.a.j.t.JMeterThread: Thread is done: GET /stats arrivals 3-151
+2026-10-09 09:21:01,582 INFO o.a.j.t.JMeterThread: Thread finished: GET /stats arrivals 3-151
+2026-10-09 09:21:02,647 INFO o.a.j.t.o.OpenModelThreadGroup: There will be no more events, so will wait for 4 sec till the end of the schedule
+2026-10-09 09:21:02,647 INFO o.a.j.t.JMeterThread: Thread started: GET /search arrivals 2-71
+2026-10-09 09:21:02,671 INFO o.a.j.t.JMeterThread: Thread is done: GET /search arrivals 2-71
+2026-10-09 09:21:02,671 INFO o.a.j.t.JMeterThread: Thread finished: GET /search arrivals 2-71
+2026-10-09 09:21:05,993 INFO o.a.j.t.o.OpenModelThreadGroup: There will be no more events, so will wait for 1 sec till the end of the schedule
+2026-10-09 09:21:05,993 INFO o.a.j.t.JMeterThread: Thread started: GET /stats arrivals 3-152
+2026-10-09 09:21:06,013 INFO o.a.j.t.JMeterThread: Thread is done: GET /stats arrivals 3-152
+2026-10-09 09:21:06,013 INFO o.a.j.t.JMeterThread: Thread finished: GET /stats arrivals 3-152
+2026-10-09 09:21:07,072 INFO o.a.j.t.o.OpenModelThreadGroup: There will be no more events, will shutdown the thread pool
+2026-10-09 09:21:07,072 INFO o.a.j.t.o.OpenModelThreadGroup: There will be no more events, will shutdown the thread pool
+2026-10-09 09:21:07,072 INFO o.a.j.t.o.OpenModelThreadGroup: There will be no more events, will shutdown the thread pool
+2026-10-09 09:21:07,072 INFO o.a.j.t.o.OpenModelThreadGroup: Thread starting done
+2026-10-09 09:21:07,072 INFO o.a.j.t.o.OpenModelThreadGroup: Thread starting done
+2026-10-09 09:21:07,072 INFO o.a.j.t.o.OpenModelThreadGroup: Thread starting done
+2026-10-09 09:21:07,072 INFO o.a.j.e.StandardJMeterEngine: Notifying test listeners of end of test
+2026-10-09 09:21:07,072 INFO o.a.j.s.FileServer: Close: team_rows_bodies.tsv
+2026-10-09 09:21:07,072 INFO o.a.j.s.FileServer: Close: search_terms.csv
+2026-10-09 09:21:07,073 INFO o.a.j.r.Summariser: summary +      2 in 00:00:05 =    0.4/s Avg:    22 Min:    21 Max:    23 Err:     0 (0.00%) Active: 0 Started: 247 Finished: 247
+2026-10-09 09:21:07,073 INFO o.a.j.r.Summariser: summary =    247 in 00:20:00 =    0.2/s Avg:   847 Min:     8 Max:  9497 Err:     0 (0.00%)
