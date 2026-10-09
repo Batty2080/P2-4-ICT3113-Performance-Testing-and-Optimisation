@@ -27,6 +27,28 @@ load tests when they have been run.
 |---|---|---|
 | Accuracy test, 3 models (`results/accuracy/acc-*`) | 9 Oct 2026, 03:34–04:25 | Windows **Balanced** power plan, on AC power. Classification accuracy does not depend on timing conditions; the per-ticket timings from this run are indicative only, not load-test evidence. |
 
+### Load tests (all on 9 Oct 2026; JMeter 5.6.3 on Machine B, service and Ollama on Machine A)
+
+Conditions that were the same for every load run: Machine A on the Windows Balanced power plan and on AC power; the
+Ollama container limited to 6 CPUs; the service, prompt and pinned models unchanged; each run started on an empty
+database with a warm-up request (excluded); the Machine B command started within 5 minutes of the Machine A
+preparation. The plan was changed once during the day (see the note below the table).
+
+| Runs | Model | Time on 9 Oct (SGT) | Test plan version |
+|---|---|---|---|
+| Mixed load r1, r2, r3 (each 20 min arrivals) | qwen2.5:1.5b | r1 07:17–07:38, r2 08:36–08:57, r3 09:58–10:19 | without drain pause |
+| Mixed load r1, r2, r3 | llama3.2:3b | r1 07:44–08:05, r2 09:01–09:22, r3 10:29–10:50 | without drain pause |
+| Mixed load r1, r2, r3 | qwen2.5:7b | r1 08:10–08:31, r2 09:32–09:53, r3 10:57–11:18 | without drain pause |
+| R2 r1, r2 (30 min arrivals) | qwen2.5:7b | r1 11:39–12:10, r2 12:12–12:43 | without drain pause |
+| R2 r3 (excluded, see `results/load/EXCLUSIONS.md`) | qwen2.5:7b | 12:52–13:23 | without drain pause |
+| Stress test (7 steps of 8 min, 120 to 480 per hour) | qwen2.5:7b | 14:16–15:26 | with 12 min drain pause |
+| R2 r4 (replaces r3) | qwen2.5:7b | 15:47–16:20 | with 2 min drain pause |
+
+Plan change: a schedule that simply ends makes JMeter interrupt requests still in flight, which cut off the last ticket
+of R2 run 3. From the stress test onward every schedule ends with a drain pause (2 min for mixed and R2, 12 min for
+stress). JMeter's logs show no interrupted request in any of the earlier runs. The mixed-load runs were done in rounds
+(1.5B, 3B, 7B, then repeated) so that drift affects all models alike.
+
 ## Network
 
 Both machines are wired to the same home router (gateway 192.168.18.1) on the same 192.168.18.0/24 subnet, so
