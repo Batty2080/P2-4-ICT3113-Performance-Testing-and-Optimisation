@@ -1,0 +1,18 @@
+﻿{
+    "test":  "r2",
+    "model":  "qwen2.5:7b",
+    "run":  3,
+    "run_id":  "load-r2-qwen2.5-7b-r3",
+    "dry":  false,
+    "target":  "http://192.168.18.104:8000",
+    "duration_min":  30,
+    "post_per_hour":  110,
+    "search_per_hour":  0,
+    "stats_per_hour":  0,
+    "jmeter_home":  "D:\\SIT\\Year 3\\ICT3113 - Performance Testing and Optimisation\\Assignment\\apache-jmeter-5.6.3",
+    "git_commit":  "29f1558730bcc671fd16596a04b28c09c6e42dd3",
+    "started_at_utc":  "2026-10-09T04:52:10.3101653Z",
+    "started_epoch_ms":  1791521530313,
+    "finished_at_utc":  "2026-10-09T05:23:11.4937169Z",
+    "finished_epoch_ms":  1791523391493
+}
