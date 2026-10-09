@@ -1,0 +1,1039 @@
+2026-10-09 14:16:25,256 INFO o.a.j.u.JMeterUtils: Setting Locale to en_EN
+2026-10-09 14:16:25,265 INFO o.a.j.JMeter: Loading user properties from: D:\SIT\Year 3\ICT3113 - Performance Testing and Optimisation\Assignment\apache-jmeter-5.6.3\bin\user.properties
+2026-10-09 14:16:25,266 INFO o.a.j.JMeter: Loading system properties from: D:\SIT\Year 3\ICT3113 - Performance Testing and Optimisation\Assignment\apache-jmeter-5.6.3\bin\system.properties
+2026-10-09 14:16:25,266 INFO o.a.j.JMeter: Loading additional properties from: D:\SIT\Year 3\ICT3113 - Performance Testing and Optimisation\Assignment\P2-4-ICT3113-Performance-Testing-and-Optimisation\results\load\load-stress-qwen2.5-7b-r1\run.properties
+2026-10-09 14:16:25,269 INFO o.a.j.JMeter: Copyright (c) 1998-2024 The Apache Software Foundation
+2026-10-09 14:16:25,269 INFO o.a.j.JMeter: Version 5.6.3
+2026-10-09 14:16:25,269 INFO o.a.j.JMeter: java.version=25.0.4.1
+2026-10-09 14:16:25,269 INFO o.a.j.JMeter: java.vm.name=Java HotSpot(TM) 64-Bit Server VM
+2026-10-09 14:16:25,270 INFO o.a.j.JMeter: os.name=Windows 11
+2026-10-09 14:16:25,270 INFO o.a.j.JMeter: os.arch=amd64
+2026-10-09 14:16:25,270 INFO o.a.j.JMeter: os.version=10.0
+2026-10-09 14:16:25,270 INFO o.a.j.JMeter: file.encoding=UTF-8
+2026-10-09 14:16:25,270 INFO o.a.j.JMeter: java.awt.headless=true
+2026-10-09 14:16:25,270 INFO o.a.j.JMeter: Max memory     =1073741824
+2026-10-09 14:16:25,270 INFO o.a.j.JMeter: Available Processors =12
+2026-10-09 14:16:25,277 INFO o.a.j.JMeter: Default Locale=English (EN)
+2026-10-09 14:16:25,277 INFO o.a.j.JMeter: JMeter  Locale=English (EN)
+2026-10-09 14:16:25,278 INFO o.a.j.JMeter: JMeterHome=D:\SIT\Year 3\ICT3113 - Performance Testing and Optimisation\Assignment\apache-jmeter-5.6.3
+2026-10-09 14:16:25,278 INFO o.a.j.JMeter: user.dir  =D:\SIT\Year 3\ICT3113 - Performance Testing and Optimisation\Assignment\P2-4-ICT3113-Performance-Testing-and-Optimisation\jmeter
+2026-10-09 14:16:25,278 INFO o.a.j.JMeter: PWD       =D:\SIT\Year 3\ICT3113 - Performance Testing and Optimisation\Assignment\P2-4-ICT3113-Performance-Testing-and-Optimisation\jmeter
+2026-10-09 14:16:25,279 INFO o.a.j.JMeter: IP: 192.168.18.85 Name: DESKTOP-UAU4QGB FullName: DESKTOP-UAU4QGB
+2026-10-09 14:16:25,286 INFO o.a.j.s.FileServer: Default base='D:\SIT\Year 3\ICT3113 - Performance Testing and Optimisation\Assignment\P2-4-ICT3113-Performance-Testing-and-Optimisation\jmeter'
+2026-10-09 14:16:25,286 INFO o.a.j.s.FileServer: Set new base='D:\SIT\Year 3\ICT3113 - Performance Testing and Optimisation\Assignment\P2-4-ICT3113-Performance-Testing-and-Optimisation\jmeter'
+2026-10-09 14:16:25,425 INFO o.a.j.s.SaveService: Testplan (JMX) version: 2.2. Testlog (JTL) version: 2.2
+2026-10-09 14:16:25,436 INFO o.a.j.s.SaveService: Using SaveService properties version 5.0
+2026-10-09 14:16:25,438 INFO o.a.j.s.SaveService: Using SaveService properties file encoding UTF-8
+2026-10-09 14:16:25,439 INFO o.a.j.s.SaveService: Loading file: D:\SIT\Year 3\ICT3113 - Performance Testing and Optimisation\Assignment\P2-4-ICT3113-Performance-Testing-and-Optimisation\jmeter\triage_load.jmx
+2026-10-09 14:16:25,484 INFO o.a.j.p.h.s.HTTPSamplerBase: Parser for text/html is org.apache.jmeter.protocol.http.parser.LagartoBasedHtmlParser
+2026-10-09 14:16:25,484 INFO o.a.j.p.h.s.HTTPSamplerBase: Parser for application/xhtml+xml is org.apache.jmeter.protocol.http.parser.LagartoBasedHtmlParser
+2026-10-09 14:16:25,484 INFO o.a.j.p.h.s.HTTPSamplerBase: Parser for application/xml is org.apache.jmeter.protocol.http.parser.LagartoBasedHtmlParser
+2026-10-09 14:16:25,484 INFO o.a.j.p.h.s.HTTPSamplerBase: Parser for text/xml is org.apache.jmeter.protocol.http.parser.LagartoBasedHtmlParser
+2026-10-09 14:16:25,485 INFO o.a.j.p.h.s.HTTPSamplerBase: Parser for text/vnd.wap.wml is org.apache.jmeter.protocol.http.parser.RegexpHTMLParser
+2026-10-09 14:16:25,485 INFO o.a.j.p.h.s.HTTPSamplerBase: Parser for text/css is org.apache.jmeter.protocol.http.parser.CssParser
+2026-10-09 14:16:25,491 INFO o.a.j.JMeter: Creating summariser <summary>
+2026-10-09 14:16:25,500 INFO o.a.j.e.StandardJMeterEngine: Running the test!
+2026-10-09 14:16:25,501 INFO o.a.j.s.SampleEvent: List of sample_variables: [row, seq]
+2026-10-09 14:16:25,501 INFO o.a.j.s.SampleEvent: List of sample_variables: [row, seq]
+2026-10-09 14:16:25,503 INFO o.a.j.e.u.CompoundVariable: Note: Function class names must contain the string: '.functions.'
+2026-10-09 14:16:25,503 INFO o.a.j.e.u.CompoundVariable: Note: Function class names must not contain the string: '.gui.'
+2026-10-09 14:16:25,543 INFO o.a.j.JMeter: Running test (1791526585543)
+2026-10-09 14:16:25,552 INFO o.a.j.e.StandardJMeterEngine: Starting ThreadGroup: 1 : POST /tickets arrivals
+2026-10-09 14:16:25,552 INFO o.a.j.e.StandardJMeterEngine: Starting 0 threads for group POST /tickets arrivals.
+2026-10-09 14:16:25,552 INFO o.a.j.e.StandardJMeterEngine: Thread will continue on error
+2026-10-09 14:16:25,552 INFO o.a.j.t.o.OpenModelThreadGroup: Starting OpenModelThreadGroup#1 with schedule rate(120/hour) random_arrivals(8 min) random_arrivals(10 sec) rate(180/hour) random_arrivals(8 min) random_arrivals(10 sec) rate(240/hour) random_arrivals(8 min) random_arrivals(10 sec) rate(300/hour) random_arrivals(8 min) random_arrivals(10 sec) rate(360/hour) random_arrivals(8 min) random_arrivals(10 sec) rate(420/hour) random_arrivals(8 min) random_arrivals(10 sec) rate(480/hour) random_arrivals(8 min) pause(12 min)
+2026-10-09 14:16:25,572 INFO o.a.j.e.StandardJMeterEngine: Starting ThreadGroup: 2 : GET /search arrivals
+2026-10-09 14:16:25,572 INFO o.a.j.e.StandardJMeterEngine: Starting 0 threads for group GET /search arrivals.
+2026-10-09 14:16:25,572 INFO o.a.j.e.StandardJMeterEngine: Thread will continue on error
+2026-10-09 14:16:25,572 INFO o.a.j.t.o.OpenModelThreadGroup: Starting OpenModelThreadGroup#2 with schedule rate(0) random_arrivals(1 sec)
+2026-10-09 14:16:25,572 INFO o.a.j.e.StandardJMeterEngine: Starting ThreadGroup: 3 : GET /stats arrivals
+2026-10-09 14:16:25,572 INFO o.a.j.t.o.OpenModelThreadGroup: Thread starting init
+2026-10-09 14:16:25,572 INFO o.a.j.e.StandardJMeterEngine: Starting 0 threads for group GET /stats arrivals.
+2026-10-09 14:16:25,572 INFO o.a.j.e.StandardJMeterEngine: Thread will continue on error
+2026-10-09 14:16:25,572 INFO o.a.j.t.o.OpenModelThreadGroup: Starting OpenModelThreadGroup#3 with schedule rate(0) random_arrivals(1 sec)
+2026-10-09 14:16:25,572 INFO o.a.j.e.StandardJMeterEngine: All thread groups have been started
+2026-10-09 14:16:25,572 INFO o.a.j.t.o.OpenModelThreadGroup: Thread starting init
+2026-10-09 14:16:25,572 INFO o.a.j.t.o.OpenModelThreadGroup: Thread starting init
+2026-10-09 14:16:25,574 INFO o.a.j.t.o.PoissonArrivalsRamp: Generating 0 events, beginRate = 0.0 / sec, endRate = 0.0 / sec, duration = 1.0 sec
+2026-10-09 14:16:25,574 INFO o.a.j.t.o.PoissonArrivalsRamp: Generating 0 events, beginRate = 0.0 / sec, endRate = 0.0 / sec, duration = 1.0 sec
+2026-10-09 14:16:25,574 INFO o.a.j.t.o.PoissonArrivalsRamp: Generating 16 events, beginRate = 0.03333333333333333 / sec, endRate = 0.03333333333333333 / sec, duration = 480.0 sec
+2026-10-09 14:16:25,574 INFO o.a.j.t.o.OpenModelThreadGroup: There will be no more events, so will wait for 0 sec till the end of the schedule
+2026-10-09 14:16:25,574 INFO o.a.j.t.o.OpenModelThreadGroup: There will be no more events, so will wait for 0 sec till the end of the schedule
+2026-10-09 14:16:26,504 INFO o.a.j.t.o.OpenModelThreadGroup: There will be no more events, will shutdown the thread pool
+2026-10-09 14:16:26,504 INFO o.a.j.t.o.OpenModelThreadGroup: There will be no more events, will shutdown the thread pool
+2026-10-09 14:16:26,504 INFO o.a.j.t.o.OpenModelThreadGroup: Thread starting done
+2026-10-09 14:16:26,504 INFO o.a.j.t.o.OpenModelThreadGroup: Thread starting done
+2026-10-09 14:16:36,585 INFO o.a.j.t.JMeterThread: Thread started: POST /tickets arrivals 1-1
+2026-10-09 14:16:36,585 INFO o.a.j.s.FileServer: Stored: team_rows_bodies.tsv
+2026-10-09 14:16:36,597 INFO o.a.j.p.h.s.HTTPHCAbstractImpl: Local host = DESKTOP-UAU4QGB
+2026-10-09 14:16:36,600 INFO o.a.j.p.h.s.HTTPHC4Impl: HTTP request retry count = 0
+2026-10-09 14:16:36,600 INFO o.a.j.s.SampleResult: Note: Sample TimeStamps are START times
+2026-10-09 14:16:36,600 INFO o.a.j.s.SampleResult: sampleresult.default.encoding is set to UTF-8
+2026-10-09 14:16:36,600 INFO o.a.j.s.SampleResult: sampleresult.useNanoTime=true
+2026-10-09 14:16:36,600 INFO o.a.j.s.SampleResult: sampleresult.nanoThreadSleep=5000
+2026-10-09 14:16:52,662 INFO o.a.j.t.JMeterThread: Thread is done: POST /tickets arrivals 1-1
+2026-10-09 14:16:52,662 INFO o.a.j.t.JMeterThread: Thread finished: POST /tickets arrivals 1-1
+2026-10-09 14:16:57,460 INFO o.a.j.t.JMeterThread: Thread started: POST /tickets arrivals 1-2
+2026-10-09 14:17:10,657 INFO o.a.j.t.JMeterThread: Thread is done: POST /tickets arrivals 1-2
+2026-10-09 14:17:10,657 INFO o.a.j.t.JMeterThread: Thread finished: POST /tickets arrivals 1-2
+2026-10-09 14:17:13,176 INFO o.a.j.t.JMeterThread: Thread started: POST /tickets arrivals 1-3
+2026-10-09 14:17:21,281 INFO o.a.j.t.JMeterThread: Thread is done: POST /tickets arrivals 1-3
+2026-10-09 14:17:21,281 INFO o.a.j.t.JMeterThread: Thread finished: POST /tickets arrivals 1-3
+2026-10-09 14:17:45,166 INFO o.a.j.t.JMeterThread: Thread started: POST /tickets arrivals 1-4
+2026-10-09 14:17:56,472 INFO o.a.j.t.JMeterThread: Thread is done: POST /tickets arrivals 1-4
+2026-10-09 14:17:56,472 INFO o.a.j.t.JMeterThread: Thread finished: POST /tickets arrivals 1-4
+2026-10-09 14:18:01,622 INFO o.a.j.t.JMeterThread: Thread started: POST /tickets arrivals 1-5
+2026-10-09 14:18:14,170 INFO o.a.j.t.JMeterThread: Thread is done: POST /tickets arrivals 1-5
+2026-10-09 14:18:14,170 INFO o.a.j.t.JMeterThread: Thread finished: POST /tickets arrivals 1-5
+2026-10-09 14:18:43,360 INFO o.a.j.t.JMeterThread: Thread started: POST /tickets arrivals 1-6
+2026-10-09 14:18:44,530 INFO o.a.j.t.JMeterThread: Thread started: POST /tickets arrivals 1-7
+2026-10-09 14:18:56,042 INFO o.a.j.t.JMeterThread: Thread started: POST /tickets arrivals 1-8
+2026-10-09 14:19:02,752 INFO o.a.j.t.JMeterThread: Thread started: POST /tickets arrivals 1-9
+2026-10-09 14:19:05,166 INFO o.a.j.r.Summariser: summary +      6 in 00:02:40 =    0.0/s Avg: 13831 Min:  8104 Max: 21805 Err:     0 (0.00%) Active: 4 Started: 9 Finished: 5
+2026-10-09 14:19:05,166 INFO o.a.j.t.JMeterThread: Thread is done: POST /tickets arrivals 1-6
+2026-10-09 14:19:05,167 INFO o.a.j.t.JMeterThread: Thread finished: POST /tickets arrivals 1-6
+2026-10-09 14:19:11,522 INFO o.a.j.t.JMeterThread: Thread is done: POST /tickets arrivals 1-7
+2026-10-09 14:19:11,522 INFO o.a.j.t.JMeterThread: Thread finished: POST /tickets arrivals 1-7
+2026-10-09 14:19:17,459 INFO o.a.j.t.JMeterThread: Thread is done: POST /tickets arrivals 1-8
+2026-10-09 14:19:17,459 INFO o.a.j.t.JMeterThread: Thread finished: POST /tickets arrivals 1-8
+2026-10-09 14:19:26,040 INFO o.a.j.t.JMeterThread: Thread is done: POST /tickets arrivals 1-9
+2026-10-09 14:19:26,040 INFO o.a.j.t.JMeterThread: Thread finished: POST /tickets arrivals 1-9
+2026-10-09 14:20:33,761 INFO o.a.j.t.JMeterThread: Thread started: POST /tickets arrivals 1-10
+2026-10-09 14:20:47,757 INFO o.a.j.t.JMeterThread: Thread is done: POST /tickets arrivals 1-10
+2026-10-09 14:20:47,757 INFO o.a.j.t.JMeterThread: Thread finished: POST /tickets arrivals 1-10
+2026-10-09 14:21:22,636 INFO o.a.j.t.JMeterThread: Thread started: POST /tickets arrivals 1-11
+2026-10-09 14:21:37,340 INFO o.a.j.t.JMeterThread: Thread is done: POST /tickets arrivals 1-11
+2026-10-09 14:21:37,340 INFO o.a.j.t.JMeterThread: Thread finished: POST /tickets arrivals 1-11
+2026-10-09 14:21:44,349 INFO o.a.j.t.JMeterThread: Thread started: POST /tickets arrivals 1-12
+2026-10-09 14:21:52,517 INFO o.a.j.t.JMeterThread: Thread is done: POST /tickets arrivals 1-12
+2026-10-09 14:21:52,517 INFO o.a.j.t.JMeterThread: Thread finished: POST /tickets arrivals 1-12
+2026-10-09 14:21:56,299 INFO o.a.j.t.JMeterThread: Thread started: POST /tickets arrivals 1-13
+2026-10-09 14:22:00,182 INFO o.a.j.t.JMeterThread: Thread started: POST /tickets arrivals 1-14
+2026-10-09 14:22:09,258 INFO o.a.j.t.JMeterThread: Thread is done: POST /tickets arrivals 1-13
+2026-10-09 14:22:09,258 INFO o.a.j.t.JMeterThread: Thread finished: POST /tickets arrivals 1-13
+2026-10-09 14:22:11,521 INFO o.a.j.t.JMeterThread: Thread started: POST /tickets arrivals 1-15
+2026-10-09 14:22:24,221 INFO o.a.j.t.o.PoissonArrivalsRamp: Generating 0 events, beginRate = 0.03333333333333333 / sec, endRate = 0.05 / sec, duration = 10.0 sec
+2026-10-09 14:22:24,222 INFO o.a.j.t.o.PoissonArrivalsRamp: Generating 24 events, beginRate = 0.05 / sec, endRate = 0.05 / sec, duration = 480.0 sec
+2026-10-09 14:22:24,222 INFO o.a.j.t.JMeterThread: Thread started: POST /tickets arrivals 1-16
+2026-10-09 14:22:24,346 INFO o.a.j.t.JMeterThread: Thread is done: POST /tickets arrivals 1-14
+2026-10-09 14:22:24,346 INFO o.a.j.t.JMeterThread: Thread finished: POST /tickets arrivals 1-14
+2026-10-09 14:22:37,528 INFO o.a.j.t.JMeterThread: Thread is done: POST /tickets arrivals 1-15
+2026-10-09 14:22:37,528 INFO o.a.j.t.JMeterThread: Thread finished: POST /tickets arrivals 1-15
+2026-10-09 14:22:46,613 INFO o.a.j.t.JMeterThread: Thread is done: POST /tickets arrivals 1-16
+2026-10-09 14:22:46,613 INFO o.a.j.t.JMeterThread: Thread finished: POST /tickets arrivals 1-16
+2026-10-09 14:24:37,731 INFO o.a.j.t.JMeterThread: Thread started: POST /tickets arrivals 1-17
+2026-10-09 14:24:43,636 INFO o.a.j.t.JMeterThread: Thread is done: POST /tickets arrivals 1-17
+2026-10-09 14:24:43,636 INFO o.a.j.t.JMeterThread: Thread finished: POST /tickets arrivals 1-17
+2026-10-09 14:24:48,712 INFO o.a.j.t.JMeterThread: Thread started: POST /tickets arrivals 1-18
+2026-10-09 14:25:00,539 INFO o.a.j.r.Summariser: summary +     12 in 00:05:55 =    0.0/s Avg: 17650 Min:  5904 Max: 26991 Err:     0 (0.00%) Active: 1 Started: 18 Finished: 17
+2026-10-09 14:25:00,539 INFO o.a.j.r.Summariser: summary =     18 in 00:08:35 =    0.0/s Avg: 16377 Min:  5904 Max: 26991 Err:     0 (0.00%)
+2026-10-09 14:25:00,539 INFO o.a.j.t.JMeterThread: Thread is done: POST /tickets arrivals 1-18
+2026-10-09 14:25:00,539 INFO o.a.j.t.JMeterThread: Thread finished: POST /tickets arrivals 1-18
+2026-10-09 14:25:10,276 INFO o.a.j.t.JMeterThread: Thread started: POST /tickets arrivals 1-19
+2026-10-09 14:25:17,859 INFO o.a.j.t.JMeterThread: Thread is done: POST /tickets arrivals 1-19
+2026-10-09 14:25:17,859 INFO o.a.j.t.JMeterThread: Thread finished: POST /tickets arrivals 1-19
+2026-10-09 14:25:24,507 INFO o.a.j.t.JMeterThread: Thread started: POST /tickets arrivals 1-20
+2026-10-09 14:25:32,945 INFO o.a.j.r.Summariser: summary +      2 in 00:00:32 =    0.1/s Avg:  8009 Min:  7582 Max:  8437 Err:     0 (0.00%) Active: 1 Started: 20 Finished: 19
+2026-10-09 14:25:32,946 INFO o.a.j.r.Summariser: summary =     20 in 00:09:07 =    0.0/s Avg: 15540 Min:  5904 Max: 26991 Err:     0 (0.00%)
+2026-10-09 14:25:32,946 INFO o.a.j.t.JMeterThread: Thread is done: POST /tickets arrivals 1-20
+2026-10-09 14:25:32,946 INFO o.a.j.t.JMeterThread: Thread finished: POST /tickets arrivals 1-20
+2026-10-09 14:25:56,782 INFO o.a.j.t.JMeterThread: Thread started: POST /tickets arrivals 1-21
+2026-10-09 14:26:01,442 INFO o.a.j.r.Summariser: summary +      1 in 00:00:28 =    0.0/s Avg:  4659 Min:  4659 Max:  4659 Err:     0 (0.00%) Active: 1 Started: 21 Finished: 20
+2026-10-09 14:26:01,442 INFO o.a.j.r.Summariser: summary =     21 in 00:09:36 =    0.0/s Avg: 15022 Min:  4659 Max: 26991 Err:     0 (0.00%)
+2026-10-09 14:26:01,442 INFO o.a.j.t.JMeterThread: Thread is done: POST /tickets arrivals 1-21
+2026-10-09 14:26:01,442 INFO o.a.j.t.JMeterThread: Thread finished: POST /tickets arrivals 1-21
+2026-10-09 14:26:22,482 INFO o.a.j.t.JMeterThread: Thread started: POST /tickets arrivals 1-22
+2026-10-09 14:26:28,861 INFO o.a.j.t.JMeterThread: Thread started: POST /tickets arrivals 1-23
+2026-10-09 14:26:41,037 INFO o.a.j.t.JMeterThread: Thread is done: POST /tickets arrivals 1-22
+2026-10-09 14:26:41,037 INFO o.a.j.t.JMeterThread: Thread finished: POST /tickets arrivals 1-22
+2026-10-09 14:26:48,130 INFO o.a.j.t.JMeterThread: Thread is done: POST /tickets arrivals 1-23
+2026-10-09 14:26:48,131 INFO o.a.j.t.JMeterThread: Thread finished: POST /tickets arrivals 1-23
+2026-10-09 14:26:49,047 INFO o.a.j.t.JMeterThread: Thread started: POST /tickets arrivals 1-24
+2026-10-09 14:26:54,062 INFO o.a.j.t.JMeterThread: Thread started: POST /tickets arrivals 1-25
+2026-10-09 14:27:04,351 INFO o.a.j.r.Summariser: summary +      3 in 00:01:03 =    0.0/s Avg: 17709 Min: 15304 Max: 19269 Err:     0 (0.00%) Active: 2 Started: 25 Finished: 23
+2026-10-09 14:27:04,352 INFO o.a.j.r.Summariser: summary =     24 in 00:10:39 =    0.0/s Avg: 15358 Min:  4659 Max: 26991 Err:     0 (0.00%)
+2026-10-09 14:27:04,352 INFO o.a.j.t.JMeterThread: Thread is done: POST /tickets arrivals 1-24
+2026-10-09 14:27:04,352 INFO o.a.j.t.JMeterThread: Thread finished: POST /tickets arrivals 1-24
+2026-10-09 14:27:10,975 INFO o.a.j.t.JMeterThread: Thread started: POST /tickets arrivals 1-26
+2026-10-09 14:27:11,591 INFO o.a.j.t.JMeterThread: Thread started: POST /tickets arrivals 1-27
+2026-10-09 14:27:12,426 INFO o.a.j.t.JMeterThread: Thread is done: POST /tickets arrivals 1-25
+2026-10-09 14:27:12,426 INFO o.a.j.t.JMeterThread: Thread finished: POST /tickets arrivals 1-25
+2026-10-09 14:27:27,760 INFO o.a.j.t.JMeterThread: Thread is done: POST /tickets arrivals 1-26
+2026-10-09 14:27:27,760 INFO o.a.j.t.JMeterThread: Thread finished: POST /tickets arrivals 1-26
+2026-10-09 14:27:33,941 INFO o.a.j.r.Summariser: summary +      3 in 00:00:30 =    0.1/s Avg: 19165 Min: 16783 Max: 22350 Err:     0 (0.00%) Active: 1 Started: 27 Finished: 26
+2026-10-09 14:27:33,942 INFO o.a.j.r.Summariser: summary =     27 in 00:11:08 =    0.0/s Avg: 15781 Min:  4659 Max: 26991 Err:     0 (0.00%)
+2026-10-09 14:27:33,942 INFO o.a.j.t.JMeterThread: Thread is done: POST /tickets arrivals 1-27
+2026-10-09 14:27:33,942 INFO o.a.j.t.JMeterThread: Thread finished: POST /tickets arrivals 1-27
+2026-10-09 14:27:38,161 INFO o.a.j.t.JMeterThread: Thread started: POST /tickets arrivals 1-28
+2026-10-09 14:27:46,839 INFO o.a.j.t.JMeterThread: Thread is done: POST /tickets arrivals 1-28
+2026-10-09 14:27:46,839 INFO o.a.j.t.JMeterThread: Thread finished: POST /tickets arrivals 1-28
+2026-10-09 14:28:05,712 INFO o.a.j.t.JMeterThread: Thread started: POST /tickets arrivals 1-29
+2026-10-09 14:28:12,437 INFO o.a.j.t.JMeterThread: Thread is done: POST /tickets arrivals 1-29
+2026-10-09 14:28:12,437 INFO o.a.j.t.JMeterThread: Thread finished: POST /tickets arrivals 1-29
+2026-10-09 14:28:35,268 INFO o.a.j.t.JMeterThread: Thread started: POST /tickets arrivals 1-30
+2026-10-09 14:28:48,854 INFO o.a.j.t.JMeterThread: Thread is done: POST /tickets arrivals 1-30
+2026-10-09 14:28:48,855 INFO o.a.j.t.JMeterThread: Thread finished: POST /tickets arrivals 1-30
+2026-10-09 14:30:09,881 INFO o.a.j.t.JMeterThread: Thread started: POST /tickets arrivals 1-31
+2026-10-09 14:30:11,055 INFO o.a.j.t.JMeterThread: Thread started: POST /tickets arrivals 1-32
+2026-10-09 14:30:19,531 INFO o.a.j.t.JMeterThread: Thread is done: POST /tickets arrivals 1-31
+2026-10-09 14:30:19,531 INFO o.a.j.t.JMeterThread: Thread finished: POST /tickets arrivals 1-31
+2026-10-09 14:30:26,227 INFO o.a.j.t.JMeterThread: Thread is done: POST /tickets arrivals 1-32
+2026-10-09 14:30:26,227 INFO o.a.j.t.JMeterThread: Thread finished: POST /tickets arrivals 1-32
+2026-10-09 14:30:42,568 INFO o.a.j.t.JMeterThread: Thread started: POST /tickets arrivals 1-33
+2026-10-09 14:30:53,529 INFO o.a.j.t.JMeterThread: Thread is done: POST /tickets arrivals 1-33
+2026-10-09 14:30:53,529 INFO o.a.j.t.JMeterThread: Thread finished: POST /tickets arrivals 1-33
+2026-10-09 14:31:05,400 INFO o.a.j.t.JMeterThread: Thread started: POST /tickets arrivals 1-34
+2026-10-09 14:31:17,668 INFO o.a.j.t.JMeterThread: Thread started: POST /tickets arrivals 1-35
+2026-10-09 14:31:21,735 INFO o.a.j.t.JMeterThread: Thread is done: POST /tickets arrivals 1-34
+2026-10-09 14:31:21,735 INFO o.a.j.t.JMeterThread: Thread finished: POST /tickets arrivals 1-34
+2026-10-09 14:31:32,225 INFO o.a.j.r.Summariser: summary +      8 in 00:03:58 =    0.0/s Avg: 11957 Min:  6724 Max: 16334 Err:     0 (0.00%) Active: 1 Started: 35 Finished: 34
+2026-10-09 14:31:32,226 INFO o.a.j.r.Summariser: summary =     35 in 00:15:07 =    0.0/s Avg: 14907 Min:  4659 Max: 26991 Err:     0 (0.00%)
+2026-10-09 14:31:32,226 INFO o.a.j.t.JMeterThread: Thread is done: POST /tickets arrivals 1-35
+2026-10-09 14:31:32,226 INFO o.a.j.t.JMeterThread: Thread finished: POST /tickets arrivals 1-35
+2026-10-09 14:31:50,963 INFO o.a.j.t.JMeterThread: Thread started: POST /tickets arrivals 1-36
+2026-10-09 14:31:52,230 INFO o.a.j.t.JMeterThread: Thread started: POST /tickets arrivals 1-37
+2026-10-09 14:31:52,905 INFO o.a.j.t.JMeterThread: Thread started: POST /tickets arrivals 1-38
+2026-10-09 14:31:58,396 INFO o.a.j.t.JMeterThread: Thread started: POST /tickets arrivals 1-39
+2026-10-09 14:32:06,845 INFO o.a.j.t.JMeterThread: Thread is done: POST /tickets arrivals 1-36
+2026-10-09 14:32:06,845 INFO o.a.j.t.JMeterThread: Thread finished: POST /tickets arrivals 1-36
+2026-10-09 14:32:19,933 INFO o.a.j.t.JMeterThread: Thread is done: POST /tickets arrivals 1-37
+2026-10-09 14:32:19,933 INFO o.a.j.t.JMeterThread: Thread finished: POST /tickets arrivals 1-37
+2026-10-09 14:32:30,265 INFO o.a.j.t.o.PoissonArrivalsRamp: Generating 0 events, beginRate = 0.05 / sec, endRate = 0.06666666666666667 / sec, duration = 10.0 sec
+2026-10-09 14:32:30,265 INFO o.a.j.t.o.PoissonArrivalsRamp: Generating 32 events, beginRate = 0.06666666666666667 / sec, endRate = 0.06666666666666667 / sec, duration = 480.0 sec
+2026-10-09 14:32:30,265 INFO o.a.j.t.JMeterThread: Thread started: POST /tickets arrivals 1-40
+2026-10-09 14:32:33,144 INFO o.a.j.r.Summariser: summary +      3 in 00:01:01 =    0.0/s Avg: 27940 Min: 15882 Max: 40237 Err:     0 (0.00%) Active: 3 Started: 40 Finished: 37
+2026-10-09 14:32:33,144 INFO o.a.j.r.Summariser: summary =     38 in 00:16:08 =    0.0/s Avg: 15936 Min:  4659 Max: 40237 Err:     0 (0.00%)
+2026-10-09 14:32:33,144 INFO o.a.j.t.JMeterThread: Thread is done: POST /tickets arrivals 1-38
+2026-10-09 14:32:33,144 INFO o.a.j.t.JMeterThread: Thread finished: POST /tickets arrivals 1-38
+2026-10-09 14:32:45,513 INFO o.a.j.t.JMeterThread: Thread is done: POST /tickets arrivals 1-39
+2026-10-09 14:32:45,513 INFO o.a.j.t.JMeterThread: Thread finished: POST /tickets arrivals 1-39
+2026-10-09 14:32:55,608 INFO o.a.j.t.JMeterThread: Thread is done: POST /tickets arrivals 1-40
+2026-10-09 14:32:55,608 INFO o.a.j.t.JMeterThread: Thread finished: POST /tickets arrivals 1-40
+2026-10-09 14:33:06,163 INFO o.a.j.t.JMeterThread: Thread started: POST /tickets arrivals 1-41
+2026-10-09 14:33:07,295 INFO o.a.j.t.JMeterThread: Thread started: POST /tickets arrivals 1-42
+2026-10-09 14:33:12,827 INFO o.a.j.t.JMeterThread: Thread is done: POST /tickets arrivals 1-41
+2026-10-09 14:33:12,827 INFO o.a.j.t.JMeterThread: Thread finished: POST /tickets arrivals 1-41
+2026-10-09 14:33:22,638 INFO o.a.j.t.JMeterThread: Thread is done: POST /tickets arrivals 1-42
+2026-10-09 14:33:22,638 INFO o.a.j.t.JMeterThread: Thread finished: POST /tickets arrivals 1-42
+2026-10-09 14:33:27,351 INFO o.a.j.t.JMeterThread: Thread started: POST /tickets arrivals 1-43
+2026-10-09 14:33:33,788 INFO o.a.j.t.JMeterThread: Thread started: POST /tickets arrivals 1-44
+2026-10-09 14:33:38,110 INFO o.a.j.t.JMeterThread: Thread started: POST /tickets arrivals 1-45
+2026-10-09 14:33:43,638 INFO o.a.j.t.JMeterThread: Thread is done: POST /tickets arrivals 1-43
+2026-10-09 14:33:43,638 INFO o.a.j.t.JMeterThread: Thread finished: POST /tickets arrivals 1-43
+2026-10-09 14:33:52,343 INFO o.a.j.t.JMeterThread: Thread is done: POST /tickets arrivals 1-44
+2026-10-09 14:33:52,343 INFO o.a.j.t.JMeterThread: Thread finished: POST /tickets arrivals 1-44
+2026-10-09 14:33:57,236 INFO o.a.j.t.JMeterThread: Thread is done: POST /tickets arrivals 1-45
+2026-10-09 14:33:57,236 INFO o.a.j.t.JMeterThread: Thread finished: POST /tickets arrivals 1-45
+2026-10-09 14:33:59,517 INFO o.a.j.t.JMeterThread: Thread started: POST /tickets arrivals 1-46
+2026-10-09 14:34:06,738 INFO o.a.j.t.JMeterThread: Thread is done: POST /tickets arrivals 1-46
+2026-10-09 14:34:06,738 INFO o.a.j.t.JMeterThread: Thread finished: POST /tickets arrivals 1-46
+2026-10-09 14:34:43,216 INFO o.a.j.t.JMeterThread: Thread started: POST /tickets arrivals 1-47
+2026-10-09 14:34:44,634 INFO o.a.j.t.JMeterThread: Thread started: POST /tickets arrivals 1-48
+2026-10-09 14:34:46,754 INFO o.a.j.t.JMeterThread: Thread started: POST /tickets arrivals 1-49
+2026-10-09 14:34:51,126 INFO o.a.j.t.JMeterThread: Thread is done: POST /tickets arrivals 1-47
+2026-10-09 14:34:51,126 INFO o.a.j.t.JMeterThread: Thread finished: POST /tickets arrivals 1-47
+2026-10-09 14:35:02,309 INFO o.a.j.r.Summariser: summary +     10 in 00:02:29 =    0.1/s Avg: 18123 Min:  6662 Max: 47117 Err:     0 (0.00%) Active: 2 Started: 49 Finished: 47
+2026-10-09 14:35:02,309 INFO o.a.j.r.Summariser: summary =     48 in 00:18:37 =    0.0/s Avg: 16391 Min:  4659 Max: 47117 Err:     0 (0.00%)
+2026-10-09 14:35:02,309 INFO o.a.j.t.JMeterThread: Thread is done: POST /tickets arrivals 1-48
+2026-10-09 14:35:02,309 INFO o.a.j.t.JMeterThread: Thread finished: POST /tickets arrivals 1-48
+2026-10-09 14:35:11,634 INFO o.a.j.t.JMeterThread: Thread is done: POST /tickets arrivals 1-49
+2026-10-09 14:35:11,634 INFO o.a.j.t.JMeterThread: Thread finished: POST /tickets arrivals 1-49
+2026-10-09 14:35:22,511 INFO o.a.j.t.JMeterThread: Thread started: POST /tickets arrivals 1-50
+2026-10-09 14:35:33,411 INFO o.a.j.t.JMeterThread: Thread started: POST /tickets arrivals 1-51
+2026-10-09 14:35:36,551 INFO o.a.j.t.JMeterThread: Thread started: POST /tickets arrivals 1-52
+2026-10-09 14:35:38,244 INFO o.a.j.t.JMeterThread: Thread is done: POST /tickets arrivals 1-50
+2026-10-09 14:35:38,244 INFO o.a.j.t.JMeterThread: Thread finished: POST /tickets arrivals 1-50
+2026-10-09 14:35:44,939 INFO o.a.j.t.JMeterThread: Thread started: POST /tickets arrivals 1-53
+2026-10-09 14:35:47,030 INFO o.a.j.t.JMeterThread: Thread is done: POST /tickets arrivals 1-51
+2026-10-09 14:35:47,030 INFO o.a.j.t.JMeterThread: Thread finished: POST /tickets arrivals 1-51
+2026-10-09 14:36:01,812 INFO o.a.j.r.Summariser: summary +      4 in 00:01:00 =    0.1/s Avg: 19872 Min: 13618 Max: 25260 Err:     0 (0.00%) Active: 2 Started: 53 Finished: 51
+2026-10-09 14:36:01,812 INFO o.a.j.r.Summariser: summary =     52 in 00:19:36 =    0.0/s Avg: 16659 Min:  4659 Max: 47117 Err:     0 (0.00%)
+2026-10-09 14:36:01,812 INFO o.a.j.t.JMeterThread: Thread is done: POST /tickets arrivals 1-52
+2026-10-09 14:36:01,812 INFO o.a.j.t.JMeterThread: Thread finished: POST /tickets arrivals 1-52
+2026-10-09 14:36:10,227 INFO o.a.j.t.JMeterThread: Thread is done: POST /tickets arrivals 1-53
+2026-10-09 14:36:10,227 INFO o.a.j.t.JMeterThread: Thread finished: POST /tickets arrivals 1-53
+2026-10-09 14:36:27,969 INFO o.a.j.t.JMeterThread: Thread started: POST /tickets arrivals 1-54
+2026-10-09 14:36:34,642 INFO o.a.j.t.JMeterThread: Thread started: POST /tickets arrivals 1-55
+2026-10-09 14:36:39,242 INFO o.a.j.t.JMeterThread: Thread is done: POST /tickets arrivals 1-54
+2026-10-09 14:36:39,242 INFO o.a.j.t.JMeterThread: Thread finished: POST /tickets arrivals 1-54
+2026-10-09 14:36:46,721 INFO o.a.j.t.JMeterThread: Thread is done: POST /tickets arrivals 1-55
+2026-10-09 14:36:46,721 INFO o.a.j.t.JMeterThread: Thread finished: POST /tickets arrivals 1-55
+2026-10-09 14:37:02,667 INFO o.a.j.t.JMeterThread: Thread started: POST /tickets arrivals 1-56
+2026-10-09 14:37:20,627 INFO o.a.j.t.JMeterThread: Thread started: POST /tickets arrivals 1-57
+2026-10-09 14:37:24,429 INFO o.a.j.t.JMeterThread: Thread is done: POST /tickets arrivals 1-56
+2026-10-09 14:37:24,429 INFO o.a.j.t.JMeterThread: Thread finished: POST /tickets arrivals 1-56
+2026-10-09 14:37:40,618 INFO o.a.j.t.JMeterThread: Thread is done: POST /tickets arrivals 1-57
+2026-10-09 14:37:40,619 INFO o.a.j.t.JMeterThread: Thread finished: POST /tickets arrivals 1-57
+2026-10-09 14:37:47,670 INFO o.a.j.t.JMeterThread: Thread started: POST /tickets arrivals 1-58
+2026-10-09 14:37:59,736 INFO o.a.j.t.JMeterThread: Thread started: POST /tickets arrivals 1-59
+2026-10-09 14:38:02,121 INFO o.a.j.r.Summariser: summary +      6 in 00:02:00 =    0.0/s Avg: 17473 Min: 11272 Max: 25288 Err:     0 (0.00%) Active: 2 Started: 59 Finished: 57
+2026-10-09 14:38:02,121 INFO o.a.j.r.Summariser: summary =     58 in 00:21:37 =    0.0/s Avg: 16743 Min:  4659 Max: 47117 Err:     0 (0.00%)
+2026-10-09 14:38:02,122 INFO o.a.j.t.JMeterThread: Thread is done: POST /tickets arrivals 1-58
+2026-10-09 14:38:02,122 INFO o.a.j.t.JMeterThread: Thread finished: POST /tickets arrivals 1-58
+2026-10-09 14:38:04,437 INFO o.a.j.t.JMeterThread: Thread started: POST /tickets arrivals 1-60
+2026-10-09 14:38:07,077 INFO o.a.j.t.JMeterThread: Thread started: POST /tickets arrivals 1-61
+2026-10-09 14:38:12,856 INFO o.a.j.t.JMeterThread: Thread started: POST /tickets arrivals 1-62
+2026-10-09 14:38:13,713 INFO o.a.j.t.JMeterThread: Thread is done: POST /tickets arrivals 1-59
+2026-10-09 14:38:13,713 INFO o.a.j.t.JMeterThread: Thread finished: POST /tickets arrivals 1-59
+2026-10-09 14:38:18,824 INFO o.a.j.t.JMeterThread: Thread started: POST /tickets arrivals 1-63
+2026-10-09 14:38:24,436 INFO o.a.j.t.JMeterThread: Thread is done: POST /tickets arrivals 1-60
+2026-10-09 14:38:24,436 INFO o.a.j.t.JMeterThread: Thread finished: POST /tickets arrivals 1-60
+2026-10-09 14:38:25,999 INFO o.a.j.t.JMeterThread: Thread started: POST /tickets arrivals 1-64
+2026-10-09 14:38:32,594 INFO o.a.j.t.JMeterThread: Thread started: POST /tickets arrivals 1-65
+2026-10-09 14:38:46,501 INFO o.a.j.t.JMeterThread: Thread is done: POST /tickets arrivals 1-61
+2026-10-09 14:38:46,501 INFO o.a.j.t.JMeterThread: Thread finished: POST /tickets arrivals 1-61
+2026-10-09 14:38:54,834 INFO o.a.j.t.JMeterThread: Thread started: POST /tickets arrivals 1-66
+2026-10-09 14:39:05,132 INFO o.a.j.r.Summariser: summary +      4 in 00:01:03 =    0.1/s Avg: 31419 Min: 13977 Max: 52276 Err:     0 (0.00%) Active: 5 Started: 66 Finished: 61
+2026-10-09 14:39:05,132 INFO o.a.j.r.Summariser: summary =     62 in 00:22:40 =    0.0/s Avg: 17690 Min:  4659 Max: 52276 Err:     0 (0.00%)
+2026-10-09 14:39:05,132 INFO o.a.j.t.JMeterThread: Thread is done: POST /tickets arrivals 1-62
+2026-10-09 14:39:05,132 INFO o.a.j.t.JMeterThread: Thread finished: POST /tickets arrivals 1-62
+2026-10-09 14:39:09,364 INFO o.a.j.t.JMeterThread: Thread started: POST /tickets arrivals 1-67
+2026-10-09 14:39:21,022 INFO o.a.j.t.JMeterThread: Thread is done: POST /tickets arrivals 1-63
+2026-10-09 14:39:21,022 INFO o.a.j.t.JMeterThread: Thread finished: POST /tickets arrivals 1-63
+2026-10-09 14:39:31,307 INFO o.a.j.t.JMeterThread: Thread started: POST /tickets arrivals 1-68
+2026-10-09 14:39:34,321 INFO o.a.j.r.Summariser: summary +      2 in 00:00:29 =    0.1/s Avg: 65261 Min: 62199 Max: 68323 Err:     0 (0.00%) Active: 5 Started: 68 Finished: 63
+2026-10-09 14:39:34,321 INFO o.a.j.r.Summariser: summary =     64 in 00:23:09 =    0.0/s Avg: 19177 Min:  4659 Max: 68323 Err:     0 (0.00%)
+2026-10-09 14:39:34,322 INFO o.a.j.t.JMeterThread: Thread is done: POST /tickets arrivals 1-64
+2026-10-09 14:39:34,322 INFO o.a.j.t.JMeterThread: Thread finished: POST /tickets arrivals 1-64
+2026-10-09 14:39:42,524 INFO o.a.j.t.JMeterThread: Thread is done: POST /tickets arrivals 1-65
+2026-10-09 14:39:42,524 INFO o.a.j.t.JMeterThread: Thread finished: POST /tickets arrivals 1-65
+2026-10-09 14:39:51,027 INFO o.a.j.t.JMeterThread: Thread is done: POST /tickets arrivals 1-66
+2026-10-09 14:39:51,027 INFO o.a.j.t.JMeterThread: Thread finished: POST /tickets arrivals 1-66
+2026-10-09 14:39:55,056 INFO o.a.j.t.JMeterThread: Thread started: POST /tickets arrivals 1-69
+2026-10-09 14:40:03,818 INFO o.a.j.r.Summariser: summary +      3 in 00:00:29 =    0.1/s Avg: 60192 Min: 54454 Max: 69930 Err:     0 (0.00%) Active: 3 Started: 69 Finished: 66
+2026-10-09 14:40:03,818 INFO o.a.j.r.Summariser: summary =     67 in 00:23:38 =    0.0/s Avg: 21013 Min:  4659 Max: 69930 Err:     0 (0.00%)
+2026-10-09 14:40:03,818 INFO o.a.j.t.JMeterThread: Thread is done: POST /tickets arrivals 1-67
+2026-10-09 14:40:03,818 INFO o.a.j.t.JMeterThread: Thread finished: POST /tickets arrivals 1-67
+2026-10-09 14:40:07,006 INFO o.a.j.t.JMeterThread: Thread started: POST /tickets arrivals 1-70
+2026-10-09 14:40:11,337 INFO o.a.j.t.JMeterThread: Thread is done: POST /tickets arrivals 1-68
+2026-10-09 14:40:11,337 INFO o.a.j.t.JMeterThread: Thread finished: POST /tickets arrivals 1-68
+2026-10-09 14:40:24,320 INFO o.a.j.t.JMeterThread: Thread started: POST /tickets arrivals 1-71
+2026-10-09 14:40:28,098 INFO o.a.j.t.JMeterThread: Thread is done: POST /tickets arrivals 1-69
+2026-10-09 14:40:28,098 INFO o.a.j.t.JMeterThread: Thread finished: POST /tickets arrivals 1-69
+2026-10-09 14:40:45,243 INFO o.a.j.t.o.PoissonArrivalsRamp: Generating 0 events, beginRate = 0.06666666666666667 / sec, endRate = 0.08333333333333333 / sec, duration = 10.0 sec
+2026-10-09 14:40:45,243 INFO o.a.j.t.JMeterThread: Thread started: POST /tickets arrivals 1-72
+2026-10-09 14:40:45,243 INFO o.a.j.t.o.PoissonArrivalsRamp: Generating 40 events, beginRate = 0.08333333333333333 / sec, endRate = 0.08333333333333333 / sec, duration = 480.0 sec
+2026-10-09 14:40:49,325 INFO o.a.j.t.JMeterThread: Thread is done: POST /tickets arrivals 1-70
+2026-10-09 14:40:49,325 INFO o.a.j.t.JMeterThread: Thread finished: POST /tickets arrivals 1-70
+2026-10-09 14:40:55,643 INFO o.a.j.t.JMeterThread: Thread is done: POST /tickets arrivals 1-71
+2026-10-09 14:40:55,643 INFO o.a.j.t.JMeterThread: Thread finished: POST /tickets arrivals 1-71
+2026-10-09 14:40:58,700 INFO o.a.j.t.JMeterThread: Thread started: POST /tickets arrivals 1-73
+2026-10-09 14:41:02,126 INFO o.a.j.r.Summariser: summary +      5 in 00:00:58 =    0.1/s Avg: 32719 Min: 16882 Max: 42320 Err:     0 (0.00%) Active: 2 Started: 73 Finished: 71
+2026-10-09 14:41:02,126 INFO o.a.j.r.Summariser: summary =     72 in 00:24:37 =    0.0/s Avg: 21826 Min:  4659 Max: 69930 Err:     0 (0.00%)
+2026-10-09 14:41:02,126 INFO o.a.j.t.JMeterThread: Thread is done: POST /tickets arrivals 1-72
+2026-10-09 14:41:02,126 INFO o.a.j.t.JMeterThread: Thread finished: POST /tickets arrivals 1-72
+2026-10-09 14:41:08,115 INFO o.a.j.t.JMeterThread: Thread is done: POST /tickets arrivals 1-73
+2026-10-09 14:41:08,115 INFO o.a.j.t.JMeterThread: Thread finished: POST /tickets arrivals 1-73
+2026-10-09 14:41:11,542 INFO o.a.j.t.JMeterThread: Thread started: POST /tickets arrivals 1-74
+2026-10-09 14:41:13,199 INFO o.a.j.t.JMeterThread: Thread started: POST /tickets arrivals 1-75
+2026-10-09 14:41:15,880 INFO o.a.j.t.JMeterThread: Thread started: POST /tickets arrivals 1-76
+2026-10-09 14:41:19,088 INFO o.a.j.t.JMeterThread: Thread started: POST /tickets arrivals 1-77
+2026-10-09 14:41:20,237 INFO o.a.j.t.JMeterThread: Thread is done: POST /tickets arrivals 1-74
+2026-10-09 14:41:20,237 INFO o.a.j.t.JMeterThread: Thread finished: POST /tickets arrivals 1-74
+2026-10-09 14:41:23,388 INFO o.a.j.t.JMeterThread: Thread started: POST /tickets arrivals 1-78
+2026-10-09 14:41:23,732 INFO o.a.j.t.JMeterThread: Thread started: POST /tickets arrivals 1-79
+2026-10-09 14:41:28,094 INFO o.a.j.t.JMeterThread: Thread is done: POST /tickets arrivals 1-75
+2026-10-09 14:41:28,094 INFO o.a.j.t.JMeterThread: Thread finished: POST /tickets arrivals 1-75
+2026-10-09 14:41:28,902 INFO o.a.j.t.JMeterThread: Thread started: POST /tickets arrivals 1-80
+2026-10-09 14:41:34,056 INFO o.a.j.t.JMeterThread: Thread started: POST /tickets arrivals 1-81
+2026-10-09 14:41:35,602 INFO o.a.j.r.Summariser: summary +      4 in 00:00:33 =    0.1/s Avg: 13181 Min:  8693 Max: 19722 Err:     0 (0.00%) Active: 6 Started: 81 Finished: 75
+2026-10-09 14:41:35,603 INFO o.a.j.r.Summariser: summary =     76 in 00:25:10 =    0.1/s Avg: 21371 Min:  4659 Max: 69930 Err:     0 (0.00%)
+2026-10-09 14:41:35,603 INFO o.a.j.t.JMeterThread: Thread is done: POST /tickets arrivals 1-76
+2026-10-09 14:41:35,603 INFO o.a.j.t.JMeterThread: Thread finished: POST /tickets arrivals 1-76
+2026-10-09 14:41:38,199 INFO o.a.j.t.JMeterThread: Thread started: POST /tickets arrivals 1-82
+2026-10-09 14:41:41,218 INFO o.a.j.t.JMeterThread: Thread started: POST /tickets arrivals 1-83
+2026-10-09 14:41:51,050 INFO o.a.j.t.JMeterThread: Thread is done: POST /tickets arrivals 1-77
+2026-10-09 14:41:51,050 INFO o.a.j.t.JMeterThread: Thread finished: POST /tickets arrivals 1-77
+2026-10-09 14:41:57,611 INFO o.a.j.t.JMeterThread: Thread is done: POST /tickets arrivals 1-78
+2026-10-09 14:41:57,611 INFO o.a.j.t.JMeterThread: Thread finished: POST /tickets arrivals 1-78
+2026-10-09 14:41:57,630 INFO o.a.j.t.JMeterThread: Thread started: POST /tickets arrivals 1-84
+2026-10-09 14:42:06,754 INFO o.a.j.t.JMeterThread: Thread started: POST /tickets arrivals 1-85
+2026-10-09 14:42:09,901 INFO o.a.j.t.JMeterThread: Thread started: POST /tickets arrivals 1-86
+2026-10-09 14:42:11,836 INFO o.a.j.t.JMeterThread: Thread is done: POST /tickets arrivals 1-79
+2026-10-09 14:42:11,836 INFO o.a.j.t.JMeterThread: Thread finished: POST /tickets arrivals 1-79
+2026-10-09 14:42:19,305 INFO o.a.j.t.JMeterThread: Thread is done: POST /tickets arrivals 1-80
+2026-10-09 14:42:19,305 INFO o.a.j.t.JMeterThread: Thread finished: POST /tickets arrivals 1-80
+2026-10-09 14:42:20,594 INFO o.a.j.t.JMeterThread: Thread started: POST /tickets arrivals 1-87
+2026-10-09 14:42:27,617 INFO o.a.j.t.JMeterThread: Thread is done: POST /tickets arrivals 1-81
+2026-10-09 14:42:27,617 INFO o.a.j.t.JMeterThread: Thread finished: POST /tickets arrivals 1-81
+2026-10-09 14:42:27,917 INFO o.a.j.t.JMeterThread: Thread started: POST /tickets arrivals 1-88
+2026-10-09 14:42:36,918 INFO o.a.j.t.JMeterThread: Thread is done: POST /tickets arrivals 1-82
+2026-10-09 14:42:36,918 INFO o.a.j.t.JMeterThread: Thread finished: POST /tickets arrivals 1-82
+2026-10-09 14:42:40,205 INFO o.a.j.t.JMeterThread: Thread started: POST /tickets arrivals 1-89
+2026-10-09 14:42:41,197 INFO o.a.j.t.JMeterThread: Thread started: POST /tickets arrivals 1-90
+2026-10-09 14:42:57,102 INFO o.a.j.t.JMeterThread: Thread is done: POST /tickets arrivals 1-83
+2026-10-09 14:42:57,102 INFO o.a.j.t.JMeterThread: Thread finished: POST /tickets arrivals 1-83
+2026-10-09 14:43:00,673 INFO o.a.j.t.JMeterThread: Thread started: POST /tickets arrivals 1-91
+2026-10-09 14:43:09,508 INFO o.a.j.t.JMeterThread: Thread is done: POST /tickets arrivals 1-84
+2026-10-09 14:43:09,508 INFO o.a.j.t.JMeterThread: Thread finished: POST /tickets arrivals 1-84
+2026-10-09 14:43:10,848 INFO o.a.j.t.JMeterThread: Thread started: POST /tickets arrivals 1-92
+2026-10-09 14:43:21,935 INFO o.a.j.t.JMeterThread: Thread started: POST /tickets arrivals 1-93
+2026-10-09 14:43:24,629 INFO o.a.j.t.JMeterThread: Thread is done: POST /tickets arrivals 1-85
+2026-10-09 14:43:24,629 INFO o.a.j.t.JMeterThread: Thread finished: POST /tickets arrivals 1-85
+2026-10-09 14:43:30,887 INFO o.a.j.t.JMeterThread: Thread started: POST /tickets arrivals 1-94
+2026-10-09 14:43:35,600 INFO o.a.j.r.Summariser: summary +     10 in 00:02:00 =    0.1/s Avg: 58831 Min: 31963 Max: 85699 Err:     0 (0.00%) Active: 9 Started: 94 Finished: 85
+2026-10-09 14:43:35,600 INFO o.a.j.r.Summariser: summary =     86 in 00:27:10 =    0.1/s Avg: 25727 Min:  4659 Max: 85699 Err:     0 (0.00%)
+2026-10-09 14:43:35,600 INFO o.a.j.t.JMeterThread: Thread is done: POST /tickets arrivals 1-86
+2026-10-09 14:43:35,600 INFO o.a.j.t.JMeterThread: Thread finished: POST /tickets arrivals 1-86
+2026-10-09 14:43:51,291 INFO o.a.j.t.JMeterThread: Thread is done: POST /tickets arrivals 1-87
+2026-10-09 14:43:51,291 INFO o.a.j.t.JMeterThread: Thread finished: POST /tickets arrivals 1-87
+2026-10-09 14:44:02,217 INFO o.a.j.r.Summariser: summary +      2 in 00:00:27 =    0.1/s Avg: 92499 Min: 90697 Max: 94301 Err:     0 (0.00%) Active: 7 Started: 94 Finished: 87
+2026-10-09 14:44:02,217 INFO o.a.j.r.Summariser: summary =     88 in 00:27:37 =    0.1/s Avg: 27244 Min:  4659 Max: 94301 Err:     0 (0.00%)
+2026-10-09 14:44:02,218 INFO o.a.j.t.JMeterThread: Thread is done: POST /tickets arrivals 1-88
+2026-10-09 14:44:02,218 INFO o.a.j.t.JMeterThread: Thread finished: POST /tickets arrivals 1-88
+2026-10-09 14:44:10,939 INFO o.a.j.t.JMeterThread: Thread is done: POST /tickets arrivals 1-89
+2026-10-09 14:44:10,939 INFO o.a.j.t.JMeterThread: Thread finished: POST /tickets arrivals 1-89
+2026-10-09 14:44:14,933 INFO o.a.j.t.JMeterThread: Thread started: POST /tickets arrivals 1-95
+2026-10-09 14:44:16,719 INFO o.a.j.t.JMeterThread: Thread started: POST /tickets arrivals 1-96
+2026-10-09 14:44:26,826 INFO o.a.j.t.JMeterThread: Thread started: POST /tickets arrivals 1-97
+2026-10-09 14:44:28,105 INFO o.a.j.t.JMeterThread: Thread is done: POST /tickets arrivals 1-90
+2026-10-09 14:44:28,105 INFO o.a.j.t.JMeterThread: Thread finished: POST /tickets arrivals 1-90
+2026-10-09 14:44:30,910 INFO o.a.j.t.JMeterThread: Thread started: POST /tickets arrivals 1-98
+2026-10-09 14:44:37,221 INFO o.a.j.t.JMeterThread: Thread is done: POST /tickets arrivals 1-91
+2026-10-09 14:44:37,221 INFO o.a.j.t.JMeterThread: Thread finished: POST /tickets arrivals 1-91
+2026-10-09 14:44:41,835 INFO o.a.j.t.JMeterThread: Thread started: POST /tickets arrivals 1-99
+2026-10-09 14:44:43,186 INFO o.a.j.t.JMeterThread: Thread is done: POST /tickets arrivals 1-92
+2026-10-09 14:44:43,186 INFO o.a.j.t.JMeterThread: Thread finished: POST /tickets arrivals 1-92
+2026-10-09 14:44:53,122 INFO o.a.j.t.JMeterThread: Thread is done: POST /tickets arrivals 1-93
+2026-10-09 14:44:53,122 INFO o.a.j.t.JMeterThread: Thread finished: POST /tickets arrivals 1-93
+2026-10-09 14:45:02,907 INFO o.a.j.r.Summariser: summary +      6 in 00:01:01 =    0.1/s Avg: 94956 Min: 90735 Max: 106909 Err:     0 (0.00%) Active: 6 Started: 99 Finished: 93
+2026-10-09 14:45:02,907 INFO o.a.j.r.Summariser: summary =     94 in 00:28:37 =    0.1/s Avg: 31566 Min:  4659 Max: 106909 Err:     0 (0.00%)
+2026-10-09 14:45:02,907 INFO o.a.j.t.JMeterThread: Thread is done: POST /tickets arrivals 1-94
+2026-10-09 14:45:02,907 INFO o.a.j.t.JMeterThread: Thread finished: POST /tickets arrivals 1-94
+2026-10-09 14:45:19,898 INFO o.a.j.t.JMeterThread: Thread is done: POST /tickets arrivals 1-95
+2026-10-09 14:45:19,898 INFO o.a.j.t.JMeterThread: Thread finished: POST /tickets arrivals 1-95
+2026-10-09 14:45:23,414 INFO o.a.j.t.JMeterThread: Thread started: POST /tickets arrivals 1-100
+2026-10-09 14:45:38,994 INFO o.a.j.t.JMeterThread: Thread is done: POST /tickets arrivals 1-96
+2026-10-09 14:45:38,994 INFO o.a.j.t.JMeterThread: Thread finished: POST /tickets arrivals 1-96
+2026-10-09 14:45:50,112 INFO o.a.j.t.JMeterThread: Thread is done: POST /tickets arrivals 1-97
+2026-10-09 14:45:50,112 INFO o.a.j.t.JMeterThread: Thread finished: POST /tickets arrivals 1-97
+2026-10-09 14:45:58,519 INFO o.a.j.t.JMeterThread: Thread is done: POST /tickets arrivals 1-98
+2026-10-09 14:45:58,519 INFO o.a.j.t.JMeterThread: Thread finished: POST /tickets arrivals 1-98
+2026-10-09 14:46:09,482 INFO o.a.j.t.JMeterThread: Thread is done: POST /tickets arrivals 1-99
+2026-10-09 14:46:09,483 INFO o.a.j.t.JMeterThread: Thread finished: POST /tickets arrivals 1-99
+2026-10-09 14:46:12,812 INFO o.a.j.t.JMeterThread: Thread started: POST /tickets arrivals 1-101
+2026-10-09 14:46:21,509 INFO o.a.j.t.JMeterThread: Thread started: POST /tickets arrivals 1-102
+2026-10-09 14:46:24,600 INFO o.a.j.t.JMeterThread: Thread is done: POST /tickets arrivals 1-100
+2026-10-09 14:46:24,600 INFO o.a.j.t.JMeterThread: Thread finished: POST /tickets arrivals 1-100
+2026-10-09 14:46:30,953 INFO o.a.j.t.JMeterThread: Thread started: POST /tickets arrivals 1-103
+2026-10-09 14:46:39,280 INFO o.a.j.t.JMeterThread: Thread is done: POST /tickets arrivals 1-101
+2026-10-09 14:46:39,280 INFO o.a.j.t.JMeterThread: Thread finished: POST /tickets arrivals 1-101
+2026-10-09 14:46:44,402 INFO o.a.j.t.JMeterThread: Thread is done: POST /tickets arrivals 1-102
+2026-10-09 14:46:44,402 INFO o.a.j.t.JMeterThread: Thread finished: POST /tickets arrivals 1-102
+2026-10-09 14:46:49,352 INFO o.a.j.t.JMeterThread: Thread started: POST /tickets arrivals 1-104
+2026-10-09 14:46:53,071 INFO o.a.j.t.JMeterThread: Thread started: POST /tickets arrivals 1-105
+2026-10-09 14:46:55,247 INFO o.a.j.t.JMeterThread: Thread started: POST /tickets arrivals 1-106
+2026-10-09 14:46:58,108 INFO o.a.j.t.JMeterThread: Thread is done: POST /tickets arrivals 1-103
+2026-10-09 14:46:58,108 INFO o.a.j.t.JMeterThread: Thread finished: POST /tickets arrivals 1-103
+2026-10-09 14:47:10,205 INFO o.a.j.t.JMeterThread: Thread is done: POST /tickets arrivals 1-104
+2026-10-09 14:47:10,205 INFO o.a.j.t.JMeterThread: Thread finished: POST /tickets arrivals 1-104
+2026-10-09 14:47:14,507 INFO o.a.j.t.JMeterThread: Thread started: POST /tickets arrivals 1-107
+2026-10-09 14:47:15,107 INFO o.a.j.t.JMeterThread: Thread started: POST /tickets arrivals 1-108
+2026-10-09 14:47:24,412 INFO o.a.j.t.JMeterThread: Thread is done: POST /tickets arrivals 1-105
+2026-10-09 14:47:24,412 INFO o.a.j.t.JMeterThread: Thread finished: POST /tickets arrivals 1-105
+2026-10-09 14:47:29,277 INFO o.a.j.t.JMeterThread: Thread is done: POST /tickets arrivals 1-106
+2026-10-09 14:47:29,277 INFO o.a.j.t.JMeterThread: Thread finished: POST /tickets arrivals 1-106
+2026-10-09 14:47:43,912 INFO o.a.j.t.JMeterThread: Thread is done: POST /tickets arrivals 1-107
+2026-10-09 14:47:43,912 INFO o.a.j.t.JMeterThread: Thread finished: POST /tickets arrivals 1-107
+2026-10-09 14:48:04,206 INFO o.a.j.r.Summariser: summary +     14 in 00:03:01 =    0.1/s Avg: 50587 Min: 20853 Max: 87649 Err:     0 (0.00%) Active: 1 Started: 108 Finished: 107
+2026-10-09 14:48:04,206 INFO o.a.j.r.Summariser: summary =    108 in 00:31:39 =    0.1/s Avg: 34032 Min:  4659 Max: 106909 Err:     0 (0.00%)
+2026-10-09 14:48:04,206 INFO o.a.j.t.JMeterThread: Thread is done: POST /tickets arrivals 1-108
+2026-10-09 14:48:04,206 INFO o.a.j.t.JMeterThread: Thread finished: POST /tickets arrivals 1-108
+2026-10-09 14:48:14,267 INFO o.a.j.t.JMeterThread: Thread started: POST /tickets arrivals 1-109
+2026-10-09 14:48:18,812 INFO o.a.j.t.JMeterThread: Thread started: POST /tickets arrivals 1-110
+2026-10-09 14:48:22,832 INFO o.a.j.t.JMeterThread: Thread is done: POST /tickets arrivals 1-109
+2026-10-09 14:48:22,832 INFO o.a.j.t.JMeterThread: Thread finished: POST /tickets arrivals 1-109
+2026-10-09 14:48:24,604 INFO o.a.j.t.JMeterThread: Thread started: POST /tickets arrivals 1-111
+2026-10-09 14:48:28,104 INFO o.a.j.t.JMeterThread: Thread is done: POST /tickets arrivals 1-110
+2026-10-09 14:48:28,104 INFO o.a.j.t.JMeterThread: Thread finished: POST /tickets arrivals 1-110
+2026-10-09 14:48:34,303 INFO o.a.j.r.Summariser: summary +      3 in 00:00:30 =    0.1/s Avg:  9184 Min:  8565 Max:  9698 Err:     0 (0.00%) Active: 1 Started: 111 Finished: 110
+2026-10-09 14:48:34,303 INFO o.a.j.r.Summariser: summary =    111 in 00:32:09 =    0.1/s Avg: 33360 Min:  4659 Max: 106909 Err:     0 (0.00%)
+2026-10-09 14:48:34,303 INFO o.a.j.t.JMeterThread: Thread is done: POST /tickets arrivals 1-111
+2026-10-09 14:48:34,303 INFO o.a.j.t.JMeterThread: Thread finished: POST /tickets arrivals 1-111
+2026-10-09 14:48:47,141 INFO o.a.j.t.o.PoissonArrivalsRamp: Generating 0 events, beginRate = 0.08333333333333333 / sec, endRate = 0.1 / sec, duration = 10.0 sec
+2026-10-09 14:48:47,141 INFO o.a.j.t.JMeterThread: Thread started: POST /tickets arrivals 1-112
+2026-10-09 14:48:47,141 INFO o.a.j.t.o.PoissonArrivalsRamp: Generating 48 events, beginRate = 0.1 / sec, endRate = 0.1 / sec, duration = 480.0 sec
+2026-10-09 14:48:53,211 INFO o.a.j.t.JMeterThread: Thread is done: POST /tickets arrivals 1-112
+2026-10-09 14:48:53,211 INFO o.a.j.t.JMeterThread: Thread finished: POST /tickets arrivals 1-112
+2026-10-09 14:49:15,374 INFO o.a.j.t.JMeterThread: Thread started: POST /tickets arrivals 1-113
+2026-10-09 14:49:18,948 INFO o.a.j.t.JMeterThread: Thread started: POST /tickets arrivals 1-114
+2026-10-09 14:49:21,604 INFO o.a.j.t.JMeterThread: Thread started: POST /tickets arrivals 1-115
+2026-10-09 14:49:22,612 INFO o.a.j.t.JMeterThread: Thread is done: POST /tickets arrivals 1-113
+2026-10-09 14:49:22,612 INFO o.a.j.t.JMeterThread: Thread finished: POST /tickets arrivals 1-113
+2026-10-09 14:49:26,182 INFO o.a.j.t.JMeterThread: Thread started: POST /tickets arrivals 1-116
+2026-10-09 14:49:32,990 INFO o.a.j.r.Summariser: summary +      3 in 00:00:59 =    0.1/s Avg:  9118 Min:  6071 Max: 14044 Err:     0 (0.00%) Active: 3 Started: 116 Finished: 113
+2026-10-09 14:49:32,990 INFO o.a.j.r.Summariser: summary =    114 in 00:33:07 =    0.1/s Avg: 32722 Min:  4659 Max: 106909 Err:     0 (0.00%)
+2026-10-09 14:49:32,991 INFO o.a.j.t.JMeterThread: Thread is done: POST /tickets arrivals 1-114
+2026-10-09 14:49:32,991 INFO o.a.j.t.JMeterThread: Thread finished: POST /tickets arrivals 1-114
+2026-10-09 14:49:47,260 INFO o.a.j.t.JMeterThread: Thread started: POST /tickets arrivals 1-117
+2026-10-09 14:49:47,701 INFO o.a.j.t.JMeterThread: Thread is done: POST /tickets arrivals 1-115
+2026-10-09 14:49:47,701 INFO o.a.j.t.JMeterThread: Thread finished: POST /tickets arrivals 1-115
+2026-10-09 14:49:47,735 INFO o.a.j.t.JMeterThread: Thread started: POST /tickets arrivals 1-118
+2026-10-09 14:49:57,393 INFO o.a.j.t.JMeterThread: Thread started: POST /tickets arrivals 1-119
+2026-10-09 14:49:58,480 INFO o.a.j.t.JMeterThread: Thread is done: POST /tickets arrivals 1-116
+2026-10-09 14:49:58,480 INFO o.a.j.t.JMeterThread: Thread finished: POST /tickets arrivals 1-116
+2026-10-09 14:50:03,771 INFO o.a.j.r.Summariser: summary +      3 in 00:00:31 =    0.1/s Avg: 24971 Min: 16512 Max: 32302 Err:     0 (0.00%) Active: 3 Started: 119 Finished: 116
+2026-10-09 14:50:03,771 INFO o.a.j.r.Summariser: summary =    117 in 00:33:38 =    0.1/s Avg: 32524 Min:  4659 Max: 106909 Err:     0 (0.00%)
+2026-10-09 14:50:03,771 INFO o.a.j.t.JMeterThread: Thread is done: POST /tickets arrivals 1-117
+2026-10-09 14:50:03,771 INFO o.a.j.t.JMeterThread: Thread finished: POST /tickets arrivals 1-117
+2026-10-09 14:50:14,499 INFO o.a.j.t.JMeterThread: Thread is done: POST /tickets arrivals 1-118
+2026-10-09 14:50:14,499 INFO o.a.j.t.JMeterThread: Thread finished: POST /tickets arrivals 1-118
+2026-10-09 14:50:18,067 INFO o.a.j.t.JMeterThread: Thread started: POST /tickets arrivals 1-120
+2026-10-09 14:50:23,517 INFO o.a.j.t.JMeterThread: Thread started: POST /tickets arrivals 1-121
+2026-10-09 14:50:23,882 INFO o.a.j.t.JMeterThread: Thread started: POST /tickets arrivals 1-122
+2026-10-09 14:50:29,078 INFO o.a.j.t.JMeterThread: Thread is done: POST /tickets arrivals 1-119
+2026-10-09 14:50:29,079 INFO o.a.j.t.JMeterThread: Thread finished: POST /tickets arrivals 1-119
+2026-10-09 14:50:38,033 INFO o.a.j.t.JMeterThread: Thread started: POST /tickets arrivals 1-123
+2026-10-09 14:50:38,163 INFO o.a.j.t.JMeterThread: Thread started: POST /tickets arrivals 1-124
+2026-10-09 14:50:44,651 INFO o.a.j.t.JMeterThread: Thread is done: POST /tickets arrivals 1-120
+2026-10-09 14:50:44,651 INFO o.a.j.t.JMeterThread: Thread finished: POST /tickets arrivals 1-120
+2026-10-09 14:50:58,285 INFO o.a.j.t.JMeterThread: Thread is done: POST /tickets arrivals 1-121
+2026-10-09 14:50:58,285 INFO o.a.j.t.JMeterThread: Thread finished: POST /tickets arrivals 1-121
+2026-10-09 14:51:06,268 INFO o.a.j.t.JMeterThread: Thread is done: POST /tickets arrivals 1-122
+2026-10-09 14:51:06,268 INFO o.a.j.t.JMeterThread: Thread finished: POST /tickets arrivals 1-122
+2026-10-09 14:51:07,973 INFO o.a.j.t.JMeterThread: Thread started: POST /tickets arrivals 1-125
+2026-10-09 14:51:15,211 INFO o.a.j.t.JMeterThread: Thread started: POST /tickets arrivals 1-126
+2026-10-09 14:51:16,966 INFO o.a.j.t.JMeterThread: Thread is done: POST /tickets arrivals 1-123
+2026-10-09 14:51:16,966 INFO o.a.j.t.JMeterThread: Thread finished: POST /tickets arrivals 1-123
+2026-10-09 14:51:18,666 INFO o.a.j.t.JMeterThread: Thread started: POST /tickets arrivals 1-127
+2026-10-09 14:51:25,978 INFO o.a.j.t.JMeterThread: Thread is done: POST /tickets arrivals 1-124
+2026-10-09 14:51:25,978 INFO o.a.j.t.JMeterThread: Thread finished: POST /tickets arrivals 1-124
+2026-10-09 14:51:43,773 INFO o.a.j.t.JMeterThread: Thread is done: POST /tickets arrivals 1-125
+2026-10-09 14:51:43,773 INFO o.a.j.t.JMeterThread: Thread finished: POST /tickets arrivals 1-125
+2026-10-09 14:51:45,976 INFO o.a.j.t.JMeterThread: Thread started: POST /tickets arrivals 1-128
+2026-10-09 14:51:46,413 INFO o.a.j.t.JMeterThread: Thread started: POST /tickets arrivals 1-129
+2026-10-09 14:51:51,782 INFO o.a.j.t.JMeterThread: Thread is done: POST /tickets arrivals 1-126
+2026-10-09 14:51:51,783 INFO o.a.j.t.JMeterThread: Thread finished: POST /tickets arrivals 1-126
+2026-10-09 14:51:58,466 INFO o.a.j.t.JMeterThread: Thread is done: POST /tickets arrivals 1-127
+2026-10-09 14:51:58,467 INFO o.a.j.t.JMeterThread: Thread finished: POST /tickets arrivals 1-127
+2026-10-09 14:52:10,147 INFO o.a.j.t.JMeterThread: Thread started: POST /tickets arrivals 1-130
+2026-10-09 14:52:10,465 INFO o.a.j.t.JMeterThread: Thread is done: POST /tickets arrivals 1-128
+2026-10-09 14:52:10,465 INFO o.a.j.t.JMeterThread: Thread finished: POST /tickets arrivals 1-128
+2026-10-09 14:52:22,293 INFO o.a.j.t.JMeterThread: Thread is done: POST /tickets arrivals 1-129
+2026-10-09 14:52:22,293 INFO o.a.j.t.JMeterThread: Thread finished: POST /tickets arrivals 1-129
+2026-10-09 14:52:29,171 INFO o.a.j.t.JMeterThread: Thread started: POST /tickets arrivals 1-131
+2026-10-09 14:52:31,854 INFO o.a.j.r.Summariser: summary +     13 in 00:02:28 =    0.1/s Avg: 34096 Min: 21710 Max: 47823 Err:     0 (0.00%) Active: 2 Started: 131 Finished: 129
+2026-10-09 14:52:31,854 INFO o.a.j.r.Summariser: summary =    130 in 00:36:06 =    0.1/s Avg: 32681 Min:  4659 Max: 106909 Err:     0 (0.00%)
+2026-10-09 14:52:31,855 INFO o.a.j.t.JMeterThread: Thread is done: POST /tickets arrivals 1-130
+2026-10-09 14:52:31,855 INFO o.a.j.t.JMeterThread: Thread finished: POST /tickets arrivals 1-130
+2026-10-09 14:52:33,168 INFO o.a.j.t.JMeterThread: Thread started: POST /tickets arrivals 1-132
+2026-10-09 14:52:35,489 INFO o.a.j.t.JMeterThread: Thread started: POST /tickets arrivals 1-133
+2026-10-09 14:52:40,087 INFO o.a.j.t.JMeterThread: Thread is done: POST /tickets arrivals 1-131
+2026-10-09 14:52:40,087 INFO o.a.j.t.JMeterThread: Thread finished: POST /tickets arrivals 1-131
+2026-10-09 14:52:45,382 INFO o.a.j.t.JMeterThread: Thread started: POST /tickets arrivals 1-134
+2026-10-09 14:52:55,268 INFO o.a.j.t.JMeterThread: Thread is done: POST /tickets arrivals 1-132
+2026-10-09 14:52:55,268 INFO o.a.j.t.JMeterThread: Thread finished: POST /tickets arrivals 1-132
+2026-10-09 14:52:58,603 INFO o.a.j.t.JMeterThread: Thread started: POST /tickets arrivals 1-135
+2026-10-09 14:53:00,191 INFO o.a.j.t.JMeterThread: Thread started: POST /tickets arrivals 1-136
+2026-10-09 14:53:07,743 INFO o.a.j.t.JMeterThread: Thread is done: POST /tickets arrivals 1-133
+2026-10-09 14:53:07,743 INFO o.a.j.t.JMeterThread: Thread finished: POST /tickets arrivals 1-133
+2026-10-09 14:53:10,931 INFO o.a.j.t.JMeterThread: Thread started: POST /tickets arrivals 1-137
+2026-10-09 14:53:23,567 INFO o.a.j.t.JMeterThread: Thread is done: POST /tickets arrivals 1-134
+2026-10-09 14:53:23,567 INFO o.a.j.t.JMeterThread: Thread finished: POST /tickets arrivals 1-134
+2026-10-09 14:53:27,493 INFO o.a.j.t.JMeterThread: Thread started: POST /tickets arrivals 1-138
+2026-10-09 14:53:29,286 INFO o.a.j.t.JMeterThread: Thread started: POST /tickets arrivals 1-139
+2026-10-09 14:53:38,155 INFO o.a.j.t.JMeterThread: Thread is done: POST /tickets arrivals 1-135
+2026-10-09 14:53:38,155 INFO o.a.j.t.JMeterThread: Thread finished: POST /tickets arrivals 1-135
+2026-10-09 14:53:51,373 INFO o.a.j.t.JMeterThread: Thread is done: POST /tickets arrivals 1-136
+2026-10-09 14:53:51,373 INFO o.a.j.t.JMeterThread: Thread finished: POST /tickets arrivals 1-136
+2026-10-09 14:53:52,089 INFO o.a.j.t.JMeterThread: Thread started: POST /tickets arrivals 1-140
+2026-10-09 14:54:01,377 INFO o.a.j.r.Summariser: summary +      7 in 00:01:30 =    0.1/s Avg: 34952 Min: 10917 Max: 51190 Err:     0 (0.00%) Active: 4 Started: 140 Finished: 136
+2026-10-09 14:54:01,377 INFO o.a.j.r.Summariser: summary =    137 in 00:37:36 =    0.1/s Avg: 32797 Min:  4659 Max: 106909 Err:     0 (0.00%)
+2026-10-09 14:54:01,377 INFO o.a.j.t.JMeterThread: Thread is done: POST /tickets arrivals 1-137
+2026-10-09 14:54:01,378 INFO o.a.j.t.JMeterThread: Thread finished: POST /tickets arrivals 1-137
+2026-10-09 14:54:11,769 INFO o.a.j.t.JMeterThread: Thread is done: POST /tickets arrivals 1-138
+2026-10-09 14:54:11,769 INFO o.a.j.t.JMeterThread: Thread finished: POST /tickets arrivals 1-138
+2026-10-09 14:54:26,914 INFO o.a.j.t.JMeterThread: Thread started: POST /tickets arrivals 1-141
+2026-10-09 14:54:27,039 INFO o.a.j.t.JMeterThread: Thread started: POST /tickets arrivals 1-142
+2026-10-09 14:54:27,116 INFO o.a.j.t.JMeterThread: Thread is done: POST /tickets arrivals 1-139
+2026-10-09 14:54:27,116 INFO o.a.j.t.JMeterThread: Thread finished: POST /tickets arrivals 1-139
+2026-10-09 14:54:31,941 INFO o.a.j.t.JMeterThread: Thread started: POST /tickets arrivals 1-143
+2026-10-09 14:54:37,184 INFO o.a.j.t.JMeterThread: Thread started: POST /tickets arrivals 1-144
+2026-10-09 14:54:41,542 INFO o.a.j.t.JMeterThread: Thread is done: POST /tickets arrivals 1-140
+2026-10-09 14:54:41,542 INFO o.a.j.t.JMeterThread: Thread finished: POST /tickets arrivals 1-140
+2026-10-09 14:54:42,991 INFO o.a.j.t.JMeterThread: Thread started: POST /tickets arrivals 1-145
+2026-10-09 14:54:44,625 INFO o.a.j.t.JMeterThread: Thread started: POST /tickets arrivals 1-146
+2026-10-09 14:54:49,045 INFO o.a.j.t.JMeterThread: Thread is done: POST /tickets arrivals 1-141
+2026-10-09 14:54:49,045 INFO o.a.j.t.JMeterThread: Thread finished: POST /tickets arrivals 1-141
+2026-10-09 14:54:53,310 INFO o.a.j.t.JMeterThread: Thread started: POST /tickets arrivals 1-147
+2026-10-09 14:55:06,358 INFO o.a.j.t.JMeterThread: Thread is done: POST /tickets arrivals 1-142
+2026-10-09 14:55:06,358 INFO o.a.j.t.JMeterThread: Thread finished: POST /tickets arrivals 1-142
+2026-10-09 14:55:16,229 INFO o.a.j.t.JMeterThread: Thread is done: POST /tickets arrivals 1-143
+2026-10-09 14:55:16,229 INFO o.a.j.t.JMeterThread: Thread finished: POST /tickets arrivals 1-143
+2026-10-09 14:55:16,747 INFO o.a.j.t.JMeterThread: Thread started: POST /tickets arrivals 1-148
+2026-10-09 14:55:18,371 INFO o.a.j.t.JMeterThread: Thread started: POST /tickets arrivals 1-149
+2026-10-09 14:55:18,881 INFO o.a.j.t.JMeterThread: Thread started: POST /tickets arrivals 1-150
+2026-10-09 14:55:24,888 INFO o.a.j.t.JMeterThread: Thread started: POST /tickets arrivals 1-151
+2026-10-09 14:55:36,224 INFO o.a.j.t.JMeterThread: Thread is done: POST /tickets arrivals 1-144
+2026-10-09 14:55:36,224 INFO o.a.j.t.JMeterThread: Thread finished: POST /tickets arrivals 1-144
+2026-10-09 14:55:36,849 INFO o.a.j.t.JMeterThread: Thread started: POST /tickets arrivals 1-152
+2026-10-09 14:55:52,938 INFO o.a.j.t.JMeterThread: Thread is done: POST /tickets arrivals 1-145
+2026-10-09 14:55:52,938 INFO o.a.j.t.JMeterThread: Thread finished: POST /tickets arrivals 1-145
+2026-10-09 14:56:02,851 INFO o.a.j.r.Summariser: summary +      9 in 00:02:01 =    0.1/s Avg: 51619 Min: 22135 Max: 78237 Err:     0 (0.00%) Active: 7 Started: 152 Finished: 145
+2026-10-09 14:56:02,851 INFO o.a.j.r.Summariser: summary =    146 in 00:39:37 =    0.1/s Avg: 33957 Min:  4659 Max: 106909 Err:     0 (0.00%)
+2026-10-09 14:56:02,851 INFO o.a.j.t.JMeterThread: Thread is done: POST /tickets arrivals 1-146
+2026-10-09 14:56:02,851 INFO o.a.j.t.JMeterThread: Thread finished: POST /tickets arrivals 1-146
+2026-10-09 14:56:11,300 INFO o.a.j.t.JMeterThread: Thread started: POST /tickets arrivals 1-153
+2026-10-09 14:56:11,531 INFO o.a.j.t.JMeterThread: Thread is done: POST /tickets arrivals 1-147
+2026-10-09 14:56:11,531 INFO o.a.j.t.JMeterThread: Thread finished: POST /tickets arrivals 1-147
+2026-10-09 14:56:17,032 INFO o.a.j.t.JMeterThread: Thread is done: POST /tickets arrivals 1-148
+2026-10-09 14:56:17,032 INFO o.a.j.t.JMeterThread: Thread finished: POST /tickets arrivals 1-148
+2026-10-09 14:56:24,310 INFO o.a.j.t.JMeterThread: Thread started: POST /tickets arrivals 1-154
+2026-10-09 14:56:26,250 INFO o.a.j.t.JMeterThread: Thread started: POST /tickets arrivals 1-155
+2026-10-09 14:56:27,538 INFO o.a.j.t.JMeterThread: Thread is done: POST /tickets arrivals 1-149
+2026-10-09 14:56:27,538 INFO o.a.j.t.JMeterThread: Thread finished: POST /tickets arrivals 1-149
+2026-10-09 14:56:38,510 INFO o.a.j.t.JMeterThread: Thread started: POST /tickets arrivals 1-156
+2026-10-09 14:56:41,089 INFO o.a.j.t.JMeterThread: Thread started: POST /tickets arrivals 1-157
+2026-10-09 14:56:43,324 INFO o.a.j.t.JMeterThread: Thread is done: POST /tickets arrivals 1-150
+2026-10-09 14:56:43,324 INFO o.a.j.t.JMeterThread: Thread finished: POST /tickets arrivals 1-150
+2026-10-09 14:56:45,462 INFO o.a.j.t.JMeterThread: Thread started: POST /tickets arrivals 1-158
+2026-10-09 14:56:49,615 INFO o.a.j.t.JMeterThread: Thread is done: POST /tickets arrivals 1-151
+2026-10-09 14:56:49,616 INFO o.a.j.t.JMeterThread: Thread finished: POST /tickets arrivals 1-151
+2026-10-09 14:56:56,088 INFO o.a.j.t.JMeterThread: Thread started: POST /tickets arrivals 1-159
+2026-10-09 14:57:01,940 INFO o.a.j.t.o.PoissonArrivalsRamp: Generating 1 events, beginRate = 0.1 / sec, endRate = 0.11666666666666667 / sec, duration = 10.0 sec
+2026-10-09 14:57:01,940 INFO o.a.j.t.JMeterThread: Thread started: POST /tickets arrivals 1-160
+2026-10-09 14:57:02,732 INFO o.a.j.r.Summariser: summary +      6 in 00:01:00 =    0.1/s Avg: 77133 Min: 60295 Max: 85896 Err:     0 (0.00%) Active: 9 Started: 160 Finished: 151
+2026-10-09 14:57:02,733 INFO o.a.j.r.Summariser: summary =    152 in 00:40:37 =    0.1/s Avg: 35662 Min:  4659 Max: 106909 Err:     0 (0.00%)
+2026-10-09 14:57:02,733 INFO o.a.j.t.JMeterThread: Thread is done: POST /tickets arrivals 1-152
+2026-10-09 14:57:02,733 INFO o.a.j.t.JMeterThread: Thread finished: POST /tickets arrivals 1-152
+2026-10-09 14:57:08,684 INFO o.a.j.t.o.PoissonArrivalsRamp: Generating 56 events, beginRate = 0.11666666666666667 / sec, endRate = 0.11666666666666667 / sec, duration = 480.0 sec
+2026-10-09 14:57:08,684 INFO o.a.j.t.JMeterThread: Thread started: POST /tickets arrivals 1-161
+2026-10-09 14:57:10,920 INFO o.a.j.t.JMeterThread: Thread is done: POST /tickets arrivals 1-153
+2026-10-09 14:57:10,920 INFO o.a.j.t.JMeterThread: Thread finished: POST /tickets arrivals 1-153
+2026-10-09 14:57:16,105 INFO o.a.j.t.JMeterThread: Thread started: POST /tickets arrivals 1-162
+2026-10-09 14:57:23,813 INFO o.a.j.t.JMeterThread: Thread started: POST /tickets arrivals 1-163
+2026-10-09 14:57:25,177 INFO o.a.j.t.JMeterThread: Thread started: POST /tickets arrivals 1-164
+2026-10-09 14:57:26,806 INFO o.a.j.t.JMeterThread: Thread is done: POST /tickets arrivals 1-154
+2026-10-09 14:57:26,807 INFO o.a.j.t.JMeterThread: Thread finished: POST /tickets arrivals 1-154
+2026-10-09 14:57:40,309 INFO o.a.j.t.JMeterThread: Thread started: POST /tickets arrivals 1-165
+2026-10-09 14:57:42,532 INFO o.a.j.t.JMeterThread: Thread started: POST /tickets arrivals 1-166
+2026-10-09 14:57:42,906 INFO o.a.j.t.JMeterThread: Thread started: POST /tickets arrivals 1-167
+2026-10-09 14:57:43,300 INFO o.a.j.t.JMeterThread: Thread is done: POST /tickets arrivals 1-155
+2026-10-09 14:57:43,300 INFO o.a.j.t.JMeterThread: Thread finished: POST /tickets arrivals 1-155
+2026-10-09 14:57:53,104 INFO o.a.j.t.JMeterThread: Thread is done: POST /tickets arrivals 1-156
+2026-10-09 14:57:53,104 INFO o.a.j.t.JMeterThread: Thread finished: POST /tickets arrivals 1-156
+2026-10-09 14:58:04,092 INFO o.a.j.r.Summariser: summary +      5 in 00:01:01 =    0.1/s Avg: 71363 Min: 59629 Max: 83015 Err:     0 (0.00%) Active: 11 Started: 167 Finished: 156
+2026-10-09 14:58:04,092 INFO o.a.j.r.Summariser: summary =    157 in 00:41:39 =    0.1/s Avg: 36798 Min:  4659 Max: 106909 Err:     0 (0.00%)
+2026-10-09 14:58:04,092 INFO o.a.j.t.JMeterThread: Thread is done: POST /tickets arrivals 1-157
+2026-10-09 14:58:04,092 INFO o.a.j.t.JMeterThread: Thread finished: POST /tickets arrivals 1-157
+2026-10-09 14:58:05,683 INFO o.a.j.t.JMeterThread: Thread started: POST /tickets arrivals 1-168
+2026-10-09 14:58:05,972 INFO o.a.j.t.JMeterThread: Thread started: POST /tickets arrivals 1-169
+2026-10-09 14:58:06,477 INFO o.a.j.t.JMeterThread: Thread started: POST /tickets arrivals 1-170
+2026-10-09 14:58:08,308 INFO o.a.j.t.JMeterThread: Thread started: POST /tickets arrivals 1-171
+2026-10-09 14:58:10,981 INFO o.a.j.t.JMeterThread: Thread is done: POST /tickets arrivals 1-158
+2026-10-09 14:58:10,981 INFO o.a.j.t.JMeterThread: Thread finished: POST /tickets arrivals 1-158
+2026-10-09 14:58:11,826 INFO o.a.j.t.JMeterThread: Thread started: POST /tickets arrivals 1-172
+2026-10-09 14:58:19,234 INFO o.a.j.t.JMeterThread: Thread started: POST /tickets arrivals 1-173
+2026-10-09 14:58:24,519 INFO o.a.j.t.JMeterThread: Thread started: POST /tickets arrivals 1-174
+2026-10-09 14:58:25,586 INFO o.a.j.t.JMeterThread: Thread started: POST /tickets arrivals 1-175
+2026-10-09 14:58:25,712 INFO o.a.j.t.JMeterThread: Thread is done: POST /tickets arrivals 1-159
+2026-10-09 14:58:25,712 INFO o.a.j.t.JMeterThread: Thread finished: POST /tickets arrivals 1-159
+2026-10-09 14:58:31,535 INFO o.a.j.t.JMeterThread: Thread started: POST /tickets arrivals 1-176
+2026-10-09 14:58:39,889 INFO o.a.j.t.JMeterThread: Thread is done: POST /tickets arrivals 1-160
+2026-10-09 14:58:39,889 INFO o.a.j.t.JMeterThread: Thread finished: POST /tickets arrivals 1-160
+2026-10-09 14:58:47,785 INFO o.a.j.t.JMeterThread: Thread is done: POST /tickets arrivals 1-161
+2026-10-09 14:58:47,785 INFO o.a.j.t.JMeterThread: Thread finished: POST /tickets arrivals 1-161
+2026-10-09 14:58:56,943 INFO o.a.j.t.JMeterThread: Thread started: POST /tickets arrivals 1-177
+2026-10-09 14:58:57,107 INFO o.a.j.t.JMeterThread: Thread is done: POST /tickets arrivals 1-162
+2026-10-09 14:58:57,107 INFO o.a.j.t.JMeterThread: Thread finished: POST /tickets arrivals 1-162
+2026-10-09 14:59:01,107 INFO o.a.j.t.JMeterThread: Thread started: POST /tickets arrivals 1-178
+2026-10-09 14:59:06,292 INFO o.a.j.t.JMeterThread: Thread is done: POST /tickets arrivals 1-163
+2026-10-09 14:59:06,292 INFO o.a.j.t.JMeterThread: Thread finished: POST /tickets arrivals 1-163
+2026-10-09 14:59:08,592 INFO o.a.j.t.JMeterThread: Thread started: POST /tickets arrivals 1-179
+2026-10-09 14:59:12,049 INFO o.a.j.t.JMeterThread: Thread started: POST /tickets arrivals 1-180
+2026-10-09 14:59:19,510 INFO o.a.j.t.JMeterThread: Thread is done: POST /tickets arrivals 1-164
+2026-10-09 14:59:19,510 INFO o.a.j.t.JMeterThread: Thread finished: POST /tickets arrivals 1-164
+2026-10-09 14:59:28,513 INFO o.a.j.t.JMeterThread: Thread started: POST /tickets arrivals 1-181
+2026-10-09 14:59:30,548 INFO o.a.j.t.JMeterThread: Thread started: POST /tickets arrivals 1-182
+2026-10-09 14:59:33,388 INFO o.a.j.r.Summariser: summary +      8 in 00:01:29 =    0.1/s Avg: 100400 Min: 85532 Max: 114350 Err:     0 (0.00%) Active: 18 Started: 182 Finished: 164
+2026-10-09 14:59:33,388 INFO o.a.j.r.Summariser: summary =    165 in 00:43:08 =    0.1/s Avg: 39882 Min:  4659 Max: 114350 Err:     0 (0.00%)
+2026-10-09 14:59:33,388 INFO o.a.j.t.JMeterThread: Thread is done: POST /tickets arrivals 1-165
+2026-10-09 14:59:33,388 INFO o.a.j.t.JMeterThread: Thread finished: POST /tickets arrivals 1-165
+2026-10-09 14:59:42,276 INFO o.a.j.t.JMeterThread: Thread is done: POST /tickets arrivals 1-166
+2026-10-09 14:59:42,276 INFO o.a.j.t.JMeterThread: Thread finished: POST /tickets arrivals 1-166
+2026-10-09 14:59:43,084 INFO o.a.j.t.JMeterThread: Thread started: POST /tickets arrivals 1-183
+2026-10-09 14:59:54,426 INFO o.a.j.t.JMeterThread: Thread started: POST /tickets arrivals 1-184
+2026-10-09 14:59:55,095 INFO o.a.j.t.JMeterThread: Thread is done: POST /tickets arrivals 1-167
+2026-10-09 14:59:55,095 INFO o.a.j.t.JMeterThread: Thread finished: POST /tickets arrivals 1-167
+2026-10-09 14:59:57,106 INFO o.a.j.t.JMeterThread: Thread started: POST /tickets arrivals 1-185
+2026-10-09 14:59:59,545 INFO o.a.j.t.JMeterThread: Thread started: POST /tickets arrivals 1-186
+2026-10-09 15:00:02,193 INFO o.a.j.r.Summariser: summary +      3 in 00:00:29 =    0.1/s Avg: 122833 Min: 116528 Max: 132209 Err:     0 (0.00%) Active: 19 Started: 186 Finished: 167
+2026-10-09 15:00:02,193 INFO o.a.j.r.Summariser: summary =    168 in 00:43:37 =    0.1/s Avg: 41363 Min:  4659 Max: 132209 Err:     0 (0.00%)
+2026-10-09 15:00:02,193 INFO o.a.j.t.JMeterThread: Thread is done: POST /tickets arrivals 1-168
+2026-10-09 15:00:02,193 INFO o.a.j.t.JMeterThread: Thread finished: POST /tickets arrivals 1-168
+2026-10-09 15:00:08,285 INFO o.a.j.t.JMeterThread: Thread is done: POST /tickets arrivals 1-169
+2026-10-09 15:00:08,285 INFO o.a.j.t.JMeterThread: Thread finished: POST /tickets arrivals 1-169
+2026-10-09 15:00:09,260 INFO o.a.j.t.JMeterThread: Thread started: POST /tickets arrivals 1-187
+2026-10-09 15:00:21,205 INFO o.a.j.t.JMeterThread: Thread is done: POST /tickets arrivals 1-170
+2026-10-09 15:00:21,205 INFO o.a.j.t.JMeterThread: Thread finished: POST /tickets arrivals 1-170
+2026-10-09 15:00:34,671 INFO o.a.j.r.Summariser: summary +      3 in 00:00:32 =    0.1/s Avg: 134489 Min: 122333 Max: 146385 Err:     0 (0.00%) Active: 17 Started: 187 Finished: 170
+2026-10-09 15:00:34,671 INFO o.a.j.r.Summariser: summary =    171 in 00:44:09 =    0.1/s Avg: 42997 Min:  4659 Max: 146385 Err:     0 (0.00%)
+2026-10-09 15:00:34,672 INFO o.a.j.t.JMeterThread: Thread is done: POST /tickets arrivals 1-171
+2026-10-09 15:00:34,672 INFO o.a.j.t.JMeterThread: Thread finished: POST /tickets arrivals 1-171
+2026-10-09 15:00:35,133 INFO o.a.j.t.JMeterThread: Thread started: POST /tickets arrivals 1-188
+2026-10-09 15:00:44,021 INFO o.a.j.t.JMeterThread: Thread started: POST /tickets arrivals 1-189
+2026-10-09 15:00:49,389 INFO o.a.j.t.JMeterThread: Thread is done: POST /tickets arrivals 1-172
+2026-10-09 15:00:49,389 INFO o.a.j.t.JMeterThread: Thread finished: POST /tickets arrivals 1-172
+2026-10-09 15:01:03,066 INFO o.a.j.r.Summariser: summary +      2 in 00:00:28 =    0.1/s Avg: 160722 Min: 157587 Max: 163857 Err:     0 (0.00%) Active: 17 Started: 189 Finished: 172
+2026-10-09 15:01:03,066 INFO o.a.j.r.Summariser: summary =    173 in 00:44:38 =    0.1/s Avg: 44358 Min:  4659 Max: 163857 Err:     0 (0.00%)
+2026-10-09 15:01:03,066 INFO o.a.j.t.JMeterThread: Thread is done: POST /tickets arrivals 1-173
+2026-10-09 15:01:03,066 INFO o.a.j.t.JMeterThread: Thread finished: POST /tickets arrivals 1-173
+2026-10-09 15:01:11,588 INFO o.a.j.t.JMeterThread: Thread is done: POST /tickets arrivals 1-174
+2026-10-09 15:01:11,589 INFO o.a.j.t.JMeterThread: Thread finished: POST /tickets arrivals 1-174
+2026-10-09 15:01:32,554 INFO o.a.j.r.Summariser: summary +      2 in 00:00:29 =    0.1/s Avg: 177046 Min: 167095 Max: 186997 Err:     0 (0.00%) Active: 15 Started: 189 Finished: 174
+2026-10-09 15:01:32,554 INFO o.a.j.r.Summariser: summary =    175 in 00:45:07 =    0.1/s Avg: 45875 Min:  4659 Max: 186997 Err:     0 (0.00%)
+2026-10-09 15:01:32,554 INFO o.a.j.t.JMeterThread: Thread is done: POST /tickets arrivals 1-175
+2026-10-09 15:01:32,554 INFO o.a.j.t.JMeterThread: Thread finished: POST /tickets arrivals 1-175
+2026-10-09 15:01:41,779 INFO o.a.j.t.JMeterThread: Thread is done: POST /tickets arrivals 1-176
+2026-10-09 15:01:41,779 INFO o.a.j.t.JMeterThread: Thread finished: POST /tickets arrivals 1-176
+2026-10-09 15:01:48,278 INFO o.a.j.t.JMeterThread: Thread started: POST /tickets arrivals 1-190
+2026-10-09 15:01:49,891 INFO o.a.j.t.JMeterThread: Thread started: POST /tickets arrivals 1-191
+2026-10-09 15:01:51,170 INFO o.a.j.t.JMeterThread: Thread is done: POST /tickets arrivals 1-177
+2026-10-09 15:01:51,170 INFO o.a.j.t.JMeterThread: Thread finished: POST /tickets arrivals 1-177
+2026-10-09 15:01:59,674 INFO o.a.j.t.JMeterThread: Thread is done: POST /tickets arrivals 1-178
+2026-10-09 15:01:59,674 INFO o.a.j.t.JMeterThread: Thread finished: POST /tickets arrivals 1-178
+2026-10-09 15:02:00,939 INFO o.a.j.t.JMeterThread: Thread started: POST /tickets arrivals 1-192
+2026-10-09 15:02:04,180 INFO o.a.j.t.JMeterThread: Thread started: POST /tickets arrivals 1-193
+2026-10-09 15:02:05,967 INFO o.a.j.r.Summariser: summary +      4 in 00:00:33 =    0.1/s Avg: 180131 Min: 174253 Max: 190274 Err:     0 (0.00%) Active: 15 Started: 193 Finished: 178
+2026-10-09 15:02:05,967 INFO o.a.j.r.Summariser: summary =    179 in 00:45:40 =    0.1/s Avg: 48875 Min:  4659 Max: 190274 Err:     0 (0.00%)
+2026-10-09 15:02:05,967 INFO o.a.j.t.JMeterThread: Thread is done: POST /tickets arrivals 1-179
+2026-10-09 15:02:05,967 INFO o.a.j.t.JMeterThread: Thread finished: POST /tickets arrivals 1-179
+2026-10-09 15:02:15,171 INFO o.a.j.t.JMeterThread: Thread is done: POST /tickets arrivals 1-180
+2026-10-09 15:02:15,171 INFO o.a.j.t.JMeterThread: Thread finished: POST /tickets arrivals 1-180
+2026-10-09 15:02:23,471 INFO o.a.j.t.JMeterThread: Thread is done: POST /tickets arrivals 1-181
+2026-10-09 15:02:23,471 INFO o.a.j.t.JMeterThread: Thread finished: POST /tickets arrivals 1-181
+2026-10-09 15:02:28,144 INFO o.a.j.t.JMeterThread: Thread started: POST /tickets arrivals 1-194
+2026-10-09 15:02:35,670 INFO o.a.j.r.Summariser: summary +      3 in 00:00:30 =    0.1/s Avg: 181095 Min: 174985 Max: 185151 Err:     0 (0.00%) Active: 13 Started: 194 Finished: 181
+2026-10-09 15:02:35,670 INFO o.a.j.r.Summariser: summary =    182 in 00:46:10 =    0.1/s Avg: 51054 Min:  4659 Max: 190274 Err:     0 (0.00%)
+2026-10-09 15:02:35,671 INFO o.a.j.t.JMeterThread: Thread is done: POST /tickets arrivals 1-182
+2026-10-09 15:02:35,671 INFO o.a.j.t.JMeterThread: Thread finished: POST /tickets arrivals 1-182
+2026-10-09 15:02:37,652 INFO o.a.j.t.JMeterThread: Thread started: POST /tickets arrivals 1-195
+2026-10-09 15:02:38,206 INFO o.a.j.t.JMeterThread: Thread started: POST /tickets arrivals 1-196
+2026-10-09 15:02:42,678 INFO o.a.j.t.JMeterThread: Thread is done: POST /tickets arrivals 1-183
+2026-10-09 15:02:42,678 INFO o.a.j.t.JMeterThread: Thread finished: POST /tickets arrivals 1-183
+2026-10-09 15:02:56,254 INFO o.a.j.t.JMeterThread: Thread is done: POST /tickets arrivals 1-184
+2026-10-09 15:02:56,254 INFO o.a.j.t.JMeterThread: Thread finished: POST /tickets arrivals 1-184
+2026-10-09 15:03:00,103 INFO o.a.j.t.JMeterThread: Thread started: POST /tickets arrivals 1-197
+2026-10-09 15:03:02,559 INFO o.a.j.r.Summariser: summary +      3 in 00:00:27 =    0.1/s Avg: 182319 Min: 179622 Max: 185481 Err:     0 (0.00%) Active: 13 Started: 197 Finished: 184
+2026-10-09 15:03:02,559 INFO o.a.j.r.Summariser: summary =    185 in 00:46:37 =    0.1/s Avg: 53183 Min:  4659 Max: 190274 Err:     0 (0.00%)
+2026-10-09 15:03:02,559 INFO o.a.j.t.JMeterThread: Thread is done: POST /tickets arrivals 1-185
+2026-10-09 15:03:02,559 INFO o.a.j.t.JMeterThread: Thread finished: POST /tickets arrivals 1-185
+2026-10-09 15:03:05,657 INFO o.a.j.t.JMeterThread: Thread started: POST /tickets arrivals 1-198
+2026-10-09 15:03:06,052 INFO o.a.j.t.JMeterThread: Thread started: POST /tickets arrivals 1-199
+2026-10-09 15:03:07,086 INFO o.a.j.t.JMeterThread: Thread started: POST /tickets arrivals 1-200
+2026-10-09 15:03:13,081 INFO o.a.j.t.JMeterThread: Thread is done: POST /tickets arrivals 1-186
+2026-10-09 15:03:13,081 INFO o.a.j.t.JMeterThread: Thread finished: POST /tickets arrivals 1-186
+2026-10-09 15:03:13,968 INFO o.a.j.t.JMeterThread: Thread started: POST /tickets arrivals 1-201
+2026-10-09 15:03:19,854 INFO o.a.j.t.JMeterThread: Thread started: POST /tickets arrivals 1-202
+2026-10-09 15:03:20,158 INFO o.a.j.t.JMeterThread: Thread is done: POST /tickets arrivals 1-187
+2026-10-09 15:03:20,158 INFO o.a.j.t.JMeterThread: Thread finished: POST /tickets arrivals 1-187
+2026-10-09 15:03:24,397 INFO o.a.j.t.JMeterThread: Thread started: POST /tickets arrivals 1-203
+2026-10-09 15:03:30,117 INFO o.a.j.t.JMeterThread: Thread started: POST /tickets arrivals 1-204
+2026-10-09 15:03:30,819 INFO o.a.j.t.JMeterThread: Thread started: POST /tickets arrivals 1-205
+2026-10-09 15:03:36,246 INFO o.a.j.t.JMeterThread: Thread is done: POST /tickets arrivals 1-188
+2026-10-09 15:03:36,246 INFO o.a.j.t.JMeterThread: Thread finished: POST /tickets arrivals 1-188
+2026-10-09 15:03:37,284 INFO o.a.j.t.JMeterThread: Thread started: POST /tickets arrivals 1-206
+2026-10-09 15:03:41,949 INFO o.a.j.t.JMeterThread: Thread is done: POST /tickets arrivals 1-189
+2026-10-09 15:03:41,949 INFO o.a.j.t.JMeterThread: Thread finished: POST /tickets arrivals 1-189
+2026-10-09 15:03:42,067 INFO o.a.j.t.JMeterThread: Thread started: POST /tickets arrivals 1-207
+2026-10-09 15:03:48,960 INFO o.a.j.t.JMeterThread: Thread is done: POST /tickets arrivals 1-190
+2026-10-09 15:03:48,960 INFO o.a.j.t.JMeterThread: Thread finished: POST /tickets arrivals 1-190
+2026-10-09 15:03:56,559 INFO o.a.j.t.JMeterThread: Thread started: POST /tickets arrivals 1-208
+2026-10-09 15:04:02,885 INFO o.a.j.t.JMeterThread: Thread started: POST /tickets arrivals 1-209
+2026-10-09 15:04:07,677 INFO o.a.j.t.JMeterThread: Thread is done: POST /tickets arrivals 1-191
+2026-10-09 15:04:07,677 INFO o.a.j.t.JMeterThread: Thread finished: POST /tickets arrivals 1-191
+2026-10-09 15:04:09,854 INFO o.a.j.t.JMeterThread: Thread started: POST /tickets arrivals 1-210
+2026-10-09 15:04:15,765 INFO o.a.j.t.JMeterThread: Thread is done: POST /tickets arrivals 1-192
+2026-10-09 15:04:15,765 INFO o.a.j.t.JMeterThread: Thread finished: POST /tickets arrivals 1-192
+2026-10-09 15:04:20,938 INFO o.a.j.t.JMeterThread: Thread started: POST /tickets arrivals 1-211
+2026-10-09 15:04:27,631 INFO o.a.j.t.JMeterThread: Thread is done: POST /tickets arrivals 1-193
+2026-10-09 15:04:27,632 INFO o.a.j.t.JMeterThread: Thread finished: POST /tickets arrivals 1-193
+2026-10-09 15:04:36,402 INFO o.a.j.t.JMeterThread: Thread started: POST /tickets arrivals 1-212
+2026-10-09 15:04:42,230 INFO o.a.j.t.JMeterThread: Thread is done: POST /tickets arrivals 1-194
+2026-10-09 15:04:42,230 INFO o.a.j.t.JMeterThread: Thread finished: POST /tickets arrivals 1-194
+2026-10-09 15:04:48,190 INFO o.a.j.t.JMeterThread: Thread started: POST /tickets arrivals 1-213
+2026-10-09 15:04:49,447 INFO o.a.j.t.JMeterThread: Thread is done: POST /tickets arrivals 1-195
+2026-10-09 15:04:49,447 INFO o.a.j.t.JMeterThread: Thread finished: POST /tickets arrivals 1-195
+2026-10-09 15:04:53,068 INFO o.a.j.t.JMeterThread: Thread started: POST /tickets arrivals 1-214
+2026-10-09 15:05:02,733 INFO o.a.j.t.JMeterThread: Thread started: POST /tickets arrivals 1-215
+2026-10-09 15:05:09,231 INFO o.a.j.t.JMeterThread: Thread is done: POST /tickets arrivals 1-196
+2026-10-09 15:05:09,231 INFO o.a.j.t.JMeterThread: Thread finished: POST /tickets arrivals 1-196
+2026-10-09 15:05:13,991 INFO o.a.j.t.JMeterThread: Thread started: POST /tickets arrivals 1-216
+2026-10-09 15:05:14,317 INFO o.a.j.t.o.PoissonArrivalsRamp: Generating 1 events, beginRate = 0.11666666666666667 / sec, endRate = 0.13333333333333333 / sec, duration = 10.0 sec
+2026-10-09 15:05:14,318 INFO o.a.j.t.JMeterThread: Thread started: POST /tickets arrivals 1-217
+2026-10-09 15:05:18,410 INFO o.a.j.t.JMeterThread: Thread is done: POST /tickets arrivals 1-197
+2026-10-09 15:05:18,410 INFO o.a.j.t.JMeterThread: Thread finished: POST /tickets arrivals 1-197
+2026-10-09 15:05:22,898 INFO o.a.j.t.JMeterThread: Thread started: POST /tickets arrivals 1-218
+2026-10-09 15:05:22,900 INFO o.a.j.t.o.PoissonArrivalsRamp: Generating 64 events, beginRate = 0.13333333333333333 / sec, endRate = 0.13333333333333333 / sec, duration = 480.0 sec
+2026-10-09 15:05:27,829 INFO o.a.j.t.JMeterThread: Thread is done: POST /tickets arrivals 1-198
+2026-10-09 15:05:27,829 INFO o.a.j.t.JMeterThread: Thread finished: POST /tickets arrivals 1-198
+2026-10-09 15:05:43,254 INFO o.a.j.t.JMeterThread: Thread is done: POST /tickets arrivals 1-199
+2026-10-09 15:05:43,254 INFO o.a.j.t.JMeterThread: Thread finished: POST /tickets arrivals 1-199
+2026-10-09 15:05:45,700 INFO o.a.j.t.JMeterThread: Thread started: POST /tickets arrivals 1-219
+2026-10-09 15:05:49,509 INFO o.a.j.t.JMeterThread: Thread started: POST /tickets arrivals 1-220
+2026-10-09 15:05:50,420 INFO o.a.j.t.JMeterThread: Thread started: POST /tickets arrivals 1-221
+2026-10-09 15:05:51,444 INFO o.a.j.t.JMeterThread: Thread is done: POST /tickets arrivals 1-200
+2026-10-09 15:05:51,445 INFO o.a.j.t.JMeterThread: Thread finished: POST /tickets arrivals 1-200
+2026-10-09 15:05:58,874 INFO o.a.j.t.JMeterThread: Thread started: POST /tickets arrivals 1-222
+2026-10-09 15:05:59,463 INFO o.a.j.t.JMeterThread: Thread started: POST /tickets arrivals 1-223
+2026-10-09 15:06:02,920 INFO o.a.j.r.Summariser: summary +     16 in 00:03:00 =    0.1/s Avg: 154281 Min: 120700 Max: 193567 Err:     0 (0.00%) Active: 23 Started: 223 Finished: 200
+2026-10-09 15:06:02,920 INFO o.a.j.r.Summariser: summary =    201 in 00:49:37 =    0.1/s Avg: 61230 Min:  4659 Max: 193567 Err:     0 (0.00%)
+2026-10-09 15:06:02,920 INFO o.a.j.t.JMeterThread: Thread is done: POST /tickets arrivals 1-201
+2026-10-09 15:06:02,920 INFO o.a.j.t.JMeterThread: Thread finished: POST /tickets arrivals 1-201
+2026-10-09 15:06:06,029 INFO o.a.j.t.JMeterThread: Thread started: POST /tickets arrivals 1-224
+2026-10-09 15:06:09,027 INFO o.a.j.t.JMeterThread: Thread is done: POST /tickets arrivals 1-202
+2026-10-09 15:06:09,027 INFO o.a.j.t.JMeterThread: Thread finished: POST /tickets arrivals 1-202
+2026-10-09 15:06:16,537 INFO o.a.j.t.JMeterThread: Thread is done: POST /tickets arrivals 1-203
+2026-10-09 15:06:16,537 INFO o.a.j.t.JMeterThread: Thread finished: POST /tickets arrivals 1-203
+2026-10-09 15:06:20,935 INFO o.a.j.t.JMeterThread: Thread started: POST /tickets arrivals 1-225
+2026-10-09 15:06:24,289 INFO o.a.j.t.JMeterThread: Thread started: POST /tickets arrivals 1-226
+2026-10-09 15:06:27,423 INFO o.a.j.t.JMeterThread: Thread is done: POST /tickets arrivals 1-204
+2026-10-09 15:06:27,423 INFO o.a.j.t.JMeterThread: Thread finished: POST /tickets arrivals 1-204
+2026-10-09 15:06:35,947 INFO o.a.j.r.Summariser: summary +      4 in 00:00:33 =    0.1/s Avg: 175964 Min: 169199 Max: 185157 Err:     0 (0.00%) Active: 22 Started: 226 Finished: 204
+2026-10-09 15:06:35,948 INFO o.a.j.r.Summariser: summary =    205 in 00:50:10 =    0.1/s Avg: 63469 Min:  4659 Max: 193567 Err:     0 (0.00%)
+2026-10-09 15:06:35,948 INFO o.a.j.t.JMeterThread: Thread is done: POST /tickets arrivals 1-205
+2026-10-09 15:06:35,948 INFO o.a.j.t.JMeterThread: Thread finished: POST /tickets arrivals 1-205
+2026-10-09 15:06:41,538 INFO o.a.j.t.JMeterThread: Thread started: POST /tickets arrivals 1-227
+2026-10-09 15:06:42,766 INFO o.a.j.t.JMeterThread: Thread started: POST /tickets arrivals 1-228
+2026-10-09 15:06:43,546 INFO o.a.j.t.JMeterThread: Thread started: POST /tickets arrivals 1-229
+2026-10-09 15:06:48,918 INFO o.a.j.t.JMeterThread: Thread is done: POST /tickets arrivals 1-206
+2026-10-09 15:06:48,918 INFO o.a.j.t.JMeterThread: Thread finished: POST /tickets arrivals 1-206
+2026-10-09 15:06:52,410 INFO o.a.j.t.JMeterThread: Thread started: POST /tickets arrivals 1-230
+2026-10-09 15:06:58,610 INFO o.a.j.t.JMeterThread: Thread is done: POST /tickets arrivals 1-207
+2026-10-09 15:06:58,610 INFO o.a.j.t.JMeterThread: Thread finished: POST /tickets arrivals 1-207
+2026-10-09 15:07:01,225 INFO o.a.j.t.JMeterThread: Thread started: POST /tickets arrivals 1-231
+2026-10-09 15:07:04,601 INFO o.a.j.t.JMeterThread: Thread started: POST /tickets arrivals 1-232
+2026-10-09 15:07:05,635 INFO o.a.j.r.Summariser: summary +      3 in 00:00:30 =    0.1/s Avg: 192447 Min: 189105 Max: 196573 Err:     0 (0.00%) Active: 25 Started: 232 Finished: 207
+2026-10-09 15:07:05,635 INFO o.a.j.r.Summariser: summary =    208 in 00:50:40 =    0.1/s Avg: 65329 Min:  4659 Max: 196573 Err:     0 (0.00%)
+2026-10-09 15:07:05,635 INFO o.a.j.t.JMeterThread: Thread is done: POST /tickets arrivals 1-208
+2026-10-09 15:07:05,635 INFO o.a.j.t.JMeterThread: Thread finished: POST /tickets arrivals 1-208
+2026-10-09 15:07:20,224 INFO o.a.j.t.JMeterThread: Thread is done: POST /tickets arrivals 1-209
+2026-10-09 15:07:20,224 INFO o.a.j.t.JMeterThread: Thread finished: POST /tickets arrivals 1-209
+2026-10-09 15:07:31,443 INFO o.a.j.t.JMeterThread: Thread started: POST /tickets arrivals 1-233
+2026-10-09 15:07:36,005 INFO o.a.j.t.JMeterThread: Thread started: POST /tickets arrivals 1-234
+2026-10-09 15:07:36,525 INFO o.a.j.t.JMeterThread: Thread is done: POST /tickets arrivals 1-210
+2026-10-09 15:07:36,525 INFO o.a.j.t.JMeterThread: Thread finished: POST /tickets arrivals 1-210
+2026-10-09 15:07:40,030 INFO o.a.j.t.JMeterThread: Thread started: POST /tickets arrivals 1-235
+2026-10-09 15:07:48,107 INFO o.a.j.t.JMeterThread: Thread is done: POST /tickets arrivals 1-211
+2026-10-09 15:07:48,107 INFO o.a.j.t.JMeterThread: Thread finished: POST /tickets arrivals 1-211
+2026-10-09 15:07:54,368 INFO o.a.j.t.JMeterThread: Thread started: POST /tickets arrivals 1-236
+2026-10-09 15:07:55,707 INFO o.a.j.t.JMeterThread: Thread is done: POST /tickets arrivals 1-212
+2026-10-09 15:07:55,707 INFO o.a.j.t.JMeterThread: Thread finished: POST /tickets arrivals 1-212
+2026-10-09 15:07:56,906 INFO o.a.j.t.JMeterThread: Thread started: POST /tickets arrivals 1-237
+2026-10-09 15:07:58,283 INFO o.a.j.t.JMeterThread: Thread started: POST /tickets arrivals 1-238
+2026-10-09 15:08:01,889 INFO o.a.j.t.JMeterThread: Thread started: POST /tickets arrivals 1-239
+2026-10-09 15:08:06,933 INFO o.a.j.t.JMeterThread: Thread is done: POST /tickets arrivals 1-213
+2026-10-09 15:08:06,933 INFO o.a.j.t.JMeterThread: Thread finished: POST /tickets arrivals 1-213
+2026-10-09 15:08:15,497 INFO o.a.j.t.JMeterThread: Thread started: POST /tickets arrivals 1-240
+2026-10-09 15:08:22,218 INFO o.a.j.t.JMeterThread: Thread is done: POST /tickets arrivals 1-214
+2026-10-09 15:08:22,218 INFO o.a.j.t.JMeterThread: Thread finished: POST /tickets arrivals 1-214
+2026-10-09 15:08:23,917 INFO o.a.j.t.JMeterThread: Thread started: POST /tickets arrivals 1-241
+2026-10-09 15:08:32,517 INFO o.a.j.t.JMeterThread: Thread started: POST /tickets arrivals 1-242
+2026-10-09 15:08:43,876 INFO o.a.j.t.JMeterThread: Thread is done: POST /tickets arrivals 1-215
+2026-10-09 15:08:43,876 INFO o.a.j.t.JMeterThread: Thread finished: POST /tickets arrivals 1-215
+2026-10-09 15:09:06,806 INFO o.a.j.t.JMeterThread: Thread is done: POST /tickets arrivals 1-216
+2026-10-09 15:09:06,806 INFO o.a.j.t.JMeterThread: Thread finished: POST /tickets arrivals 1-216
+2026-10-09 15:09:11,683 INFO o.a.j.t.JMeterThread: Thread started: POST /tickets arrivals 1-243
+2026-10-09 15:09:19,815 INFO o.a.j.t.JMeterThread: Thread started: POST /tickets arrivals 1-244
+2026-10-09 15:09:22,997 INFO o.a.j.t.JMeterThread: Thread is done: POST /tickets arrivals 1-217
+2026-10-09 15:09:22,997 INFO o.a.j.t.JMeterThread: Thread finished: POST /tickets arrivals 1-217
+2026-10-09 15:09:35,082 INFO o.a.j.r.Summariser: summary +     10 in 00:02:29 =    0.1/s Avg: 217353 Min: 197369 Max: 252223 Err:     0 (0.00%) Active: 27 Started: 244 Finished: 217
+2026-10-09 15:09:35,082 INFO o.a.j.r.Summariser: summary =    218 in 00:53:10 =    0.1/s Avg: 72303 Min:  4659 Max: 252223 Err:     0 (0.00%)
+2026-10-09 15:09:35,082 INFO o.a.j.t.JMeterThread: Thread is done: POST /tickets arrivals 1-218
+2026-10-09 15:09:35,082 INFO o.a.j.t.JMeterThread: Thread finished: POST /tickets arrivals 1-218
+2026-10-09 15:09:46,485 INFO o.a.j.t.JMeterThread: Thread started: POST /tickets arrivals 1-245
+2026-10-09 15:09:51,653 INFO o.a.j.t.JMeterThread: Thread started: POST /tickets arrivals 1-246
+2026-10-09 15:09:53,483 INFO o.a.j.t.JMeterThread: Thread is done: POST /tickets arrivals 1-219
+2026-10-09 15:09:53,483 INFO o.a.j.t.JMeterThread: Thread finished: POST /tickets arrivals 1-219
+2026-10-09 15:10:01,791 INFO o.a.j.t.JMeterThread: Thread started: POST /tickets arrivals 1-247
+2026-10-09 15:10:10,186 INFO o.a.j.t.JMeterThread: Thread is done: POST /tickets arrivals 1-220
+2026-10-09 15:10:10,186 INFO o.a.j.t.JMeterThread: Thread finished: POST /tickets arrivals 1-220
+2026-10-09 15:10:11,083 INFO o.a.j.t.JMeterThread: Thread started: POST /tickets arrivals 1-248
+2026-10-09 15:10:14,237 INFO o.a.j.t.JMeterThread: Thread started: POST /tickets arrivals 1-249
+2026-10-09 15:10:17,877 INFO o.a.j.t.JMeterThread: Thread is done: POST /tickets arrivals 1-221
+2026-10-09 15:10:17,877 INFO o.a.j.t.JMeterThread: Thread finished: POST /tickets arrivals 1-221
+2026-10-09 15:10:19,896 INFO o.a.j.t.JMeterThread: Thread started: POST /tickets arrivals 1-250
+2026-10-09 15:10:23,395 INFO o.a.j.t.JMeterThread: Thread is done: POST /tickets arrivals 1-222
+2026-10-09 15:10:23,395 INFO o.a.j.t.JMeterThread: Thread finished: POST /tickets arrivals 1-222
+2026-10-09 15:10:33,786 INFO o.a.j.r.Summariser: summary +      5 in 00:00:59 =    0.1/s Avg: 262993 Min: 247823 Max: 274366 Err:     0 (0.00%) Active: 28 Started: 250 Finished: 222
+2026-10-09 15:10:33,787 INFO o.a.j.r.Summariser: summary =    223 in 00:54:08 =    0.1/s Avg: 76578 Min:  4659 Max: 274366 Err:     0 (0.00%)
+2026-10-09 15:10:33,787 INFO o.a.j.t.JMeterThread: Thread is done: POST /tickets arrivals 1-223
+2026-10-09 15:10:33,787 INFO o.a.j.t.JMeterThread: Thread finished: POST /tickets arrivals 1-223
+2026-10-09 15:10:35,032 INFO o.a.j.t.JMeterThread: Thread started: POST /tickets arrivals 1-251
+2026-10-09 15:10:39,713 INFO o.a.j.t.JMeterThread: Thread started: POST /tickets arrivals 1-252
+2026-10-09 15:10:51,281 INFO o.a.j.t.JMeterThread: Thread is done: POST /tickets arrivals 1-224
+2026-10-09 15:10:51,281 INFO o.a.j.t.JMeterThread: Thread finished: POST /tickets arrivals 1-224
+2026-10-09 15:10:52,921 INFO o.a.j.t.JMeterThread: Thread started: POST /tickets arrivals 1-253
+2026-10-09 15:11:02,466 INFO o.a.j.r.Summariser: summary +      2 in 00:00:29 =    0.1/s Avg: 283435 Min: 281574 Max: 285297 Err:     0 (0.00%) Active: 29 Started: 253 Finished: 224
+2026-10-09 15:11:02,467 INFO o.a.j.r.Summariser: summary =    225 in 00:54:37 =    0.1/s Avg: 78417 Min:  4659 Max: 285297 Err:     0 (0.00%)
+2026-10-09 15:11:02,467 INFO o.a.j.t.JMeterThread: Thread is done: POST /tickets arrivals 1-225
+2026-10-09 15:11:02,467 INFO o.a.j.t.JMeterThread: Thread finished: POST /tickets arrivals 1-225
+2026-10-09 15:11:08,370 INFO o.a.j.t.JMeterThread: Thread is done: POST /tickets arrivals 1-226
+2026-10-09 15:11:08,370 INFO o.a.j.t.JMeterThread: Thread finished: POST /tickets arrivals 1-226
+2026-10-09 15:11:08,854 INFO o.a.j.t.JMeterThread: Thread started: POST /tickets arrivals 1-254
+2026-10-09 15:11:11,232 INFO o.a.j.t.JMeterThread: Thread started: POST /tickets arrivals 1-255
+2026-10-09 15:11:15,749 INFO o.a.j.t.JMeterThread: Thread started: POST /tickets arrivals 1-256
+2026-10-09 15:11:18,508 INFO o.a.j.t.JMeterThread: Thread started: POST /tickets arrivals 1-257
+2026-10-09 15:11:20,488 INFO o.a.j.t.JMeterThread: Thread is done: POST /tickets arrivals 1-227
+2026-10-09 15:11:20,488 INFO o.a.j.t.JMeterThread: Thread finished: POST /tickets arrivals 1-227
+2026-10-09 15:11:21,459 INFO o.a.j.t.JMeterThread: Thread started: POST /tickets arrivals 1-258
+2026-10-09 15:11:23,254 INFO o.a.j.t.JMeterThread: Thread started: POST /tickets arrivals 1-259
+2026-10-09 15:11:26,513 INFO o.a.j.t.JMeterThread: Thread started: POST /tickets arrivals 1-260
+2026-10-09 15:11:30,295 INFO o.a.j.t.JMeterThread: Thread started: POST /tickets arrivals 1-261
+2026-10-09 15:11:32,209 INFO o.a.j.t.JMeterThread: Thread started: POST /tickets arrivals 1-262
+2026-10-09 15:11:34,283 INFO o.a.j.r.Summariser: summary +      3 in 00:00:32 =    0.1/s Avg: 284893 Min: 278994 Max: 291562 Err:     0 (0.00%) Active: 35 Started: 262 Finished: 227
+2026-10-09 15:11:34,283 INFO o.a.j.r.Summariser: summary =    228 in 00:55:09 =    0.1/s Avg: 81134 Min:  4659 Max: 291562 Err:     0 (0.00%)
+2026-10-09 15:11:34,283 INFO o.a.j.t.JMeterThread: Thread is done: POST /tickets arrivals 1-228
+2026-10-09 15:11:34,283 INFO o.a.j.t.JMeterThread: Thread finished: POST /tickets arrivals 1-228
+2026-10-09 15:11:38,127 INFO o.a.j.t.JMeterThread: Thread started: POST /tickets arrivals 1-263
+2026-10-09 15:11:42,919 INFO o.a.j.t.JMeterThread: Thread started: POST /tickets arrivals 1-264
+2026-10-09 15:11:49,078 INFO o.a.j.t.JMeterThread: Thread is done: POST /tickets arrivals 1-229
+2026-10-09 15:11:49,078 INFO o.a.j.t.JMeterThread: Thread finished: POST /tickets arrivals 1-229
+2026-10-09 15:12:02,625 INFO o.a.j.t.JMeterThread: Thread started: POST /tickets arrivals 1-265
+2026-10-09 15:12:02,942 INFO o.a.j.t.JMeterThread: Thread started: POST /tickets arrivals 1-266
+2026-10-09 15:12:04,478 INFO o.a.j.r.Summariser: summary +      2 in 00:00:30 =    0.1/s Avg: 308848 Min: 305580 Max: 312117 Err:     0 (0.00%) Active: 37 Started: 266 Finished: 229
+2026-10-09 15:12:04,478 INFO o.a.j.r.Summariser: summary =    230 in 00:55:39 =    0.1/s Avg: 83114 Min:  4659 Max: 312117 Err:     0 (0.00%)
+2026-10-09 15:12:04,478 INFO o.a.j.t.JMeterThread: Thread is done: POST /tickets arrivals 1-230
+2026-10-09 15:12:04,478 INFO o.a.j.t.JMeterThread: Thread finished: POST /tickets arrivals 1-230
+2026-10-09 15:12:07,078 INFO o.a.j.t.JMeterThread: Thread started: POST /tickets arrivals 1-267
+2026-10-09 15:12:07,927 INFO o.a.j.t.JMeterThread: Thread started: POST /tickets arrivals 1-268
+2026-10-09 15:12:08,169 INFO o.a.j.t.JMeterThread: Thread started: POST /tickets arrivals 1-269
+2026-10-09 15:12:11,685 INFO o.a.j.t.JMeterThread: Thread started: POST /tickets arrivals 1-270
+2026-10-09 15:12:12,168 INFO o.a.j.t.JMeterThread: Thread is done: POST /tickets arrivals 1-231
+2026-10-09 15:12:12,168 INFO o.a.j.t.JMeterThread: Thread finished: POST /tickets arrivals 1-231
+2026-10-09 15:12:16,637 INFO o.a.j.t.JMeterThread: Thread started: POST /tickets arrivals 1-271
+2026-10-09 15:12:18,709 INFO o.a.j.t.JMeterThread: Thread started: POST /tickets arrivals 1-272
+2026-10-09 15:12:20,144 INFO o.a.j.t.JMeterThread: Thread is done: POST /tickets arrivals 1-232
+2026-10-09 15:12:20,144 INFO o.a.j.t.JMeterThread: Thread finished: POST /tickets arrivals 1-232
+2026-10-09 15:12:25,457 INFO o.a.j.t.JMeterThread: Thread is done: POST /tickets arrivals 1-233
+2026-10-09 15:12:25,457 INFO o.a.j.t.JMeterThread: Thread finished: POST /tickets arrivals 1-233
+2026-10-09 15:12:26,484 INFO o.a.j.t.JMeterThread: Thread started: POST /tickets arrivals 1-273
+2026-10-09 15:12:33,151 INFO o.a.j.r.Summariser: summary +      4 in 00:00:29 =    0.1/s Avg: 304459 Min: 294059 Max: 315592 Err:     0 (0.00%) Active: 40 Started: 273 Finished: 233
+2026-10-09 15:12:33,151 INFO o.a.j.r.Summariser: summary =    234 in 00:56:08 =    0.1/s Avg: 86898 Min:  4659 Max: 315592 Err:     0 (0.00%)
+2026-10-09 15:12:33,151 INFO o.a.j.t.JMeterThread: Thread is done: POST /tickets arrivals 1-234
+2026-10-09 15:12:33,151 INFO o.a.j.t.JMeterThread: Thread finished: POST /tickets arrivals 1-234
+2026-10-09 15:12:36,841 INFO o.a.j.t.JMeterThread: Thread started: POST /tickets arrivals 1-274
+2026-10-09 15:12:42,834 INFO o.a.j.t.JMeterThread: Thread started: POST /tickets arrivals 1-275
+2026-10-09 15:12:44,455 INFO o.a.j.t.JMeterThread: Thread started: POST /tickets arrivals 1-276
+2026-10-09 15:12:46,195 INFO o.a.j.t.JMeterThread: Thread started: POST /tickets arrivals 1-277
+2026-10-09 15:12:47,048 INFO o.a.j.t.JMeterThread: Thread is done: POST /tickets arrivals 1-235
+2026-10-09 15:12:47,048 INFO o.a.j.t.JMeterThread: Thread finished: POST /tickets arrivals 1-235
+2026-10-09 15:12:48,540 INFO o.a.j.t.JMeterThread: Thread started: POST /tickets arrivals 1-278
+2026-10-09 15:12:51,559 INFO o.a.j.t.JMeterThread: Thread started: POST /tickets arrivals 1-279
+2026-10-09 15:12:55,349 INFO o.a.j.t.JMeterThread: Thread is done: POST /tickets arrivals 1-236
+2026-10-09 15:12:55,349 INFO o.a.j.t.JMeterThread: Thread finished: POST /tickets arrivals 1-236
+2026-10-09 15:13:13,142 INFO o.a.j.t.JMeterThread: Thread is done: POST /tickets arrivals 1-237
+2026-10-09 15:13:13,142 INFO o.a.j.t.JMeterThread: Thread finished: POST /tickets arrivals 1-237
+2026-10-09 15:13:13,750 INFO o.a.j.t.JMeterThread: Thread started: POST /tickets arrivals 1-280
+2026-10-09 15:13:18,407 INFO o.a.j.t.JMeterThread: Thread started: POST /tickets arrivals 1-281
+2026-10-09 15:13:19,821 INFO o.a.j.t.o.EvenArrivalsRamp: Generating 0 events, beginRate = 0.0 / sec, endRate = 0.0 / sec, duration = 720.0 sec
+2026-10-09 15:13:19,821 INFO o.a.j.t.o.OpenModelThreadGroup: There will be no more events, so will wait for 725 sec till the end of the schedule
+2026-10-09 15:13:19,821 INFO o.a.j.t.JMeterThread: Thread started: POST /tickets arrivals 1-282
+2026-10-09 15:13:28,237 INFO o.a.j.t.JMeterThread: Thread is done: POST /tickets arrivals 1-238
+2026-10-09 15:13:28,237 INFO o.a.j.t.JMeterThread: Thread finished: POST /tickets arrivals 1-238
+2026-10-09 15:13:31,843 INFO o.a.j.r.Summariser: summary +      5 in 00:00:59 =    0.1/s Avg: 316877 Min: 301028 Max: 330005 Err:     2 (40.00%) Active: 44 Started: 282 Finished: 238
+2026-10-09 15:13:31,843 INFO o.a.j.r.Summariser: summary =    239 in 00:57:06 =    0.1/s Avg: 91709 Min:  4659 Max: 330005 Err:     2 (0.84%)
+2026-10-09 15:13:31,843 INFO o.a.j.t.JMeterThread: Thread is done: POST /tickets arrivals 1-239
+2026-10-09 15:13:31,843 INFO o.a.j.t.JMeterThread: Thread finished: POST /tickets arrivals 1-239
+2026-10-09 15:13:45,447 INFO o.a.j.t.JMeterThread: Thread is done: POST /tickets arrivals 1-240
+2026-10-09 15:13:45,447 INFO o.a.j.t.JMeterThread: Thread finished: POST /tickets arrivals 1-240
+2026-10-09 15:13:53,871 INFO o.a.j.t.JMeterThread: Thread is done: POST /tickets arrivals 1-241
+2026-10-09 15:13:53,871 INFO o.a.j.t.JMeterThread: Thread finished: POST /tickets arrivals 1-241
+2026-10-09 15:14:02,467 INFO o.a.j.r.Summariser: summary +      3 in 00:00:31 =    0.1/s Avg: 330002 Min: 330002 Max: 330004 Err:     3 (100.00%) Active: 41 Started: 282 Finished: 241
+2026-10-09 15:14:02,467 INFO o.a.j.r.Summariser: summary =    242 in 00:57:37 =    0.1/s Avg: 94663 Min:  4659 Max: 330005 Err:     5 (2.07%)
+2026-10-09 15:14:02,469 INFO o.a.j.t.JMeterThread: Thread is done: POST /tickets arrivals 1-242
+2026-10-09 15:14:02,469 INFO o.a.j.t.JMeterThread: Thread finished: POST /tickets arrivals 1-242
+2026-10-09 15:14:21,854 INFO o.a.j.t.JMeterThread: Thread is done: POST /tickets arrivals 1-243
+2026-10-09 15:14:21,854 INFO o.a.j.t.JMeterThread: Thread finished: POST /tickets arrivals 1-243
+2026-10-09 15:14:37,650 INFO o.a.j.t.JMeterThread: Thread is done: POST /tickets arrivals 1-244
+2026-10-09 15:14:37,650 INFO o.a.j.t.JMeterThread: Thread finished: POST /tickets arrivals 1-244
+2026-10-09 15:14:49,034 INFO o.a.j.t.JMeterThread: Thread is done: POST /tickets arrivals 1-245
+2026-10-09 15:14:49,034 INFO o.a.j.t.JMeterThread: Thread finished: POST /tickets arrivals 1-245
+2026-10-09 15:15:00,824 INFO o.a.j.r.Summariser: summary +      4 in 00:00:58 =    0.1/s Avg: 309979 Min: 302596 Max: 317884 Err:     0 (0.00%) Active: 37 Started: 282 Finished: 245
+2026-10-09 15:15:00,824 INFO o.a.j.r.Summariser: summary =    246 in 00:58:35 =    0.1/s Avg: 98164 Min:  4659 Max: 330005 Err:     5 (2.03%)
+2026-10-09 15:15:00,824 INFO o.a.j.t.JMeterThread: Thread is done: POST /tickets arrivals 1-246
+2026-10-09 15:15:00,824 INFO o.a.j.t.JMeterThread: Thread finished: POST /tickets arrivals 1-246
+2026-10-09 15:15:13,326 INFO o.a.j.t.JMeterThread: Thread is done: POST /tickets arrivals 1-247
+2026-10-09 15:15:13,326 INFO o.a.j.t.JMeterThread: Thread finished: POST /tickets arrivals 1-247
+2026-10-09 15:15:21,359 INFO o.a.j.t.JMeterThread: Thread is done: POST /tickets arrivals 1-248
+2026-10-09 15:15:21,359 INFO o.a.j.t.JMeterThread: Thread finished: POST /tickets arrivals 1-248
+2026-10-09 15:15:27,824 INFO o.a.j.t.JMeterThread: Thread is done: POST /tickets arrivals 1-249
+2026-10-09 15:15:27,824 INFO o.a.j.t.JMeterThread: Thread finished: POST /tickets arrivals 1-249
+2026-10-09 15:15:43,922 INFO o.a.j.t.JMeterThread: Thread is done: POST /tickets arrivals 1-250
+2026-10-09 15:15:43,922 INFO o.a.j.t.JMeterThread: Thread finished: POST /tickets arrivals 1-250
+2026-10-09 15:15:51,420 INFO o.a.j.t.JMeterThread: Thread is done: POST /tickets arrivals 1-251
+2026-10-09 15:15:51,420 INFO o.a.j.t.JMeterThread: Thread finished: POST /tickets arrivals 1-251
+2026-10-09 15:16:02,722 INFO o.a.j.r.Summariser: summary +      6 in 00:01:02 =    0.1/s Avg: 316519 Min: 310324 Max: 324077 Err:     0 (0.00%) Active: 31 Started: 282 Finished: 251
+2026-10-09 15:16:02,722 INFO o.a.j.r.Summariser: summary =    252 in 00:59:37 =    0.1/s Avg: 103363 Min:  4659 Max: 330005 Err:     5 (1.98%)
+2026-10-09 15:16:02,722 INFO o.a.j.t.JMeterThread: Thread is done: POST /tickets arrivals 1-252
+2026-10-09 15:16:02,722 INFO o.a.j.t.JMeterThread: Thread finished: POST /tickets arrivals 1-252
+2026-10-09 15:16:17,726 INFO o.a.j.t.JMeterThread: Thread is done: POST /tickets arrivals 1-253
+2026-10-09 15:16:17,726 INFO o.a.j.t.JMeterThread: Thread finished: POST /tickets arrivals 1-253
+2026-10-09 15:16:26,620 INFO o.a.j.t.JMeterThread: Thread is done: POST /tickets arrivals 1-254
+2026-10-09 15:16:26,620 INFO o.a.j.t.JMeterThread: Thread finished: POST /tickets arrivals 1-254
+2026-10-09 15:16:37,229 INFO o.a.j.t.JMeterThread: Thread is done: POST /tickets arrivals 1-255
+2026-10-09 15:16:37,229 INFO o.a.j.t.JMeterThread: Thread finished: POST /tickets arrivals 1-255
+2026-10-09 15:16:45,701 INFO o.a.j.t.JMeterThread: Thread is done: POST /tickets arrivals 1-256
+2026-10-09 15:16:45,701 INFO o.a.j.t.JMeterThread: Thread finished: POST /tickets arrivals 1-256
+2026-10-09 15:16:48,461 INFO o.a.j.t.JMeterThread: Thread is done: POST /tickets arrivals 1-257
+2026-10-09 15:16:48,461 INFO o.a.j.t.JMeterThread: Thread finished: POST /tickets arrivals 1-257
+2026-10-09 15:16:51,412 INFO o.a.j.t.JMeterThread: Thread is done: POST /tickets arrivals 1-258
+2026-10-09 15:16:51,412 INFO o.a.j.t.JMeterThread: Thread finished: POST /tickets arrivals 1-258
+2026-10-09 15:16:53,206 INFO o.a.j.t.JMeterThread: Thread is done: POST /tickets arrivals 1-259
+2026-10-09 15:16:53,206 INFO o.a.j.t.JMeterThread: Thread finished: POST /tickets arrivals 1-259
+2026-10-09 15:16:56,466 INFO o.a.j.t.JMeterThread: Thread is done: POST /tickets arrivals 1-260
+2026-10-09 15:16:56,466 INFO o.a.j.t.JMeterThread: Thread finished: POST /tickets arrivals 1-260
+2026-10-09 15:17:00,246 INFO o.a.j.r.Summariser: summary +      9 in 00:00:58 =    0.2/s Avg: 327638 Min: 317815 Max: 330005 Err:     6 (66.67%) Active: 22 Started: 282 Finished: 260
+2026-10-09 15:17:00,246 INFO o.a.j.r.Summariser: summary =    261 in 01:00:35 =    0.1/s Avg: 111097 Min:  4659 Max: 330005 Err:    11 (4.21%)
+2026-10-09 15:17:00,246 INFO o.a.j.t.JMeterThread: Thread is done: POST /tickets arrivals 1-261
+2026-10-09 15:17:00,246 INFO o.a.j.t.JMeterThread: Thread finished: POST /tickets arrivals 1-261
+2026-10-09 15:17:02,163 INFO o.a.j.t.JMeterThread: Thread is done: POST /tickets arrivals 1-262
+2026-10-09 15:17:02,163 INFO o.a.j.t.JMeterThread: Thread finished: POST /tickets arrivals 1-262
+2026-10-09 15:17:08,079 INFO o.a.j.t.JMeterThread: Thread is done: POST /tickets arrivals 1-263
+2026-10-09 15:17:08,079 INFO o.a.j.t.JMeterThread: Thread finished: POST /tickets arrivals 1-263
+2026-10-09 15:17:12,870 INFO o.a.j.t.JMeterThread: Thread is done: POST /tickets arrivals 1-264
+2026-10-09 15:17:12,871 INFO o.a.j.t.JMeterThread: Thread finished: POST /tickets arrivals 1-264
+2026-10-09 15:17:32,579 INFO o.a.j.r.Summariser: summary +      4 in 00:00:32 =    0.1/s Avg: 330003 Min: 330002 Max: 330005 Err:     4 (100.00%) Active: 18 Started: 282 Finished: 264
+2026-10-09 15:17:32,579 INFO o.a.j.r.Summariser: summary =    265 in 01:01:07 =    0.1/s Avg: 114401 Min:  4659 Max: 330005 Err:    15 (5.66%)
+2026-10-09 15:17:32,579 INFO o.a.j.t.JMeterThread: Thread is done: POST /tickets arrivals 1-265
+2026-10-09 15:17:32,579 INFO o.a.j.t.JMeterThread: Thread finished: POST /tickets arrivals 1-265
+2026-10-09 15:17:32,894 INFO o.a.j.t.JMeterThread: Thread is done: POST /tickets arrivals 1-266
+2026-10-09 15:17:32,894 INFO o.a.j.t.JMeterThread: Thread finished: POST /tickets arrivals 1-266
+2026-10-09 15:17:37,031 INFO o.a.j.t.JMeterThread: Thread is done: POST /tickets arrivals 1-267
+2026-10-09 15:17:37,031 INFO o.a.j.t.JMeterThread: Thread finished: POST /tickets arrivals 1-267
+2026-10-09 15:17:37,880 INFO o.a.j.t.JMeterThread: Thread is done: POST /tickets arrivals 1-268
+2026-10-09 15:17:37,880 INFO o.a.j.t.JMeterThread: Thread finished: POST /tickets arrivals 1-268
+2026-10-09 15:17:38,121 INFO o.a.j.t.JMeterThread: Thread is done: POST /tickets arrivals 1-269
+2026-10-09 15:17:38,121 INFO o.a.j.t.JMeterThread: Thread finished: POST /tickets arrivals 1-269
+2026-10-09 15:17:41,637 INFO o.a.j.t.JMeterThread: Thread is done: POST /tickets arrivals 1-270
+2026-10-09 15:17:41,637 INFO o.a.j.t.JMeterThread: Thread finished: POST /tickets arrivals 1-270
+2026-10-09 15:17:46,590 INFO o.a.j.t.JMeterThread: Thread is done: POST /tickets arrivals 1-271
+2026-10-09 15:17:46,590 INFO o.a.j.t.JMeterThread: Thread finished: POST /tickets arrivals 1-271
+2026-10-09 15:17:48,663 INFO o.a.j.t.JMeterThread: Thread is done: POST /tickets arrivals 1-272
+2026-10-09 15:17:48,663 INFO o.a.j.t.JMeterThread: Thread finished: POST /tickets arrivals 1-272
+2026-10-09 15:17:56,437 INFO o.a.j.t.JMeterThread: Thread is done: POST /tickets arrivals 1-273
+2026-10-09 15:17:56,437 INFO o.a.j.t.JMeterThread: Thread finished: POST /tickets arrivals 1-273
+2026-10-09 15:18:06,795 INFO o.a.j.t.JMeterThread: Thread is done: POST /tickets arrivals 1-274
+2026-10-09 15:18:06,795 INFO o.a.j.t.JMeterThread: Thread finished: POST /tickets arrivals 1-274
+2026-10-09 15:18:12,787 INFO o.a.j.t.JMeterThread: Thread is done: POST /tickets arrivals 1-275
+2026-10-09 15:18:12,787 INFO o.a.j.t.JMeterThread: Thread finished: POST /tickets arrivals 1-275
+2026-10-09 15:18:14,406 INFO o.a.j.t.JMeterThread: Thread is done: POST /tickets arrivals 1-276
+2026-10-09 15:18:14,406 INFO o.a.j.t.JMeterThread: Thread finished: POST /tickets arrivals 1-276
+2026-10-09 15:18:16,147 INFO o.a.j.t.JMeterThread: Thread is done: POST /tickets arrivals 1-277
+2026-10-09 15:18:16,147 INFO o.a.j.t.JMeterThread: Thread finished: POST /tickets arrivals 1-277
+2026-10-09 15:18:18,493 INFO o.a.j.t.JMeterThread: Thread is done: POST /tickets arrivals 1-278
+2026-10-09 15:18:18,493 INFO o.a.j.t.JMeterThread: Thread finished: POST /tickets arrivals 1-278
+2026-10-09 15:18:21,512 INFO o.a.j.t.JMeterThread: Thread is done: POST /tickets arrivals 1-279
+2026-10-09 15:18:21,512 INFO o.a.j.t.JMeterThread: Thread finished: POST /tickets arrivals 1-279
+2026-10-09 15:18:43,702 INFO o.a.j.t.JMeterThread: Thread is done: POST /tickets arrivals 1-280
+2026-10-09 15:18:43,702 INFO o.a.j.t.JMeterThread: Thread finished: POST /tickets arrivals 1-280
+2026-10-09 15:18:48,360 INFO o.a.j.t.JMeterThread: Thread is done: POST /tickets arrivals 1-281
+2026-10-09 15:18:48,360 INFO o.a.j.t.JMeterThread: Thread finished: POST /tickets arrivals 1-281
+2026-10-09 15:18:49,772 INFO o.a.j.t.JMeterThread: Thread is done: POST /tickets arrivals 1-282
+2026-10-09 15:18:49,772 INFO o.a.j.t.JMeterThread: Thread finished: POST /tickets arrivals 1-282
+2026-10-09 15:25:25,400 INFO o.a.j.t.o.OpenModelThreadGroup: There will be no more events, will shutdown the thread pool
+2026-10-09 15:25:25,400 INFO o.a.j.t.o.OpenModelThreadGroup: Thread starting done
+2026-10-09 15:25:25,400 INFO o.a.j.e.StandardJMeterEngine: Notifying test listeners of end of test
+2026-10-09 15:25:25,400 INFO o.a.j.s.FileServer: Close: team_rows_bodies.tsv
+2026-10-09 15:25:25,401 INFO o.a.j.r.Summariser: summary +     17 in 00:07:53 =    0.0/s Avg: 330003 Min: 330002 Max: 330005 Err:    17 (100.00%) Active: 0 Started: 282 Finished: 282
+2026-10-09 15:25:25,402 INFO o.a.j.r.Summariser: summary =    282 in 01:09:00 =    0.1/s Avg: 127398 Min:  4659 Max: 330005 Err:    32 (11.35%)

@@ -1,0 +1,55 @@
+﻿{
+    "test":  "stress",
+    "model":  "qwen2.5:7b",
+    "run":  1,
+    "run_id":  "load-stress-qwen2.5-7b-r1",
+    "dry":  false,
+    "target":  "http://192.168.18.104:8000",
+    "drain_min":  12,
+    "step_min":  8,
+    "ramp_s":  10,
+    "steps":  [
+                  {
+                      "rate_per_hour":  120,
+                      "start_s":  0,
+                      "end_s":  480
+                  },
+                  {
+                      "rate_per_hour":  180,
+                      "start_s":  490,
+                      "end_s":  970
+                  },
+                  {
+                      "rate_per_hour":  240,
+                      "start_s":  980,
+                      "end_s":  1460
+                  },
+                  {
+                      "rate_per_hour":  300,
+                      "start_s":  1470,
+                      "end_s":  1950
+                  },
+                  {
+                      "rate_per_hour":  360,
+                      "start_s":  1960,
+                      "end_s":  2440
+                  },
+                  {
+                      "rate_per_hour":  420,
+                      "start_s":  2450,
+                      "end_s":  2930
+                  },
+                  {
+                      "rate_per_hour":  480,
+                      "start_s":  2940,
+                      "end_s":  3420
+                  }
+              ],
+    "post_schedule":  "rate(120/hour) random_arrivals(8 min) random_arrivals(10 sec) rate(180/hour) random_arrivals(8 min) random_arrivals(10 sec) rate(240/hour) random_arrivals(8 min) random_arrivals(10 sec) rate(300/hour) random_arrivals(8 min) random_arrivals(10 sec) rate(360/hour) random_arrivals(8 min) random_arrivals(10 sec) rate(420/hour) random_arrivals(8 min) random_arrivals(10 sec) rate(480/hour) random_arrivals(8 min) pause(12 min)",
+    "jmeter_home":  "D:\\SIT\\Year 3\\ICT3113 - Performance Testing and Optimisation\\Assignment\\apache-jmeter-5.6.3",
+    "git_commit":  "a37d48a7e2df80927e3cb1ff8c2525eb1990f2ec",
+    "started_at_utc":  "2026-10-09T06:16:24.6201165Z",
+    "started_epoch_ms":  1791526584620,
+    "finished_at_utc":  "2026-10-09T07:26:25.7418003Z",
+    "finished_epoch_ms":  1791530785741
+}
