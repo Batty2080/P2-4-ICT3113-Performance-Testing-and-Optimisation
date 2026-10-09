@@ -1,0 +1,144 @@
+{
+  "test": "r2",
+  "model": "qwen2.5:7b",
+  "runs": [
+    "load-r2-qwen2.5-7b-r1",
+    "load-r2-qwen2.5-7b-r2",
+    "load-r2-qwen2.5-7b-r4"
+  ],
+  "per_run": {
+    "POST /tickets": [
+      {
+        "n": 55,
+        "ok": 55,
+        "errors": 0,
+        "error_pct": 0.0,
+        "p50": 12.231,
+        "p95": 20.644099999999995,
+        "p99": 24.348420000000004,
+        "mean": 12.179054545454544,
+        "max": 27.36
+      },
+      {
+        "n": 55,
+        "ok": 55,
+        "errors": 0,
+        "error_pct": 0.0,
+        "p50": 12.235,
+        "p95": 28.7634,
+        "p99": 32.52942,
+        "mean": 14.096054545454546,
+        "max": 33.138
+      },
+      {
+        "n": 55,
+        "ok": 55,
+        "errors": 0,
+        "error_pct": 0.0,
+        "p50": 11.652,
+        "p95": 23.8187,
+        "p99": 25.95876,
+        "mean": 12.810690909090908,
+        "max": 27.096
+      }
+    ]
+  },
+  "pooled": {
+    "POST /tickets": {
+      "n": 165,
+      "ok": 165,
+      "errors": 0,
+      "error_pct": 0.0,
+      "p50": 11.682,
+      "p95": 24.7264,
+      "p99": 30.016760000000044,
+      "mean": 13.028599999999999,
+      "max": 33.138
+    }
+  },
+  "r2": [
+    {
+      "sent": 55,
+      "completed_ok": 55,
+      "offered_per_hour": 110.0,
+      "completed_per_hour": 110.0,
+      "error_rate": 0.0,
+      "median_first_window_s": 13.037,
+      "n_first": 13,
+      "median_last_window_s": 9.686,
+      "n_last": 24,
+      "ratio_last_over_first": 0.7429623379611874,
+      "pass_throughput": true,
+      "pass_error": true,
+      "pass_no_buildup": true
+    },
+    {
+      "sent": 55,
+      "completed_ok": 55,
+      "offered_per_hour": 110.0,
+      "completed_per_hour": 110.0,
+      "error_rate": 0.0,
+      "median_first_window_s": 13.225000000000001,
+      "n_first": 24,
+      "median_last_window_s": 8.846499999999999,
+      "n_last": 16,
+      "ratio_last_over_first": 0.668922495274102,
+      "pass_throughput": true,
+      "pass_error": true,
+      "pass_no_buildup": true
+    },
+    {
+      "sent": 55,
+      "completed_ok": 55,
+      "offered_per_hour": 110.0,
+      "completed_per_hour": 110.0,
+      "error_rate": 0.0,
+      "median_first_window_s": 14.583,
+      "n_first": 19,
+      "median_last_window_s": 10.524000000000001,
+      "n_last": 18,
+      "ratio_last_over_first": 0.7216622094219297,
+      "pass_throughput": true,
+      "pass_error": true,
+      "pass_no_buildup": true
+    }
+  ],
+  "verdict": {
+    "R2": true
+  },
+  "reconciliation": {
+    "load-r2-qwen2.5-7b-r1": {
+      "jtl_requests": 55,
+      "missing_in_service_log": 0,
+      "status_mismatch": 0,
+      "in_service_log_not_in_jtl": 0,
+      "post_wait_before_service_s": {
+        "mean": 1.5986383636363637,
+        "p95": 11.036645199999993,
+        "max": 14.902446
+      }
+    },
+    "load-r2-qwen2.5-7b-r2": {
+      "jtl_requests": 55,
+      "missing_in_service_log": 0,
+      "status_mismatch": 0,
+      "in_service_log_not_in_jtl": 0,
+      "post_wait_before_service_s": {
+        "mean": 3.437605636363636,
+        "p95": 17.190406,
+        "max": 19.734014
+      }
+    },
+    "load-r2-qwen2.5-7b-r4": {
+      "jtl_requests": 55,
+      "missing_in_service_log": 0,
+      "status_mismatch": 0,
+      "in_service_log_not_in_jtl": 0,
+      "post_wait_before_service_s": {
+        "mean": 2.331765418181818,
+        "p95": 14.415503099999999,
+        "max": 21.64993
+      }
+    }
+  }
+}
