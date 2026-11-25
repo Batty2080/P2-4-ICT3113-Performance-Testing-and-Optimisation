@@ -6,7 +6,7 @@ We are committing this before the first Assignment 2 benchmark run. We will not 
 
 ## The cascade we are predicting for
 
-This is Person 2's rule from `CASCADE_A2.md`. qwen2.5:1.5b classifies every ticket first. If it predicts a category on the accept list, we keep its answer. Otherwise the ticket goes to qwen2.5:7b and we use the 7b's answer.
+This is Step 2's rule from `CASCADE_A2.md`. qwen2.5:1.5b classifies every ticket first. If it predicts a category on the accept list, we keep its answer. Otherwise the ticket goes to qwen2.5:7b and we use the 7b's answer.
 
 | Setting | Keep the 1.5b answer for | Send to 7b |
 |---|---|---|
@@ -15,7 +15,7 @@ This is Person 2's rule from `CASCADE_A2.md`. qwen2.5:1.5b classifies every tick
 
 ## What we based this on
 
-We used our A1 accuracy results and Person 2's tuning-set simulation (`results/a2/cascade_tuning.json`). We only looked at the tuning set (odd rows). We did not run the cascade on the test set.
+We used our A1 accuracy results and Step 2's tuning-set simulation (`results/a2/cascade_tuning.json`). We only looked at the tuning set (odd rows). We did not run the cascade on the test set.
 
 Single-model accuracy on the test set is not really a prediction, since we can reuse our A1 records (same digest, prompt, Ollama version and machine). From those, qwen2.5:7b gets 60/75 (80.0%), llama3.2:3b gets 43/75 (57.3%) and qwen2.5:1.5b gets 32/75 (42.7%). The overall limit is 53/75, so both small models fail by themselves and won't be speed tested.
 
