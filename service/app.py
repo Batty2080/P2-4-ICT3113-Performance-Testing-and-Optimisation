@@ -22,6 +22,22 @@ OLLAMA_URL = os.getenv("OLLAMA_URL", "http://ollama:11434")
 OLLAMA_MODEL = os.getenv("OLLAMA_MODEL", "")
 MODEL_TIMEOUT = float(os.getenv("MODEL_TIMEOUT", "300"))
 RUN_ID = os.getenv("RUN_ID", "development")
+TRIAGE_MODE = os.getenv("TRIAGE_MODE", "single")
+CASCADE_SETTING = os.getenv("CASCADE_SETTING", "strict")
+SMALL_MODEL = "qwen2.5:1.5b"
+LARGE_MODEL = "qwen2.5:7b"
+ACCEPT_CATEGORIES = {
+    "strict": frozenset({"Mortgage", "Bank account or service", "Money transfer or service"}),
+    "relaxed": frozenset({"Mortgage", "Bank account or service", "Money transfer or service",
+                          "Debt collection", "Consumer loan"}),
+}
+# Hold residency policy constant across A2 configurations; restart Ollama between runs.
+MODEL_KEEP_ALIVE = -1
+if TRIAGE_MODE not in {"single", "cascade"}:
+    raise ValueError("TRIAGE_MODE must be single or cascade")
+if CASCADE_SETTING not in ACCEPT_CATEGORIES:
+    raise ValueError("CASCADE_SETTING must be strict or relaxed")
+PUBLIC_MODEL = OLLAMA_MODEL if TRIAGE_MODE == "single" else f"cascade-{CASCADE_SETTING}"
 
 DATA_DIR.mkdir(parents=True, exist_ok=True)
 LOG_DIR.mkdir(parents=True, exist_ok=True)
@@ -109,6 +125,11 @@ def start_request():
     g.error = None
     g.narrative_hash = None
     g.narrative_chars = None
+    g.small_prediction = None
+    g.escalated = False
+    g.escalation_reason = None
+    g.final_model = None
+    g.model_calls = []
 
 
 @app.after_request
@@ -126,7 +147,14 @@ def log_request(response):
         "status": response.status_code,
         "duration_ms": round(elapsed_ms, 3),
         "model_ms": g.model_ms,
-        "model": OLLAMA_MODEL,
+        "model": PUBLIC_MODEL,
+        "mode": TRIAGE_MODE,
+        "cascade_setting": CASCADE_SETTING if TRIAGE_MODE == "cascade" else None,
+        "small_prediction": g.small_prediction,
+        "escalated": g.escalated,
+        "escalation_reason": g.escalation_reason,
+        "final_model": g.final_model,
+        "model_calls": g.model_calls,
         "prompt_sha256": PROMPT_HASH,
         "ticket_id": g.ticket_id,
         "category": g.category,
@@ -159,45 +187,86 @@ def handle_unexpected_error(exception):
     return error_response("Internal server error", 500)
 
 
-def classify_ticket(narrative):
-    started = time.perf_counter()
+class InvalidClassification(ValueError):
+    pass
 
+
+def call_model(narrative, model, read_timeout):
+    started = time.perf_counter()
+    call = {"model": model, "category": None, "duration_ms": None,
+            "load_duration_ms": None, "prompt_eval_duration_ms": None,
+            "eval_duration_ms": None, "error": None}
+    g.model_calls.append(call)
     try:
         response = requests.post(
             f"{OLLAMA_URL.rstrip('/')}/api/chat",
             json={
-                "model": OLLAMA_MODEL,
+                "model": model,
                 "messages": [
                     {"role": "system", "content": PROMPT},
                     {"role": "user", "content": narrative},
                 ],
                 "stream": False,
                 "format": "json",
-                "options": {
-                    "temperature": 0,
-                    "num_gpu": 0,
-                },
+                "keep_alive": MODEL_KEEP_ALIVE,
+                "options": {"temperature": 0, "num_gpu": 0},
             },
-            timeout=(10, MODEL_TIMEOUT),
+            timeout=(10, read_timeout),
         )
         response.raise_for_status()
+        try:
+            result = response.json()
+            for field in ("load_duration", "prompt_eval_duration", "eval_duration"):
+                value = result.get(field)
+                if isinstance(value, (int, float)):
+                    call[field + "_ms"] = round(value / 1_000_000, 3)
+            if result.get("done") is not True:
+                raise ValueError("Incomplete model response")
+            prediction = json.loads(result["message"]["content"])
+            category = prediction["category"]
+            if category not in CATEGORIES:
+                raise ValueError("Unrecognised category")
+        except (ValueError, KeyError, TypeError, AttributeError) as exc:
+            raise InvalidClassification("Model returned an invalid classification") from exc
+        call["category"] = category
+        return category
+    except Exception as exc:
+        call["error"] = type(exc).__name__
+        raise
+    finally:
+        call["duration_ms"] = round((time.perf_counter() - started) * 1000, 3)
 
-        result = response.json()
-        if result.get("done") is not True:
-            raise ValueError("Incomplete model response")
 
-        prediction = json.loads(result["message"]["content"])
-        category = prediction["category"]
+def classify_ticket(narrative):
+    started = time.perf_counter()
+    try:
+        if TRIAGE_MODE == "single":
+            category = call_model(narrative, OLLAMA_MODEL, MODEL_TIMEOUT)
+            g.final_model = OLLAMA_MODEL
+            return category
 
-        if category not in CATEGORIES:
-            raise ValueError("Unrecognised category")
+        try:
+            g.small_prediction = call_model(narrative, SMALL_MODEL, MODEL_TIMEOUT)
+        except InvalidClassification:
+            # Invalid output cannot be accepted. Transport errors/timeouts still fail the request.
+            g.escalation_reason = "invalid_small_output"
 
+        if g.small_prediction in ACCEPT_CATEGORIES[CASCADE_SETTING]:
+            g.final_model = SMALL_MODEL
+            return g.small_prediction
+
+        g.escalated = True
+        if g.escalation_reason is None:
+            g.escalation_reason = "category_not_accepted"
+        # Share the existing 300-second inference budget; do not allow two full 300s waits.
+        remaining = MODEL_TIMEOUT - (time.perf_counter() - started)
+        if remaining <= 0:
+            raise requests.exceptions.Timeout("Cascade inference budget exhausted")
+        category = call_model(narrative, LARGE_MODEL, remaining)
+        g.final_model = LARGE_MODEL
         return category
     finally:
-        g.model_ms = round(
-            (time.perf_counter() - started) * 1000,
-            3,
-        )
+        g.model_ms = round((time.perf_counter() - started) * 1000, 3)
 
 
 @app.post("/tickets")
@@ -220,7 +289,7 @@ def create_ticket():
         narrative.encode("utf-8")
     ).hexdigest()
 
-    if not OLLAMA_MODEL:
+    if TRIAGE_MODE == "single" and not OLLAMA_MODEL:
         return error_response("OLLAMA_MODEL is not configured", 503)
 
     try:
@@ -241,7 +310,7 @@ def create_ticket():
         INSERT INTO tickets (narrative, category, model, created_at)
         VALUES (?, ?, ?, ?)
         """,
-        (narrative, category, OLLAMA_MODEL, created_at),
+        (narrative, category, PUBLIC_MODEL, created_at),
     )
     db.commit()
 
@@ -250,7 +319,7 @@ def create_ticket():
     return jsonify(
         id=g.ticket_id,
         category=category,
-        model=OLLAMA_MODEL,
+        model=PUBLIC_MODEL,
         created_at=created_at,
         request_id=g.request_id,
     ), 201

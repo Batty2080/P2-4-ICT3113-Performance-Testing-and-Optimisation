@@ -25,6 +25,8 @@ services:
     environment:
       OLLAMA_URL: "http://ollama:11434"
       OLLAMA_MODEL: "${OLLAMA_MODEL:-}"
+      TRIAGE_MODE: "${TRIAGE_MODE:-single}"
+      CASCADE_SETTING: "${CASCADE_SETTING:-strict}"
       MODEL_TIMEOUT: "300"
       RUN_ID: "${RUN_ID:-development}"
       DATA_DIR: "/app/data"

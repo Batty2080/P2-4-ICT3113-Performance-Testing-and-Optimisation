@@ -1,0 +1,136 @@
+{
+  "kind": "offline_tuning_simulation_not_benchmark",
+  "n": 75,
+  "source_sha256": {
+    "golden_set/tuning.csv": "69b4efcd0886b0104e0740994b536785ce2beeda9793caeae821aaa338c60b3f",
+    "results/accuracy/acc-qwen2.5-1.5b-20261009-033439/predictions.csv": "6300dc9575be2a9e62136333585aab66f0afe01a59114cdcd46d4e9f4e4eaaee",
+    "results/accuracy/acc-qwen2.5-7b-20261009-035613/predictions.csv": "a718ca92af61acb5438bf55110ff73df168455d7b459c6456100812d160c417b"
+  },
+  "small_correct": 32,
+  "large_correct": 55,
+  "predicted_category_precision": {
+    "Bank account or service": {
+      "correct": 3,
+      "predictions": 3,
+      "precision": 1.0
+    },
+    "Consumer loan": {
+      "correct": 3,
+      "predictions": 8,
+      "precision": 0.375
+    },
+    "Credit card": {
+      "correct": 3,
+      "predictions": 14,
+      "precision": 0.21428571428571427
+    },
+    "Credit reporting": {
+      "correct": 15,
+      "predictions": 41,
+      "precision": 0.36585365853658536
+    },
+    "Debt collection": {
+      "correct": 1,
+      "predictions": 2,
+      "precision": 0.5
+    },
+    "Money transfer or service": {
+      "correct": 1,
+      "predictions": 1,
+      "precision": 1.0
+    },
+    "Mortgage": {
+      "correct": 6,
+      "predictions": 6,
+      "precision": 1.0
+    }
+  },
+  "settings": {
+    "strict": {
+      "accept_categories": [
+        "Bank account or service",
+        "Money transfer or service",
+        "Mortgage"
+      ],
+      "accepted": 10,
+      "wrong_accepted": 0,
+      "escalated": 65,
+      "escalation_fraction": 0.8666666666666667,
+      "correct": 56,
+      "per_category": {
+        "Bank account or service": {
+          "correct": 10,
+          "total": 13
+        },
+        "Consumer loan": {
+          "correct": 5,
+          "total": 9
+        },
+        "Credit card": {
+          "correct": 7,
+          "total": 11
+        },
+        "Credit reporting": {
+          "correct": 15,
+          "total": 15
+        },
+        "Debt collection": {
+          "correct": 5,
+          "total": 6
+        },
+        "Money transfer or service": {
+          "correct": 6,
+          "total": 10
+        },
+        "Mortgage": {
+          "correct": 8,
+          "total": 11
+        }
+      }
+    },
+    "relaxed": {
+      "accept_categories": [
+        "Bank account or service",
+        "Consumer loan",
+        "Debt collection",
+        "Money transfer or service",
+        "Mortgage"
+      ],
+      "accepted": 20,
+      "wrong_accepted": 6,
+      "escalated": 55,
+      "escalation_fraction": 0.7333333333333333,
+      "correct": 53,
+      "per_category": {
+        "Bank account or service": {
+          "correct": 10,
+          "total": 13
+        },
+        "Consumer loan": {
+          "correct": 5,
+          "total": 9
+        },
+        "Credit card": {
+          "correct": 7,
+          "total": 11
+        },
+        "Credit reporting": {
+          "correct": 15,
+          "total": 15
+        },
+        "Debt collection": {
+          "correct": 3,
+          "total": 6
+        },
+        "Money transfer or service": {
+          "correct": 6,
+          "total": 10
+        },
+        "Mortgage": {
+          "correct": 7,
+          "total": 11
+        }
+      }
+    }
+  }
+}
