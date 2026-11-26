@@ -43,7 +43,7 @@
         <stringProp name="HTTPSampler.contentEncoding">UTF-8</stringProp>
         <stringProp name="HTTPSampler.path"></stringProp>
         <stringProp name="HTTPSampler.connect_timeout">10000</stringProp>
-        <stringProp name="HTTPSampler.response_timeout">330000</stringProp>
+        <stringProp name="HTTPSampler.response_timeout">${__P(response_timeout_ms,330000)}</stringProp>
       </ConfigTestElement>
       <hashTree/>
 
@@ -52,13 +52,13 @@
         <elementProp name="ThreadGroup.main_controller" elementType="OpenModelThreadGroupController"/>
         <stringProp name="ThreadGroup.on_sample_error">continue</stringProp>
         <stringProp name="OpenModelThreadGroup.schedule">${__P(post_schedule,${post_default})}</stringProp>
-        <stringProp name="OpenModelThreadGroup.random_seed">0</stringProp>
+        <stringProp name="OpenModelThreadGroup.random_seed">${__P(random_seed,0)}</stringProp>
       </OpenModelThreadGroup>
       <hashTree>
-        <CSVDataSet guiclass="TestBeanGUI" testclass="CSVDataSet" testname="Ticket bodies (rows 4000-4999, in order)" enabled="true">
+        <CSVDataSet guiclass="TestBeanGUI" testclass="CSVDataSet" testname="Ticket bodies (A1: rows 4000-4999; A2: a2_speed_bodies.tsv), in order" enabled="true">
           <stringProp name="delimiter">\t</stringProp>
           <stringProp name="fileEncoding">UTF-8</stringProp>
-          <stringProp name="filename">team_rows_bodies.tsv</stringProp>
+          <stringProp name="filename">${__P(bodies_file,team_rows_bodies.tsv)}</stringProp>
           <boolProp name="ignoreFirstLine">true</boolProp>
           <boolProp name="quotedData">false</boolProp>
           <boolProp name="recycle">true</boolProp>
