@@ -92,3 +92,91 @@ Windows Firewall on A, so the network delay was measured as TCP connect time fro
   carry over to any deployment of this baseline.
 - **Absolute latencies will not carry over.** Treat our p95 values as indicative for a 6-core CPU server, not as
   guarantees for the client's hardware; the client should re-run the playbook on their own servers.
+
+---
+
+# Assignment 2 test environment
+
+Source for A2 slide 3. Everything below was recorded on 25–26 November 2026; times are Singapore time (SGT).
+
+## Machines: unchanged from Assignment 1
+
+The same two machines as in Assignment 1 (table at the top of this file), with the same limits. Checked on 26 Nov 2026:
+
+| Item | Assignment 2 | Same as A1? |
+|---|---|---|
+| Machine A (service + Ollama) | Lenovo 83DF, Intel Core i9-14900HX, 31.7 GB RAM, Windows 11 Pro build 26200 | Yes |
+| Docker | Docker Desktop 29.5.3, ≈ 15.5 GiB memory available (`docker info`: 16,623,935,488 bytes) | Yes |
+| Ollama | `ollama/ollama:0.40.0`, container limited to 6 CPUs, `OLLAMA_NUM_PARALLEL=1`, context 4096, temperature 0, `num_gpu: 0` (CPU only) | Yes |
+| Models | Same tags and digests as `models.lock.json`; `scripts/check_pins.py` PASS before every A2 run (`logs/pin_check_202611*.txt`) | Yes |
+| Classification prompt | `service/classification_prompt.txt`, unchanged since 5 Oct 2026 | Yes |
+| Machine B (load generator) | Desktop PC, Apache JMeter 5.6.3, Java 25.0.4.1; a separate physical machine from Machine A | Yes |
+| Power | Machine A on AC power, Windows Balanced power plan | Yes |
+| Network | Machine A on wired Ethernet (1 Gbps, 192.168.18.104), same router and subnet as Machine B. **Wi-Fi switched off on Machine A for all A2 runs** (see below) | Yes (Wi-Fi off now stated explicitly) |
+
+## Changes from Assignment 1
+
+1. **Service:** `POST /tickets` can run a cascade (`docs/a2/CASCADE_A2.md`): `TRIAGE_MODE=single` (one model, as in A1) or `TRIAGE_MODE=cascade` with `CASCADE_SETTING=strict|relaxed`. The service log records `escalated`, `final_model` and each model call per ticket.
+2. **Model residency:** every model call sends `keep_alive: -1`, so loaded models stay in memory for the whole run (in A1 Ollama unloaded a model after 5 idle minutes). Applied identically to every A2 configuration. Thread count, parallelism and context length are unchanged.
+3. **Load profile:** POST /tickets only (no GET /search or GET /stats traffic), at the rate set from S (below), instead of the A1 workload mix.
+4. **Workload tickets:** a fixed list of 40 tickets from rows 4150–4999 (outside the golden set), sent in the same order in every run (`results/a2/workload_tickets.md`).
+5. **Arrival pattern:** the Open Model Thread Group uses a fixed random seed (3113), so every speed run receives the same arrival times.
+6. **Per-run reset:** Ollama is restarted before every run (clears its memory and prompt cache), as the A2 brief requires.
+
+## Arrival rate and run length (from S)
+
+Measured on 26 Nov at 15:18 (`results/a2/s_measurement.txt`, `scripts/measure_s.py`): after an Ollama restart and three warm-up tickets (rows 4791, 4567, 4936), three different median-length tickets were sent to qwen2.5:7b one at a time.
+
+| Row | Characters | Time |
+|---|---|---|
+| 4444 | 813 | 12.22 s |
+| 4421 | 815 | **11.16 s (middle = S)** |
+| 4987 | 816 | 9.21 s |
+
+| Setting | Value |
+|---|---|
+| S | 11.16 s |
+| Arrival rate | one ticket every 2 × S = 22.32 s on average = **161.3 tickets/hour** (open model, random arrivals) |
+| Arrival period | S minutes = **670 s** |
+| HTTP response timeout | max(10 × S, 5 min) = **5 min** |
+| End-of-schedule pause (drain) | **6 min** (timeout + 1 min) |
+| Comparison with the client | 161.3/h is **above** the A1 design peak of 72 tickets/hour |
+
+## Procedure for each speed run
+
+On Machine A: `python scripts/prepare_run_a2.py --config <config> --run-id a2-<config>-r<n>` (pin check, stop service, delete database, restart Ollama, start service in the configuration, 3 warm-up tickets plus, for a cascade, one direct call to qwen2.5:7b, check `ollama ps`, check GET /stats = 3). Then on Machine B: `.\jmeter\run_load_test.ps1 -Test a2 -Config <config> -Run <n>` (records GET /stats before and after). After JMeter finishes, on Machine A: the same prepare command with `--after` (records `ollama ps` and GET /stats). Evidence: `results/a2/load_prep/` (Machine A) and `results/a2/load/<run id>/` (Machine B).
+
+## Conditions of each A2 run (all on 26 Nov 2026 unless stated)
+
+| Run | When (SGT) | Notes |
+|---|---|---|
+| Memory check: qwen2.5:1.5b + qwen2.5:7b loaded together | 25 Nov, 18:49 | `results/a2/memory_check_20261125-184905.txt`; both resident, 6.1 GiB of 15.5 GiB |
+| S measurement | 15:18 | See above |
+| Accuracy test, cascade strict (75 test-set tickets) | 16:11–16:27 | `results/a2/accuracy/acc-a2-cascade-strict-20261126-160938/` |
+| Accuracy test, cascade relaxed | 16:29–16:43 | `results/a2/accuracy/acc-a2-cascade-relaxed-20261126-162749/` |
+| Practice run 1 (dry, not a result) | 17:51–17:55 | 1 connect timeout and 2 lost replies; see "Network finding" |
+| Practice run 2 (dry, not a result) | 18:01–18:05 | After Wi-Fi off: 5 sent, 0 errors |
+| single-7b r1 | 18:38–18:56 | Round 1 |
+| cascade-strict r1 | 19:09–19:28 | Round 1 |
+| cascade-relaxed r1 | 19:33–19:51 | Round 1 |
+| single-7b r2 | 19:57–20:15 | Round 2 |
+| cascade-strict r2 | 20:18–20:37 | Round 2 |
+| cascade-relaxed r2 | 20:41–21:00 | Round 2; models ran ≈ 20–25% slower than in r1 for the first tickets (see below) |
+| single-7b r3 | 21:04–21:22 | Round 3 |
+| cascade-strict r3 | 21:25–21:44 | Round 3 |
+| cascade-relaxed r3 | 22:08–22:26 | Round 3 |
+
+Speed-run times are from Machine B's `run_info.json`. Every speed run: 30 tickets sent, 30 completed (GET /stats 3 → 33), 0 errors; `ollama ps` before and after each run shows the required model(s) loaded; the largest model `load_duration` inside any run was under 0.1 s (no reloads). The configurations were run in rotation (7b, strict, relaxed, repeated three times) so that drift over the evening affects all three alike.
+
+## Network finding (practice runs)
+
+In practice run 1 Machine A was connected to the network twice: by Ethernet (192.168.18.104) and by Wi-Fi (192.168.18.73) on the same subnet. JMeter recorded one connection timeout and two replies that never arrived (the service log shows those two tickets answered with HTTP 201 in 15–20 s). With Wi-Fi switched off, practice run 2 and all nine speed runs had no errors. Wi-Fi stayed off on Machine A for every A2 speed run.
+
+## Factors that could make A2 measurements unrepresentative
+
+In addition to the A1 factors above (laptop CPU, Docker on Windows, home network, background activity):
+
+1. **Drift over the evening.** The nine runs took about four hours back to back. In cascade-relaxed r2 the same model calls took ≈ 20–25% longer than in r1 for the first tickets (identical routing, no reloads), and single-7b r3 averaged 13.5 s against 12.6–12.7 s in r1–r2. Likely causes are heat or background activity on the laptop. Mitigation: rotation of configurations, and three runs each, so the spread is visible.
+2. **One arrival rate.** All speed results hold at 161.3 tickets/hour only (above the client's peak of 72/h). They do not show behaviour at higher rates.
+3. **Small samples.** 30 requests per run, 90 per configuration; p95 is pooled over the 90.
+4. **Same arrival pattern in every run.** The fixed seed makes runs directly comparable, but the three runs sample one arrival pattern, not three.
