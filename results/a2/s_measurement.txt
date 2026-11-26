@@ -1,0 +1,33 @@
+Assignment 2 – measurement of S · 2026-11-26T15:18:12
+Machine A (Lenovo 83DF, i9-14900HX), compose.yaml unchanged (Ollama 0.40.0, 6 CPUs, OLLAMA_NUM_PARALLEL=1).
+Service: single mode, qwen2.5:7b, run_id a2-s-measurement. Requests sent to POST /tickets on the service machine,
+one at a time; client time measured around each HTTP request. Ollama restarted just before this script.
+
+$ docker compose exec ollama ollama ps   (before warm-up; expect empty)
+NAME    ID    SIZE    PROCESSOR    CONTEXT    RUNNER    UNTIL
+
+Warm-up (timings discarded):
+warm-up  row 4791 (814 chars): client  30.12 s | service  30.07 s | model  30.03 s | load  7.01 s | HTTP 201 -> Bank account or service | final_model qwen2.5:7b
+warm-up  row 4567 (810 chars): client  11.56 s | service  11.55 s | model  11.51 s | load  0.01 s | HTTP 201 -> Mortgage | final_model qwen2.5:7b
+warm-up  row 4936 (818 chars): client  11.26 s | service  11.25 s | model  11.22 s | load  0.01 s | HTTP 201 -> Mortgage | final_model qwen2.5:7b
+
+$ docker compose exec ollama ollama ps   (after warm-up)
+NAME          ID              SIZE      PROCESSOR    CONTEXT    RUNNER      UNTIL   
+qwen2.5:7b    845dbda0ea48    5.1 GB    100% CPU     4096       llamacpp    Forever
+
+S tickets:
+S        row 4444 (813 chars): client  12.22 s | service  12.20 s | model  12.16 s | load  0.00 s | HTTP 201 -> Debt collection | final_model qwen2.5:7b
+S        row 4421 (815 chars): client  11.16 s | service  11.14 s | model  11.10 s | load  0.00 s | HTTP 201 -> Consumer loan | final_model qwen2.5:7b
+S        row 4987 (816 chars): client   9.21 s | service   9.20 s | model   9.15 s | load  0.00 s | HTTP 201 -> Credit reporting | final_model qwen2.5:7b
+
+Three S timings (client): 12.22, 11.16, 9.21 s for rows [4444, 4421, 4987]
+S = middle value = 11.16 s
+
+Derived speed-test settings (same for every configuration):
+  Arrival rate : one ticket every 2 x S = 22.32 s on average = 2.69 per minute = 161.3 per hour
+  Run length   : S minutes, minimum 5 -> 670 s = 11.17 min (about 30 tickets per run)
+  HTTP timeout : max(10 x S, 300 s) = 300 s -> 5 min
+  End pause    : timeout + 1 min -> 6 min
+  A1 design peak: 72 tickets/hour -> test rate is ABOVE the client's peak
+
+RESULT: OK – all requests answered by qwen2.5:7b under run_id a2-s-measurement
