@@ -1,0 +1,6 @@
+timeStamp,elapsed,label,responseCode,responseMessage,threadName,dataType,success,failureMessage,bytes,sentBytes,grpThreads,allThreads,URL,Latency,IdleTime,Connect,"row","seq"
+1795686720895,10013,POST /tickets,Non HTTP response code: org.apache.http.conn.ConnectTimeoutException,Non HTTP response message: Connect to 192.168.18.104:8000 [/192.168.18.104] failed: Connect timed out,POST /tickets arrivals 1-1,text,false,,2983,0,1,1,http://192.168.18.104:8000/tickets,0,0,10013,4620,1
+1795686784829,14849,POST /tickets,201,CREATED,POST /tickets arrivals 1-2,text,true,,367,1274,3,3,http://192.168.18.104:8000/tickets,14849,0,1,4192,2
+1795686785935,30739,POST /tickets,201,CREATED,POST /tickets arrivals 1-3,text,true,,374,1332,3,3,http://192.168.18.104:8000/tickets,30739,0,2,4343,3
+1795686798190,98338,POST /tickets,Non HTTP response code: java.net.SocketException,Non HTTP response message: Socket closed,POST /tickets arrivals 1-4,text,false,,3243,0,2,2,http://192.168.18.104:8000/tickets,0,0,3,4815,4
+1795686814813,81716,POST /tickets,Non HTTP response code: java.net.SocketException,Non HTTP response message: Socket closed,POST /tickets arrivals 1-5,text,false,,3243,0,2,2,http://192.168.18.104:8000/tickets,0,0,3,4693,5
