@@ -1,0 +1,169 @@
+{
+  "config": "cascade-strict",
+  "run_id": "acc-a2-cascade-strict-20261126-160938",
+  "started_at": "2026-11-26T16:11:13+08:00",
+  "finished_at": "2026-11-26T16:27:48+08:00",
+  "accept_categories": [
+    "Bank account or service",
+    "Money transfer or service",
+    "Mortgage"
+  ],
+  "n": 75,
+  "correct": 59,
+  "errors": 0,
+  "overall_min": 53,
+  "top_model_correct": 60,
+  "overall_pass": true,
+  "all_categories_pass": true,
+  "pass": true,
+  "per_category": {
+    "Credit reporting": {
+      "n": 16,
+      "correct": 15,
+      "min_correct": 13,
+      "pass": true,
+      "top_correct": 15,
+      "margin": 2
+    },
+    "Debt collection": {
+      "n": 10,
+      "correct": 9,
+      "min_correct": 8,
+      "pass": true,
+      "top_correct": 9,
+      "margin": 1
+    },
+    "Mortgage": {
+      "n": 13,
+      "correct": 8,
+      "min_correct": 7,
+      "pass": true,
+      "top_correct": 8,
+      "margin": 1
+    },
+    "Credit card": {
+      "n": 7,
+      "correct": 4,
+      "min_correct": 3,
+      "pass": true,
+      "top_correct": 4,
+      "margin": 1
+    },
+    "Bank account or service": {
+      "n": 8,
+      "correct": 6,
+      "min_correct": 6,
+      "pass": true,
+      "top_correct": 7,
+      "margin": 0
+    },
+    "Consumer loan": {
+      "n": 8,
+      "correct": 6,
+      "min_correct": 5,
+      "pass": true,
+      "top_correct": 6,
+      "margin": 1
+    },
+    "Money transfer or service": {
+      "n": 13,
+      "correct": 11,
+      "min_correct": 10,
+      "pass": true,
+      "top_correct": 11,
+      "margin": 1
+    }
+  },
+  "confusion_matrix": {
+    "Credit reporting": {
+      "Credit reporting": 15,
+      "Debt collection": 1,
+      "Mortgage": 0,
+      "Credit card": 0,
+      "Bank account or service": 0,
+      "Consumer loan": 0,
+      "Money transfer or service": 0,
+      "ERROR": 0
+    },
+    "Debt collection": {
+      "Credit reporting": 1,
+      "Debt collection": 9,
+      "Mortgage": 0,
+      "Credit card": 0,
+      "Bank account or service": 0,
+      "Consumer loan": 0,
+      "Money transfer or service": 0,
+      "ERROR": 0
+    },
+    "Mortgage": {
+      "Credit reporting": 2,
+      "Debt collection": 0,
+      "Mortgage": 8,
+      "Credit card": 0,
+      "Bank account or service": 1,
+      "Consumer loan": 2,
+      "Money transfer or service": 0,
+      "ERROR": 0
+    },
+    "Credit card": {
+      "Credit reporting": 2,
+      "Debt collection": 0,
+      "Mortgage": 0,
+      "Credit card": 4,
+      "Bank account or service": 1,
+      "Consumer loan": 0,
+      "Money transfer or service": 0,
+      "ERROR": 0
+    },
+    "Bank account or service": {
+      "Credit reporting": 0,
+      "Debt collection": 0,
+      "Mortgage": 0,
+      "Credit card": 1,
+      "Bank account or service": 6,
+      "Consumer loan": 0,
+      "Money transfer or service": 1,
+      "ERROR": 0
+    },
+    "Consumer loan": {
+      "Credit reporting": 1,
+      "Debt collection": 1,
+      "Mortgage": 0,
+      "Credit card": 0,
+      "Bank account or service": 0,
+      "Consumer loan": 6,
+      "Money transfer or service": 0,
+      "ERROR": 0
+    },
+    "Money transfer or service": {
+      "Credit reporting": 0,
+      "Debt collection": 0,
+      "Mortgage": 0,
+      "Credit card": 1,
+      "Bank account or service": 1,
+      "Consumer loan": 0,
+      "Money transfer or service": 11,
+      "ERROR": 0
+    }
+  },
+  "escalated": 66,
+  "escalation_fraction": 0.88,
+  "escalation_reasons": {
+    "category_not_accepted": 65,
+    "invalid_small_output": 1
+  },
+  "escalated_correct": 51,
+  "not_escalated": 9,
+  "not_escalated_correct": 8,
+  "small_wrong_among_escalated": 42,
+  "wrong_answers_accepted_from_small": 1,
+  "reconciliation": {
+    "requests_sent": 75,
+    "log_entries": 75,
+    "problems": []
+  },
+  "consistency_with_a1": {
+    "small_answer_differs_from_a1": 0,
+    "final_answer_differs_from_a1_expected_rows": []
+  }
+}
