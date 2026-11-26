@@ -26,4 +26,4 @@ Small categories: Credit card (7), Bank account or service (8) and Consumer loan
 
 ## Accuracy limits
 
-The accuracy limits derived from this test set are in `REQUIREMENTS_A2.md` (repo root), computed by `floors.py`.
+The accuracy limits derived from this test set are in `docs/a2/REQUIREMENTS_A2.md`, computed by `floors.py`.

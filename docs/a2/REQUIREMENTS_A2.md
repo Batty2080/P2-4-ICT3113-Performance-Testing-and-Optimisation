@@ -1,6 +1,6 @@
 # Assignment 2 – Revised requirements
 
-The client has revised the requirements for Assignment 2. **Speed is now the primary concern.** A lower accuracy than the top Assignment 1 model is accepted, within the limits below. The Assignment 1 accuracy requirements (R4: 85% weighted accuracy, and 70% recall per category) **do not apply** in Assignment 2. See `REQUIREMENTS.md` for the Assignment 1 requirements.
+The client has revised the requirements for Assignment 2. **Speed is now the primary concern.** A lower accuracy than the top Assignment 1 model is accepted, within the limits below. The Assignment 1 accuracy requirements (R4: 85% weighted accuracy, and 70% recall per category) **do not apply** in Assignment 2. See `docs/a1/REQUIREMENTS.md` for the Assignment 1 requirements.
 
 Unchanged constraints: CPU-only Ollama on hardware the team controls, no hosted model APIs, and the same test machine (CPU and RAM) as Assignment 1.
 
