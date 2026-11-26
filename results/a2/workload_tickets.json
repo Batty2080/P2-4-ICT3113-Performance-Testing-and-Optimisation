@@ -1,0 +1,219 @@
+{
+  "seed": 3113,
+  "source": "team_rows_4000_4999.csv",
+  "pool": "rows 4150-4999 minus [4500, 4501, 4502, 4503]",
+  "pool_size": 846,
+  "pool_median_chars": 813,
+  "length_quarters_chars": [
+    {
+      "quarter": 1,
+      "min": 201,
+      "max": 501
+    },
+    {
+      "quarter": 2,
+      "min": 501,
+      "max": 810
+    },
+    {
+      "quarter": 3,
+      "min": 813,
+      "max": 1240
+    },
+    {
+      "quarter": 4,
+      "min": 1245,
+      "max": 1974
+    }
+  ],
+  "s_tickets": [
+    {
+      "row": 4444,
+      "chars": 813
+    },
+    {
+      "row": 4421,
+      "chars": 815
+    },
+    {
+      "row": 4987,
+      "chars": 816
+    }
+  ],
+  "warmup_tickets": [
+    {
+      "row": 4791,
+      "chars": 814
+    },
+    {
+      "row": 4567,
+      "chars": 810
+    },
+    {
+      "row": 4936,
+      "chars": 818
+    }
+  ],
+  "speed_tickets_in_order": [
+    {
+      "row": 4620,
+      "chars": 1406
+    },
+    {
+      "row": 4192,
+      "chars": 1025
+    },
+    {
+      "row": 4343,
+      "chars": 1079
+    },
+    {
+      "row": 4815,
+      "chars": 1305
+    },
+    {
+      "row": 4693,
+      "chars": 307
+    },
+    {
+      "row": 4266,
+      "chars": 1389
+    },
+    {
+      "row": 4486,
+      "chars": 1525
+    },
+    {
+      "row": 4182,
+      "chars": 370
+    },
+    {
+      "row": 4983,
+      "chars": 552
+    },
+    {
+      "row": 4822,
+      "chars": 507
+    },
+    {
+      "row": 4727,
+      "chars": 930
+    },
+    {
+      "row": 4790,
+      "chars": 1384
+    },
+    {
+      "row": 4951,
+      "chars": 836
+    },
+    {
+      "row": 4479,
+      "chars": 1421
+    },
+    {
+      "row": 4657,
+      "chars": 762
+    },
+    {
+      "row": 4263,
+      "chars": 642
+    },
+    {
+      "row": 4708,
+      "chars": 1954
+    },
+    {
+      "row": 4267,
+      "chars": 727
+    },
+    {
+      "row": 4367,
+      "chars": 302
+    },
+    {
+      "row": 4897,
+      "chars": 546
+    },
+    {
+      "row": 4440,
+      "chars": 1049
+    },
+    {
+      "row": 4687,
+      "chars": 936
+    },
+    {
+      "row": 4297,
+      "chars": 1082
+    },
+    {
+      "row": 4242,
+      "chars": 620
+    },
+    {
+      "row": 4907,
+      "chars": 848
+    },
+    {
+      "row": 4887,
+      "chars": 212
+    },
+    {
+      "row": 4504,
+      "chars": 468
+    },
+    {
+      "row": 4215,
+      "chars": 1820
+    },
+    {
+      "row": 4781,
+      "chars": 500
+    },
+    {
+      "row": 4702,
+      "chars": 380
+    },
+    {
+      "row": 4329,
+      "chars": 977
+    },
+    {
+      "row": 4947,
+      "chars": 298
+    },
+    {
+      "row": 4253,
+      "chars": 492
+    },
+    {
+      "row": 4975,
+      "chars": 360
+    },
+    {
+      "row": 4707,
+      "chars": 1167
+    },
+    {
+      "row": 4739,
+      "chars": 1488
+    },
+    {
+      "row": 4283,
+      "chars": 584
+    },
+    {
+      "row": 4662,
+      "chars": 654
+    },
+    {
+      "row": 4619,
+      "chars": 1307
+    },
+    {
+      "row": 4575,
+      "chars": 782
+    }
+  ]
+}
